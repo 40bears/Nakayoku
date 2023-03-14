@@ -1,0 +1,97 @@
+@extends('layout.main')
+@section('title', 'Add Page | CII')
+@section('main-container')
+
+<div class="container-fluid px-0 bg-lgreen py-5">
+
+    <div class="container padt-5">
+        <ul class="breadcrumb menu menu1 pb-5">
+            <li class="breadcrumb-item"><a href="/">TOP</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">MyPage</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('view-pages') }}">User Guide Page</a></li>
+        </ul>
+    </div>
+
+    <div class="container  d-flex flex-column justify-content-center align-items-center">
+
+        <h3 class="signup-h3 pb-5">Add Page</h3>
+        <form method="POST" enctype="multipart/form-data" class="wd-50">
+            @csrf
+            <div class="pb-4 d-flex flex-column">
+
+                <label class="signup-lbl pb-2">Page Title</label>
+                <input type="text" class="form-input-2 font-pswd " name="title" id="title" placeholder="Enter Page Title" />
+                @if($errors->has('title'))
+                <div class="d-flex align-items-center">
+                    <img src="{{ url('assets/images/cancel-mark.png') }}" class="img-fluid pe-2" alt="settings" />
+                    <p class="error-p">{{$errors->first('title')}}</p>
+                </div>
+                @endif
+
+                <label class="signup-lbl pb-2 pt-4">Content</label>
+                <textarea name="content" placeholder="enter content" id="content" cols="30" rows="10"></textarea>
+                <p class="select-game mt-3">
+                    Please click on '<>' tag on the top right of the editor when you start writing 
+                        and write class="about-p" inside &lt;p&gt; tag like this example shown below: <br>
+                        Example ---
+
+                        &lt;p class="about-p"&gt;
+
+                </p>
+                @if($errors->has('content'))
+                <div class="d-flex align-items-center">
+                    <img src="{{ url('assets/images/cancel-mark.png') }}" class="img-fluid pe-2" alt="settings" />
+                    <p class="error-p">{{$errors->first('content')}}</p>
+                </div>
+                @endif
+
+                <label class="signup-lbl pb-2 pt-4 ">Status</label>
+                <div class="form-group d-flex justify-content-center">
+                    <label for="exampleFormControlSelect2" class="d-none">Select</label>
+                    <select class="select-bank buy-p font-pswd minimal w-100" name="status" id="exampleFormControlSelect2">
+                        <option value="">Please select</option>
+                        <option value="PUBLISHED">Published</option>
+                        <option value="DRAFT">Draft</option>
+                    </select>
+                </div>
+                @if($errors->has('status'))
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="{{ url('assets/images/cancel-mark.png') }}" class="img-fluid pe-2" alt="settings" />
+                    <p class="error-p">{{$errors->first('status')}}</p>
+                </div>
+                @endif
+
+                <label class="signup-lbl pb-2 pt-4">Category</label>
+                <div class="form-group d-flex justify-content-center">
+                    <label for="category" class="d-none">Select</label>
+                    <select class="select-bank buy-p w-100 minimal font-pswd " name="category" id="category">
+                        <option value="">Please select</option>
+                        @foreach($pageCategories as $pageCategory)
+                        <option value="{{$pageCategory->id}}">{{$pageCategory->name}}</option>
+                        @endforeach
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                @if($errors->has('category'))
+                <div class="d-flex align-items-center w-50 justify-content-center">
+                    <img src="{{ url('assets/images/cancel-mark.png') }}" class="img-fluid pe-2" alt="settings" />
+                    <p class="error-p">{{$errors->first('category')}}</p>
+                </div>
+                @endif
+
+                <div id="otherDeviceInput" class="d-flex flex-column align-items-center hide">
+                    <label class="signup-lbl pb-2 pt-4 d-flex ">Add Other Category</label>
+                    <input type="text" class="form-input-2 font-pswd w-75" name="other_category" placeholder="Add a category" />
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column align-items-center mt-5">
+                <input type="submit" formaction="{{ route('add-page-post') }}" class="signup-btn w-100" id="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+@endsection
