@@ -1,8 +1,8 @@
 @extends('layout.main')
-@section('title', 'Login | CII')
+@section('title', 'Login | Nakayoku')
 @section('main-container')
 
-<div class="container-fluid px-0 bg-lgreen padt-5" >
+<div class="container-fluid px-0 bg-lgreen padt-5 position-relative" >
     <div class="container psignup">
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-5">Sign in</h3>
@@ -14,12 +14,12 @@
             @endif
 
             <div class="d-flex justify-content-center align-items-start w-80 main-box">
-                <div class="d-flex flex-column justify-content-start left-box w-50">
-                    <a href="/"> <img src="{{ url('assets/images/logo-long-green.svg') }}"></a>
-                    <p class="sign-txt mt-4">Connecting Gamers Worldwide: A One-Stop Platform for Gaming Communities, Content, and Commerce</p>
-                    <img src="{{ url('assets/images/sign-img.png') }}" class="img-fluid">
+                <div class="d-flex flex-column justify-content-start left-box">
+                    {{-- <a href="/"> <img src="{{ url('assets/images/logo-long-green.svg') }}"></a> --}}
+                    <p class="sign-txt mt-4"><span class="span-1">Connecting Gamers Worldwide:</span> A One-Stop Platform for <span class="span-2">Gaming Communities, Content, and Commerce</span></p>
+                    <img src="{{ url('assets/images/login-img.png') }}" class="img-fluid">
                 </div>
-                <div class="d-flex flex-column justify-content-start right-box w-50">
+                <div class="d-flex flex-column justify-content-start right-box">
                     <h4 class="signin-h3 text-center">Welcome Back! </h4>
                     @if(Session::has('msg'))
                     <p class="error-p">{{ Session('msg') }}</p>
@@ -43,7 +43,7 @@
                                 <p class="error-p">{{$errors->first('password')}}</p>
                             </div>
                             @endif
-                            <a class="signup-a pt-2 gry-color" href="{{ route('forgot-password') }}">Forget password?</a>
+                            <a class="signup-a pt-2 gry-color text-decoration-none" href="{{ route('forgot-password') }}">Forget password?</a>
                             <div class="d-flex flex-column align-items-center pt-4">
                                 <input type="submit" class="signup-btn w-100" id="signin" name="signin" value="Sign in">
                                 <a class="signup-a pt-3" href="{{ route('signup1') }}">Don't have an account? Register Here</a>
@@ -55,6 +55,7 @@
 
         </div>
     </div>
+    <div class="blend-bg"></div>
 </div>
 {{-- 
 <div class="container-fluid px-0 bg-blue plogin">

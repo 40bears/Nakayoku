@@ -12,8 +12,8 @@ After cloning the repo in your machine, please follow below steps.
 Make .env file from example
 cp .env.example .env
 
-# Create a database named 'CII'
-$ CREATE DATABASE CII CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+# Create a database named 'NAKAYOKU'
+$ CREATE DATABASE NAKAYOKU CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 # install app's dependencies
 $ composer install
