@@ -1,16 +1,16 @@
 @extends('layout.main')
-@section('title', 'Signup | CII')
+@section('title', 'Signup | Nakayoku')
 @section('main-container')
 
 <!-- Sign up starts -->
 <div class="container-fluid px-0 bg-lgreen padt-5">
-    <div class="container psignup">
+    <div class="container psignup signup-img">
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-4">Sign up</h3>
             <p class="signup-p">For better experience please sign up</p>
-            <h2 class="signup-h2 pb-5">Join our community</h2>
+            <h2 class="signup-h2 pb-5">Join be part of our vastly growing marketplace</h2>
             <div class="signup-box">
-                <h4 class="signup-h4">Welcome to Class Innovation International </h4>
+                <h4 class="signup-h4">Welcome to Nakayoku</h4>
                 <form action="{{ route('signup1-post') }}" method="POST">
                     @csrf
                     <div class="d-flex flex-column">
@@ -32,6 +32,7 @@
             </div>
         </div>  
     </div>
+    <div class="blend-bg"></div>
 </div>
 <!-- Sign up ends -->
 @endsection
