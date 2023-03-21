@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Login | CII')
+@section('title', 'Contact Us | Nakayoku')
 @section('main-container')
 
 <!-- Contact us thanks starts -->

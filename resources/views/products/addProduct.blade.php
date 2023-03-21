@@ -1,29 +1,19 @@
 @extends('layout.main')
-@section('title', 'Add Product | CII')
+@section('title', 'Add Product | Nakayoku')
 @section('main-container')
 
 <!-- Sell item starts -->
 <div class="container-fluid px-0 bg-lgreen py-5">
 
-    <div class="container padt-5">
-        <ul class="breadcrumb menu menu1">
-            <li class="breadcrumb-item"><a href="/">TOP</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('add-product') }}">Sell New</a></li>
-        </ul>
-
-        {{-- <img src="{{ url('assets/images/goback-mark.svg') }}" class="img-fluid" alt="goback" />
-        <a href="/" class="go-back ps-3"> GO BACK</a> --}}
-    </div>
-
-    <div class="container pcontact">
+    <div class="container padt-6 padb-10">
         <div class="d-flex flex-column justify-content-center align-items-center ">
-        <h3 class="signup-h3 pb-5">Sell item</h3>
+        <h3 class="signup-h3 pb-5">Sell Item</h3>
         <form method="POST" enctype="multipart/form-data" class="sell-w">
             @csrf
             <div class="pb-4 d-flex flex-column">
 
                 <label class="signup-lbl pb-2">Select game name</label>
-                <input type="text" class="signup-input" autocomplete="off" name="game_name" id="game_name" placeholder="Enter Name" value="{{Route::is('edit-product') ? $product->games->name : ''}}" />
+                <input type="text" class="signup-input" autocomplete="off" name="game_name" id="game_name" placeholder="Select Game Name" value="{{Route::is('edit-product') ? $product->games->name : ''}}" />
                 <input type="hidden" class="signup-input" name="game_id" id="game_id" value="{{Route::is('edit-product') ? $product->game_id : ''}}" />
                 <div class="form-group hide">
                     <label for="exampleFormControlSelect1" class="d-none">Select</label>
@@ -42,10 +32,11 @@
                 @endif
 
                 <label class="signup-lbl pb-2 pt-4">Upload Image</label>
-                <div class="d-flex flex-column image-box image-select-div bg-white">
+                <div class="d-flex flex-column image-box image-select-div">
 
                     <div class="d-flex justify-content-center text-center flex-column align-items-center">
-                        <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                        {{-- <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" /> --}}
+                        <i class="fa-solid fa-cloud-arrow-up cloud-upload"></i>
                             <span class="profile-p text-center py-3">Upload image</span>
                         @if(Route::is('edit-product'))
                         <div class="d-flex flex-column">
@@ -80,8 +71,8 @@
                 <!-- <label class="form-label pb-2 pt-4">Platforms</label>
                 <input type="text" class="form-input-2 font-pswd " id="platforms" placeholder="PC" /> -->
 
-                <label class="signup-lbl pb-2 pt-4">Name</label>
-                <input type="text" class="signup-input" name="name" id="platforms" placeholder="Enter Name" value="{{Route::is('edit-product') ? $product->name : ''}}" />
+                <label class="signup-lbl pb-2 pt-4">Product Name</label>
+                <input type="text" class="signup-input" name="name" id="platforms" placeholder="Enter Product Name" value="{{Route::is('edit-product') ? $product->name : ''}}" />
                 @if($errors->has('name'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
@@ -92,7 +83,7 @@
                 <label class="signup-lbl pb-2 pt-4">Type of item</label>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2" class="d-none">Select</label>
-                    <select class="select-bank w-100 minimal bg-white" name="product_type" id="exampleFormControlSelect2" value="{{Route::is('edit-product') ? $product->product_type : ''}}">
+                    <select class="select-bank w-100 minimal" name="product_type" id="exampleFormControlSelect2" value="{{Route::is('edit-product') ? $product->product_type : ''}}">
                         <option value="">Please Select</option>
                         <option value="account" {{Route::is('edit-product') ? $product->product_type == 'account' ? 'selected': '' : ''}}>Account</option>
                         <option value="item" {{Route::is('edit-product') ? $product->product_type == 'item' ? 'selected': '' : ''}}>Item</option>
@@ -160,9 +151,9 @@
 
                 <a class="show pt-3 me-3" href="{{ route('currently-on-display') }}">Back</a>
                 @else
-                <input type="submit" formaction="{{ route('add-product-post') }}" class="signup-btn w-100 mb-4" id="submit" name="submit" value="Submit" />
+                <input type="submit" formaction="{{ route('add-product-post') }}" class="signup-btn w-100 mb-4" id="submit" name="submit" value="SUBMIT" />
 
-                <input type="submit" formaction="{{ route('add-product-draft-post') }}" class="draft-btn w-100" id="draft" name="draft" value="Put in draft" />
+                <input type="submit" formaction="{{ route('add-product-draft-post') }}" class="view w-100" id="draft" name="draft" value="PUT IN DRAFT" />
                 @endif
 
             </div>

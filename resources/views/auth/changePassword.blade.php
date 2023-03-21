@@ -1,13 +1,13 @@
 @extends('layout.main')
-@section('title', 'Store Password | CII')
+@section('title', 'Store Password | Nakayoku')
 @section('main-container')
 
 <!-- Sign up starts -->
-<div class="container-fluid px-0 bg-lgreen">
+<div class="container-fluid px-0 bg-lgreen padt-5">
     <div class="container form-container psignup">
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-5">Enter New Password</h3>
-            <div class="signup-box">
+            <div class="signup-box w-100">
                 <form action="{{ route('change-password') }}" method="POST">
                     @csrf
                     <div class="pb-4 d-flex flex-column">
@@ -42,7 +42,7 @@
                             <p class="error-p">Contains a number or symbol</p>
                         </div>
                         <p class="text-p mb-4">
-                            By selecting Agree and countinue, I agree to CLASS INNOVATION INTERNATIONAL
+                            By selecting Agree and countinue, I agree to NAKAYOKU
                             <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Service</a>,
                             </a>
                             and acknowledge the
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="d-flex flex-column align-items-center">
-                        <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="Countinue" />
+                        <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="CONTINUE" />
                         <a class="signup-a pt-3" href="{{ route('login') }}">Already have account ?</a>
                     </div>
                 </form>

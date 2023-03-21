@@ -48,6 +48,10 @@ body {
     padding-top: 6rem;
 }
 
+.padb-10 {
+    padding-bottom: 10rem;
+}
+
 .pad-0 {
     padding: 0rem !important;
 }
@@ -438,7 +442,7 @@ a:hover {
 
 .select-bank {
     height: 3.563rem;
-    background-color: transparent;
+    background-color: #232323;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     margin: 0;
@@ -448,6 +452,7 @@ a:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     color: #F8F7F8;
+    border: none;
 }
 
 .select-bank {
@@ -881,7 +886,7 @@ li.nav-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color: #1D262D;
+    color: #F8F7F8;
 }
 
 .text-para {
@@ -902,7 +907,7 @@ input[type="file"] {
     cursor: pointer;
     width: 8rem;
     border-radius: 5px;
-    background-color: #005C46;
+    background: #E42575;
 }
 
 .select-game {
@@ -923,25 +928,18 @@ input[type="file"] {
     line-height: 19px;
 }
 
-/* .view {
-    line-height: 15px;
-    background: transparent;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    backdrop-filter: blur(2px);
-    font-size: 16px;
-    width: 110px;
-    height: 38px;
-    border-width: 5px;
-    border: 1px solid transparent;
-    border-radius: 20px;
+.view {
     background-image: linear-gradient(#1e1e1e, #1e1e1e), linear-gradient(to right, #09FBD3, #FE53BB);
+    border: solid 2px transparent;
+    border-radius: 100rem;
     background-origin: border-box;
     background-clip: content-box, border-box;
-} */
+    box-shadow: 2px 1000px 1px #19191B inset;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 .view:hover {
     color: #fff;
@@ -966,13 +964,17 @@ input[type="file"] {
 .form-input-2 {
     height: 60px;
     border-radius: 5px;
-    border: 1px solid #acacac;
+    border: none;
     color: #acacac;
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 18px;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #232323;
+}
+
+.cloud-upload {
+    color: #fff;
 }
 
 .input-text {
@@ -1160,13 +1162,13 @@ select.minimal {
     background: #19191B;
 }
 
-.signup-img {
+/* .signup-img {
     background: url(/public/assets/images/signup-img.png);
     width: 100%;
     height: auto;
     background-size: cover;
     background-position: 100%;
-}
+} */
 
 .signup-box {
     background: #19191B;
@@ -1197,6 +1199,11 @@ select.minimal {
     width: 40%;
 }
 
+.bg-contact {
+    background: linear-gradient(180deg, rgba(51, 112, 102, 0.2622) 39.41%, rgba(9, 251, 211, 0.4617) 100%);
+    border-radius: 50px;
+}
+
 .blend-bg {
     width: 200px;
     height: 200px;
@@ -1213,7 +1220,7 @@ select.minimal {
 }
 
 .success-h4 {
-    color: #13161C;
+    color: #F8F7F8;
     font-weight: 500;
     font-size: 24px;
 }
@@ -1246,11 +1253,11 @@ select.minimal {
 .thank-p {
     font-weight: 400;
     font-size: 16px;
-    color: #13161C;
+    color: #F8F7F8;
 }
 
 .go-back {
-    color: #717782;
+    color: #F8F7F8;
     font-weight: 400;
     font-size: 14px;
 }
@@ -1259,7 +1266,7 @@ select.minimal {
     font-weight: 600;
     font-size: 19px;
     line-height: 28px;
-    color: #13161C;
+    color: #F8F7F8;
 }
 
 .rating-game {
@@ -1414,7 +1421,7 @@ select.minimal {
 }
 
 .big-lbl {
-    color: #1D262D;
+    color: rgba(251, 251, 251, 0.5);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1431,7 +1438,7 @@ select.minimal {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #005C46;
+    color: #E42575;
 }
 
 .terms-head {
@@ -1504,6 +1511,14 @@ select.minimal {
     padding: 1rem;
     background-color: #232323 !important;
     outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #acacac !important;
 }
 
 .tagify {
@@ -2074,6 +2089,10 @@ ul.footer-links li {
 /* Responsive code for sp starts */
 
 @media only screen and (max-width: 767px) {
+
+    .signup-box {
+        width: 100%;
+    }
 
     .currency-profile-pic {
         width: 15%;

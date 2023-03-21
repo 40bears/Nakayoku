@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Identity Verification | CII')
+@section('title', 'Identity Verification | Nakayoku')
 @section('main-container')
 
 
