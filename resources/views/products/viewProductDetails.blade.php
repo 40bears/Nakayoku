@@ -23,27 +23,83 @@
         <div class="row pt-5">
 
              <!-- Left side starts -->
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-5 col-sm-12">
                 <div class="d-flex flex-row justify-content-start pb-3 px-3">
-                    <div class="">
-                        {{--@if($product->user->profile_picture != null)--}}
-                        @if($product->image != null)
+                    {{-- <div class="">
+                        @if($product->user->profile_picture != null)
                         <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" />
                         <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                         @else
                         <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
                         @endif
+                    </div> --}}
+
+                    <div class="d-flex flex-column">
+                        <div class="w-25">
+                            @if($product->user->profile_picture != null)
+                            <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
+                            @else
+                            <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
+                            @endif
+                        </div>
+                        <div class="d-flex flex-column justify-content-center mt-3">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
+                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                            </div>
+                            <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
+                                <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
+                                <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
+                            </div> -->
+                        </div>
+                        @if($product->user->introduction != null)
+                        <div class="mt-3">
+                            <p>{product->user->introduction}</p>
+                        </div>
+                        @endif
+                        <div class="mt-3 vector-image-text">
+                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+                        </div>
+                        <div class="d-flex">
+
+                            <div class="d-flex mb-3 mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Device</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::upper($product->games->devices->name)}}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Left side ends -->
 
             <!-- Middle side starts -->
-            <div class="col-md-4 col-sm-12">
-                <div>
-                    <p class="buy-page-product-name">{{$product->name}}</p>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
+                <div class="">
+                    @if($product->image != null)
+                    <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
+                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    @else
+                    <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
+                    @endif
                 </div>
-                <div class="d-flex mb-3">
+                <div>
+                    <p class="buy-page-product-name">{{$product->description}}</p>
+                </div>
+                <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
                         <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
                     </div>
@@ -88,16 +144,16 @@
                             <p class="mb-0">{{$product->min_quantity}}</p>
                         </div>
                     </div>
-                {{-- </div> --}}
+                {{-- </div> --}} -->
             </div>
             <!-- Middle side ends -->
 
             <!-- Right side starts -->
-            <div class="col-md-4 col-sm-12 white-box bank-wh d-flex justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center">
                 <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -115,7 +171,7 @@
                                 <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <p class="buy-text">BUY</p> -->
                     <div class="d-flex flex-row justify-content-between pt-3 pb-1">
                         <p class="detail-p text-dark mb-0 align-self-center">Price</p>
@@ -128,12 +184,12 @@
                     </div>
 
                     <div class="d-flex justify-content-between pb-4">
-                        <button type="button" class="btn decrease vector-image-border">
+                        <button type="button" class="btn decrease vector-image-border buy-item-input">
                             <i class="fa fa-minus" aria-hidden="true"></i>
                         </button>
-                        <input type="number" class="value mx-4 w-75 vector-image-border text-center" placeholder="0" value="0" min="1">
+                        <input type="number" class="value mx-2 w-75 vector-image-border buy-item-input text-center" placeholder="0" value="0" min="1">
                         <input type="hidden" name="quantity" id="hidden-quantity">
-                        <button type="button" class="btn increase vector-image-border">
+                        <button type="button" class="btn increase vector-image-border buy-item-input">
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -164,17 +220,21 @@
                     </button>
                     @endif
 
-                    <div class="d-flex align-items-center pt-5">
+                    <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
-                        <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Add to Favourite
-                        </a>
-                        <i class="fa-regular fa-heart text-dark heart-w heart-2"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Add to Favourite
+                            </a>
+                        </div>
                         @else
-                        <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Remove from Favourite
-                        </a>
-                        <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Remove from Favourite
+                            </a>
+                        </div>
                         @endif
                     </div>
                 </form>
@@ -188,26 +248,70 @@
   
         <div class="row pt-5">
             <!-- Left side starts -->
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-5 col-sm-12">
             <div class="d-flex flex-row justify-content-start pb-3 px-3">
-                    <div class="">
+                   {{-- <div class="">
                         @if($product->image != null)
-                        <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" />
-                        <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" /> -->
+                        <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
+                        <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" />
                         @else
                         <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
                         @endif
+                    </div> --}}
+                    <div class="d-flex flex-column">
+                        <div class="w-25">
+                            @if($product->user->profile_picture != null)
+                            <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
+                            @else
+                            <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
+                            @endif
+                        </div>
+                        <div class="d-flex flex-column justify-content-center mt-3">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
+                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                            </div>
+                            <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
+                                <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
+                                <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
+                            </div> -->
+                        </div>
+                        @if($product->user->introduction != null)
+                        <div class="mt-3">
+                            <p>{product->user->introduction}</p>
+                        </div>
+                        @endif
+                        <div class="mt-3 vector-image-text">
+                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+                        </div>
+                        <div class="d-flex mb-3 mt-3">
+                            <div class="vector-image-border" >
+                                <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                            </div>
+                            <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
+                            </div>
+                        </div>
                     </div>
             </div>
             </div>  
             <!-- Left side ends -->
 
             <!-- Middle section starts -->
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
+                <div class="">
+                    @if($product->image != null)
+                    <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
+                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    @else
+                    <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
+                    @endif
+                </div>
                 <div>
                     <p class="buy-page-product-name">{{$product->name}}</p>
                 </div>
-                <div class="d-flex mb-3">
+                <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
                         <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
                     </div>
@@ -252,17 +356,17 @@
                             <p class="mb-0">{{$product->min_quantity}}</p>
                         </div>
                     </div>
-                {{-- </div> --}}
+                {{-- </div> --}} -->
             </div>
             <!-- Middle section ends -->
 
             <!-- Right side starts -->
 
-            <div class="col-md-4 col-sm-12 white-box bank-wh d-flex justify-content-center align-items-center">
-                <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
+            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center">
+                <form style="color: wheat;" class="w-100" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -280,10 +384,10 @@
                                 <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <p class="buy-text">BUY</p> -->
-                    <div class="d-flex flex-row justify-content-between border-nav pt-3 pb-2">
-                        <p class="detail-p text-dark align-self-center mb-0">Price</p>
+                    <div class="d-flex flex-row justify-content-between  pt-3 pb-2">
+                        <p class=" buy-item-price-text align-self-center mb-0">Price</p>
                         <input type="hidden" value="{{showConvertedPrice($product->price)}}" id="pricePerItem" name="">
                         <p class="detail-p3 item-price"><span>{{showCurrencySymbol()}}</span> {{formatPrice(showConvertedPrice($product->price))}}</p>
                     </div>
@@ -309,17 +413,21 @@
                     </button>
                     @endif
 
-                    <div class="d-flex align-items-center pt-5">
+                    <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
-                        <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Add to Favourite
-                        </a>
-                        <i class="fa-regular fa-heart text-dark heart-w heart-2"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Add to Favourite
+                            </a>
+                        </div>
                         @else
-                        <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Remove from Favourite
-                        </a>
-                        <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Remove from Favourite
+                            </a>
+                        </div>
                         @endif
                     </div>
                 </form>
@@ -332,27 +440,83 @@
         <!-- Buying details starts for items-->
         <div class="row pt-5">
             <!-- Left side starts -->
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-5 col-sm-12">
                 <div class="d-flex flex-row justify-content-start pb-3 px-3">
-                    <div class="">
-                        {{--@if($product->user->profile_picture != null)--}}
-                        @if($product->image != null)
+                    {{-- <div class="">
+                        @if($product->user->profile_picture != null)
                         <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" style="height:100%;" alt="games" />
                         <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                         @else
                         <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
                         @endif
+                    </div> --}}
+
+                    <div class="d-flex flex-column">
+                        <div class="w-25">
+                            @if($product->user->profile_picture != null)
+                            <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
+                            @else
+                            <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
+                            @endif
+                        </div>
+                        <div class="d-flex flex-column justify-content-center mt-3">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
+                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                            </div>
+                            <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
+                                <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
+                                <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
+                            </div> -->
+                        </div>
+                        @if($product->user->introduction != null)
+                        <div class="mt-3">
+                            <p>{product->user->introduction}</p>
+                        </div>
+                        @endif
+                        <div class="mt-3 vector-image-text">
+                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+                        </div>
+                        <div class="d-flex">
+
+                            <div class="d-flex mb-3 mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Device</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::upper($product->games->devices->name)}}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Left side ends -->
 
             <!-- Middle div starts -->
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
+                <div class="">
+                    @if($product->image != null)
+                    <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
+                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    @else
+                    <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
+                    @endif
+                </div>
                 <div>
                     <p class="buy-page-product-name">{{$product->name}}</p>
                 </div>
-                <div class="d-flex mb-3">
+                <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
                         <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
                     </div>
@@ -397,17 +561,17 @@
                             <p class="mb-0">{{$product->min_quantity}}</p>
                         </div>
                     </div>
-                {{-- </div> --}}
+                {{-- </div> --}} -->
             </div>
             <!-- Middle div ends -->
 
             <!-- Right side starts -->
 
-            <div class="col-md-4 col-sm-12  white-box bank-wh d-flex justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-12  white-box bank-wh d-flex justify-content-center align-items-center">
                 <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -425,7 +589,7 @@
                                 <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <p class="buy-text">BUY</p> -->
                     <div class="d-flex flex-row justify-content-between pt-3 pb-1">
                         <p class="detail-p text-dark align-self-center mb-0">Price</p>
@@ -439,12 +603,12 @@
                     </div>
 
                     <div class="d-flex justify-content-between pb-4">
-                        <button type="button" class="btn decrease vector-image-border">
+                        <button type="button" class="btn decrease vector-image-border buy-item-input">
                             <i class="fa fa-minus " aria-hidden="true"></i>
                         </button>
-                        <input type="number" class="value mx-4 w-75 vector-image-border text-center" placeholder="0" value="0" min="1">
+                        <input type="number" class="value mx-4 w-75 vector-image-border buy-item-input text-center" placeholder="0" value="0" min="1">
                         <input type="hidden" name="quantity" id="hidden-quantity">
-                        <button type="button" class="btn increase vector-image-border">
+                        <button type="button" class="btn increase vector-image-border buy-item-input">
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                     </div>
@@ -482,17 +646,21 @@
                         </p>
                     </div> -->
 
-                    <div class="d-flex align-items-center pt-5">
+                    <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
-                        <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Add to Favourite
-                        </a>
-                        <i class="fa-regular fa-heart text-dark heart-w heart-2"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Add to Favourite
+                            </a>
+                        </div>
                         @else
-                        <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="detail-p mb-0 pe-2 text-decoration-underline">
-                            Remove from Favourite
-                        </a>
-                        <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                        <div class="favourites-button-div">
+                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
+                                Remove from Favourite
+                            </a>
+                        </div>
                         @endif
                     </div>
                 </form>
@@ -558,15 +726,16 @@
                     <div class="white-box">
                         <a class="w-15" href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($item->image != null)
-                            <img src="{{ url('storage/uploads/' . $item->image ) }}" class="img-fluid " alt="product" />
+                            <!-- <img src="{{ url('storage/uploads/' . $item->image ) }}" class="img-fluid " alt="product" /> -->
+                            <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" />
                             @else
                             <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid " alt="product" />
                             @endif
                             @if(empty($product->description))
-                            <p class="detail-p display">{{Str::limit($product->name, 80, $end='.......')}}</p>
+                            <p class="detail-p display mt-3">{{Str::limit($product->name, 80, $end='.......')}}</p>
                             <p class="detail-p d-md-none d-sm-block">{{Str::limit($product->name, 25, $end='.......')}}</p>
                             @else
-                            <p class="detail-p display">{{Str::limit($product->description, 80, $end='.......')}}</p>
+                            <p class="detail-p display mt-3">{{Str::limit($product->description, 80, $end='.......')}}</p>
                             <p class="detail-p d-md-none d-sm-block">{{Str::limit($product->description, 25, $end='.......')}}</p>
                             @endif
                             <div class="d-flex">
@@ -588,12 +757,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <div>
+                            <div class="d-flex justify-content-start mt-3">
+                                <div class="mr-15">
                                     <p class="detail-head">Instock</p>
                                     <p class="detail-para">{{$product->stock_quantity}} M</p>
                                 </div>
-                                <div>
+                                <div class="mr-15">
                                     <p class="detail-head">Min qty.</p>
                                     <p class="detail-para">{{$product->min_quantity ? $product->min_quantity . 'M' : '--'}}</p>
                                 </div>
