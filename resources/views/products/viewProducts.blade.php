@@ -37,13 +37,13 @@
         <div class="row">
 
         <!-- Price filter starts -->
-        <div class="col-md-3 col-sm-12">
-        <div class="d-flex flex-column pb-5 justify-content-start f-column">
+        <div class="col-md-12 col-sm-12">
+        <div class="d-flex flex-row pb-5 justify-content-between f-column">
 
             <!-- Checkbox starts -->
-            <div>
+            <div class="d-flex justify-content-center align-items-center">
                 <p class="keyword-p">ALL</p>
-                <ul class="ps-0 left-menu">
+                <ul class="ps-0 left-menu d-flex justify-content-center align-items-center">
                     <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}">
                         <li class="border-nav border-t ps-3 py-2 {{str_contains(url()->current(), 'account') ? 'current-page' : ''}}">
                             <div class="d-flex justify-content-between"> 
@@ -142,7 +142,6 @@
                                         @endif
                                     </div> --}}
                                     <div class="number-group d-flex justify-content-between ">
-                                        <!-- <input class="number-input price-input-1 w-price min-price price-slider" name="min_price" type="number" value="{{request()->has('min_price') ? request()->get('min_price') : ''}}" min="0" max="1000" placeholder="min" /> -->
                                         <input class="number-input price-input-1  min-price price-slider format-with-comma w-40" name="min_price" type="text" value="{{request()->has('min_price') ? request()->get('min_price') : ''}}" placeholder="min" />
                                         {{-- to --}}
                                         <input class="number-input price-input-1  max-price price-slider format-with-comma w-40" name="max_price" type="text" value="{{request()->has('max_price') ? request()->get('max_price') : ''}}" min="0" max="50000" placeholder="max" />
@@ -180,7 +179,7 @@
 
         </div>
 
-        <div class="col-md-9 col-sm-12 ps-5 common-space pt-0">
+        <div class="col-md-12 col-sm-12 ps-5 common-space pt-0">
             <div class="d-flex pb-2">
                 @if(!empty(request()->get('min_price')))
                 <div class="properties d-flex justify-content-around align-items-center me-4 min-filter">
@@ -222,7 +221,7 @@
         <div class="row py-4">
         @foreach ($products as $product)
         @if($product->product_type === 'account')
-        <div class="col-md-4 col-sm-12 sp-mb mb-4">
+        <div class="col-md-3 col-sm-12 sp-mb mb-4">
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($game->image != null)
@@ -257,7 +256,7 @@
             </div>
         </div>
         @elseif($product->product_type === 'currency')
-        <div class="col-md-4 col-sm-12 sp-mb mb-4">
+        <div class="col-md-3 col-sm-12 sp-mb mb-4">
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                     @if($product->image != null)
@@ -306,7 +305,7 @@
             </div>
         </div>
         @else
-        <div class="col-md-4 col-sm-12 sp-mb mb-4">
+        <div class="col-md-3 col-sm-12 sp-mb mb-4">
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($game->image != null)

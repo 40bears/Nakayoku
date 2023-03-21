@@ -109,25 +109,78 @@ body {
 .decrease:active,
 .increase:focus,
 .decrease:focus {
-    color: #005C46;
-    border-color: #005C46;
+    /* color: #005C46;
+    border-color: #005C46; */
+    color: white;
 }
 
 .buy-page-product-name {
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 26px;
+    font-size: 13px;
     line-height: 32px;
     text-transform: uppercase;
-    color: #1D262D;
+    color: #1D262D; */
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #F8F7F8;
+    margin-top: 5%;
+}
+
+.buy-item-user-name{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.364px;
+    color: #F8F7F8;
+}
+
+.buy-item-price-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F8F7F8;
+}
+
+.favourites-button-div{
+    background: rgba(35, 35, 35, 0.65);
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-fav-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F8F7F8 !important;
 }
 
 .vector-image-border {
-    border: 0.5px solid #717782;
+    /* border: 0.5px solid #717782; */
     border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
+}
+.vector-image-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F8F7F8;
+}
+
+.buy-item-input{
+    background: #232323;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 1rem;
 }
 
 .item-price {
@@ -135,7 +188,8 @@ body {
     font-size: 30px;
     line-height: 35px;
     text-transform: uppercase;
-    color: #005C46;
+    /* color: #005C46; */
+    color: #F8F7F8;
 }
 
 .other-sellers-text {
@@ -168,6 +222,10 @@ a:hover {
     width: 280px;
     height: 162px;
     object-fit: fill;
+    box-shadow: 0px 3px 17px 2px rgba(254, 83, 187, 0.13);
+    filter: drop-shadow(0px -3px 15px rgba(9, 251, 211, 0.12));
+    border-radius: 4px;
+    margin-bottom: 2%;
 }
 
 .border-box {
@@ -214,6 +272,10 @@ a:hover {
 
 .gap-5 {
     gap: 5%;
+}
+
+.mr-15{
+    margin-right: 15%;
 }
 
 .w-input {
@@ -327,10 +389,13 @@ a:hover {
 }
 
 .games-head {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 24px;
-    color: #1D262D;
+    font-size: 65px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #F8F7F8;
 }
 
 .count {
@@ -1111,14 +1176,19 @@ select.minimal {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color: #717782;
+    /* color: #717782; */
+    color: rgba(251, 251, 251, 0.5);
 }
 
 .detail-para {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #717782;
+    /* color: #717782; */
+    color: rgba(251, 251, 251, 0.5);
+}
+.detail-p{
+    color: #AAAAAA !important;
 }
 
 .top-image {
@@ -1557,10 +1627,20 @@ input:-webkit-autofill:active {
 }
 
 .white-box {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #1E1E1E;
     padding: 1rem 1rem 2rem;
     position: relative;
+    border-radius: 6px;
 }
+
+.white-box-border{
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    filter: drop-shadow(0px 3px 26px rgba(0, 0, 0, 0.14));
+    border-radius: 20px;
+    padding: 1rem !important;
+}
+
 
 .image-preview-para {
     font-weight: 400;
@@ -1601,7 +1681,8 @@ input:-webkit-autofill:active {
 }
 
 .price {
-    color: #717782;
+    /* color: #717782; */
+    color: rgba(251, 251, 251, 0.5);
     font-weight: 500;
     font-size: 12px;
     line-height: 21px;
@@ -1622,17 +1703,18 @@ input:-webkit-autofill:active {
 }
 
 .price-num {
-    color: #11110F;
+    /* color: #11110F; */
+    color: #F8F7F8;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
 }
 
 .unit {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    color: #11110F;
+    color: #F8F7F8;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .tag-red {
@@ -1891,9 +1973,11 @@ hr {
     font-weight: 400;
     line-height: 29px;
     text-decoration: none;
-    background-color: #005C46;
+    /* background-color: #005C46; */
+    background: #232323;
     color: #F5F7FB;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 50%;
 }
 
 .page-item a,
@@ -1907,8 +1991,9 @@ hr {
     font-weight: 400;
     line-height: 29px;
     text-decoration: none;
-    background-color: #fff;
-    color: #005C46;
+    /* background-color: #fff; */
+    /* color: #005C46; */
+    color: #717782;
     border-radius: 5px;
 }
 
