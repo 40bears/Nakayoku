@@ -1,12 +1,12 @@
 @extends('layout.main')
-@section('title', 'Store Password | CII')
+@section('title', 'Store Password | Nakayoku')
 @section('main-container')
 
 <!-- Sign up starts -->
 <div class="container-fluid px-0 bg-lgreen padt-5">
     <div class="container psignup form-container">
         <div class="d-flex flex-column align-items-center">
-            <h3 class="signup-h3 pb-5">Sign up</h3>
+            <h3 class="signup-h3 pb-5">Sign Up</h3>
             <form action="{{ route('store-password') }}" method="POST">
                 @csrf
                 <input type="hidden" name="document_type" value="{{Session::get('document_type')}}">
@@ -14,7 +14,7 @@
                 <input type="hidden" name="document_two" value="{{Session::get('document_two')}}">
                 <input type="hidden" name="residence_certificate" value="{{Session::get('residence_certificate')}}">
                 <div class="pb-4 d-flex flex-column">
-                    <label class="finish pb-4">Finish Signing Up</label>
+                    <label class="finish pb-4 text-center">Finish Signing Up</label>
                     <div class="d-flex flex-column form-input">
                         <span class="signup-lbl pb-3">First Name</span>
                         <input type="text" class="signup-input" id="firstName" name="first_name" placeholder="First Name" />
@@ -42,7 +42,7 @@
                         bank account.)
                     </p>
                     <div class="d-flex flex-column form-input">
-                        <span class="signup-lbl pb-3">Date of birth</span>
+                        <span class="signup-lbl pb-3">Date of Birth</span>
                         <input type="date" class="signup-input" id="date" name="dob" placeholder="Date of birth" />
                     </div>
                     @if($errors->has('dob'))
@@ -54,7 +54,7 @@
 
                     <p class="text-p my-4">
                         (To sign up, you need to be at least 13. Your birthday won’t be
-                        shared with other people who use CII)
+                        shared with other people who use NAKAYOKU)
                     </p>
 
                     <div class="d-flex flex-column form-input">
@@ -79,14 +79,14 @@
                     </div>
                     @endif
                     <p class="text-p my-4">
-                        By selecting Agree and countinue, I agree to CLASS INNOVATION INTERNATIONAL
+                        By selecting Agree and countinue, I agree to NAKAYOKU
                         <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Conditions</a> and acknowledge the
                         <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
                     </p>
                 </div>
 
                 <div class="d-flex flex-column align-items-center pt-4">
-                    <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="Countinue" />
+                    <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="CONTINUE" />
                     <a class="signup-a pt-3" href="{{ route('login') }}">Already have an account ?</a>
                 </div>
             </form>

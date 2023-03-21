@@ -4,7 +4,7 @@
 
 <!-- Sign up starts -->
 <div class="container-fluid px-0 bg-lgreen padt-5">
-    <div class="container psignup signup-img">
+    <div class="container psignup signup-img" style="background-image: url('{{ asset('assets/images/signup-img.png')}}');">
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-4">Sign up</h3>
             <p class="signup-p">For better experience please sign up</p>
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="d-flex flex-column align-items-center pt-4">
-                        <input type="submit" class="signup-btn w-100" id="signup" name="signup" value="Countinue" />
+                        <input type="submit" class="signup-btn w-100" id="signup" name="signup" value="CONTINUE" />
                         <a class="signup-a pt-3" href="{{ route('login') }}">Already have an account ?</a>
                     </div>
                 </form>

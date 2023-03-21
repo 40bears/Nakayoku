@@ -208,7 +208,7 @@
                                        
                                         @if(!Auth::user())
                                         <li class="nav-item menu menu1">
-                                            <a class="nav-link view" href="{{ route('login') }}">Sign in</a>
+                                            <a class="nav-link view" href="{{ route('login') }}">SIGN IN</a>
                                         </li>
                                         @endif
                                        

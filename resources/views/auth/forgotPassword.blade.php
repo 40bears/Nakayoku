@@ -1,10 +1,10 @@
 @extends('layout.main')
-@section('title', 'Signup | CII')
+@section('title', 'Signup | Nakayoku')
 @section('main-container')
 
 
 <div class="container-fluid px-0 bg-lgreen padt-5" >
-    <div class="container psignup">
+    <div class="container psignup" style="background-image: url('{{ asset('assets/images/signup-img.png')}}');">
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-5">Forgot Your Password</h3>
             <div class="signup-box w-40">
@@ -20,7 +20,7 @@
                         </div>
                         @endif
                         <div class="d-flex flex-column align-items-center pt-4">
-                            <input type="submit" class="signup-btn w-100" id="signup" name="signup" value="Countinue">
+                            <input type="submit" class="signup-btn w-100" id="signup" name="signup" value="CONTINUE">
                             <a class="signup-a pt-3" href="{{ route('login') }}">Already have an account?</a>
                         </div>
                    </div>
@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+    <div class="blend-bg"></div>
 </div>
 
 {{-- <div class="container-fluid px-0 bg-blue plogin">
