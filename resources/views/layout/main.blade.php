@@ -428,17 +428,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" integrity="sha512-HWlJyU4ut5HkEj0QsK/IxBCY55n5ZpskyjVlAoV9Z7XQwwkqXoYdCIC93/htL3Gu5H3R4an/S0h2NXfbZk3g7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tiny.cloud/1/vg5nx30rht0pb0emuqfa710x6fgcldvb4nd1fnkso8gktlay/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="{{ url('assets/js/index.js') }}"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- Pageproofer section starts-->
-    <script type="text/javascript">
-        (function (d, t) {
-        var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        pp.src = '//app.pageproofer.com/embed/a2d4f472-57d3-59c0-b677-37fff8bbfac2';
-        pp.type = 'text/javascript';
-        pp.async = true;
-        s.parentNode.insertBefore(pp, s);
-        })(document, 'script');
-        </script>
+   
     <!-- Pageproofer section ends-->
 
     <!-- Autocomplete section starts -->
