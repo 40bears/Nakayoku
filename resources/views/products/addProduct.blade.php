@@ -12,7 +12,7 @@
             @csrf
             <div class="pb-4 d-flex flex-column">
 
-                <label class="signup-lbl pb-2">Select game name</label>
+                <label class="signup-lbl pb-2">Select Game Name</label>
                 <input type="text" class="signup-input" autocomplete="off" name="game_name" id="game_name" placeholder="Select Game Name" value="{{Route::is('edit-product') ? $product->games->name : ''}}" />
                 <input type="hidden" class="signup-input" name="game_id" id="game_id" value="{{Route::is('edit-product') ? $product->game_id : ''}}" />
                 <div class="form-group hide">
@@ -37,7 +37,7 @@
                     <div class="d-flex justify-content-center text-center flex-column align-items-center">
                         {{-- <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" /> --}}
                         <i class="fa-solid fa-cloud-arrow-up cloud-upload"></i>
-                            <span class="profile-p text-center py-3">Upload image</span>
+                            <span class="profile-p text-center py-3">Upload Image</span>
                         @if(Route::is('edit-product'))
                         <div class="d-flex flex-column">
                             @if($product->image != null)
@@ -80,7 +80,7 @@
                 </div>
                 @endif
 
-                <label class="signup-lbl pb-2 pt-4">Type of item</label>
+                <label class="signup-lbl pb-2 pt-4">Type of Item</label>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2" class="d-none">Select</label>
                     <select class="select-bank w-100 minimal" name="product_type" id="exampleFormControlSelect2" value="{{Route::is('edit-product') ? $product->product_type : ''}}">
@@ -97,7 +97,7 @@
                 </div>
                 @endif
 
-                <label class="signup-lbl pb-2 pt-4">Price(per unit)</label>
+                <label class="signup-lbl pb-2 pt-4">Price (per unit)</label>
                 <div class="d-flex justify-content-between align-items-center form-input-2">
                     <span class="big-lbl">{{ Auth::user()->base_currency  }}</span>
                     <input type="number" class="input-text text-end big-lbl flex-grow-1" id="number" name="price" placeholder="0" min="0" value="{{Route::is('edit-product') ? round(showConvertedPrice($product->price)) : ''}}" />
@@ -118,7 +118,7 @@
                 </div>
                 @endif
 
-                <label class="signup-lbl pb-2 pt-4">Delivery time (in minutes)</label>
+                <label class="signup-lbl pb-2 pt-4">Delivery Time (in minutes)</label>
                 <input type="text" class="signup-input" name="delivery_time" id="platforms" placeholder="Enter Delivery Time" value="{{Route::is('edit-product') ? $product->delivery_time : ''}}" />
                 @if($errors->has('delivery_time'))
                 <div class="d-flex align-items-center">
@@ -127,7 +127,7 @@
                 </div>
                 @endif
 
-                <label class="signup-lbl pb-2 pt-4">Minimum quantity</label>
+                <label class="signup-lbl pb-2 pt-4">Minimum Quantity</label>
                 <input type="text" class="signup-input" name="min_quantity" id="platforms" placeholder="Enter Minimum Quantity" value="{{Route::is('edit-product') ? $product->min_quantity : ''}}" />
                 @if($errors->has('min_quantity'))
                 <div class="d-flex align-items-center">

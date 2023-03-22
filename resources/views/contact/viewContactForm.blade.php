@@ -9,19 +9,19 @@
         <div class="d-flex flex-column align-items-center">
             <h3 class="signup-h3 pb-5">Contact Form</h3>
     <div class="d-flex justify-content-center align-items-start w-80 main-box bg-contact">
-            <div class="d-flex flex-column justify-content-center align-items-center left-box w-50 bg-transparent">
-                <p class="sign-txt mt-4 invisible"><span class="span-1">Connecting Gamers Worldwide:</span> A One-Stop Platform for <span class="span-2">Gaming Communities, Content, and Commerce</span></p>
-                <img src="{{ url('assets/images/contact-img.png') }}" class="img-fluid">
+            <div class="d-flex flex-column justify-content-center align-items-center left-box w-50 bg-transparent px-0 sp-padb">
+                <p class="sign-txt mt-4 invisible sp-contact"><span class="span-1">Connecting Gamers Worldwide:</span> A One-Stop Platform for <span class="span-2">Gaming Communities, Content, and Commerce</span></p>
+                <lottie-player src="https://lottie.host/52e0ef35-6652-4407-95e0-08ac62db8e8e/wXEWGgmKzU.json" background="transparent" speed="1"  loop autoplay></lottie-player>
             </div>
-            <div class="d-flex flex-column justify-content-start right-box w-50">
+            <div class="d-flex flex-column justify-content-start right-box w-50 contact-bg-right">
        
-                    <div class="signup-box w-100">
+                    <div class="signup-box w-100 contact-bg-right">
                         <form action="{{ route('submit-contact-post') }}" method="POST">
                             @csrf
                             <div class="pb-4 d-flex flex-column">
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">First Name</span>
-                                    <input type="text" class="signup-input contact_field" name="first_name" id="firstName" placeholder="Enter Your First Name" value="{{Auth::user() ? Auth::user()->first_name : ''}}" />
+                                    <input type="text" class="signup-input contact_field input-bg-blk" name="first_name" id="firstName" placeholder="Enter Your First Name" value="{{Auth::user() ? Auth::user()->first_name : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('first_name'))
@@ -32,7 +32,7 @@
                                 @endif
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">Last Name</span>
-                                    <input type="text" class="signup-input contact_field" name="last_name" id="lastName" placeholder="Enter Your Last Name" value="{{Auth::user() ? Auth::user()->last_name : ''}}" />
+                                    <input type="text" class="signup-input contact_field input-bg-blk" name="last_name" id="lastName" placeholder="Enter Your Last Name" value="{{Auth::user() ? Auth::user()->last_name : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('last_name'))
@@ -43,7 +43,7 @@
                                 @endif
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">Email</span>
-                                    <input type="email" class="signup-input contact_field" name="email" id="email" placeholder="Enter Your Email" value="{{Auth::user() ? Auth::user()->email : ''}}" />
+                                    <input type="email" class="signup-input contact_field input-bg-blk" name="email" id="email" placeholder="Enter Your Email" value="{{Auth::user() ? Auth::user()->email : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('email'))
@@ -55,7 +55,7 @@
 
                                 <label class="signup-lbl py-3">Write Your Inquiry</label>
                                 
-                                <textarea class="signup-input h-100 contact_field" id="introduction" name="inquiry" rows="15" cols="50" placeholder="Please write your enquiry..." required></textarea>
+                                <textarea class="signup-input h-100 contact_field input-bg-blk" id="introduction" name="inquiry" rows="15" cols="50" placeholder="Please Write Your Enquiry..." required></textarea>
                                 <span class="input-text contact_label hide"></span>
                                 @if($errors->has('inquiry'))
                                     <div class="d-flex align-items-center mb-4">

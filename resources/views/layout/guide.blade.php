@@ -415,15 +415,7 @@
     <!-- Fixed bottom menu ends -->
 
     {{-- Page proofer starts --}}
-    <script type="text/javascript">
-        (function (d, t) {
-        var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        pp.src = '//app.pageproofer.com/embed/a2d4f472-57d3-59c0-b677-37fff8bbfac2';
-        pp.type = 'text/javascript';
-        pp.async = true;
-        s.parentNode.insertBefore(pp, s);
-        })(document, 'script');
-        </script>
+  
     {{-- Page proofer ends --}}
 
     <!-- Javascript Section -->
