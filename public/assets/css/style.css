@@ -306,8 +306,9 @@ a:hover {
 }
 
 .green {
-    color: #005C46 !important;
-    text-decoration: underline;
+    background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .game-w {
@@ -737,6 +738,10 @@ a:hover {
     color: #fff;
 }
 
+.white-2 {
+    color: #F8F7F8;
+}
+
 .breadcrumb-item a,
 .price-2 {
     color: #717782;
@@ -771,9 +776,8 @@ a:hover {
 
 .search-div-2 {
     height: 40px;
-    border-radius: 5px;
-    border: 1px solid #AAAAAA;
-    background: linear-gradient(91.95deg, rgba(254, 255, 255, 0.22) -3.46%, rgba(234, 237, 239, 0.11) 144.4%);
+    background: rgba(253, 253, 255, 0.1);
+    border-radius: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -1005,6 +1009,19 @@ input[type="file"] {
     padding: 0.5rem 1.2rem;
     font-size: 16px;
     font-weight: 400;
+}
+
+.menu-div {
+    background-image: linear-gradient(#1e1e1e, #1e1e1e), linear-gradient(to right, #09FBD3, #FE53BB);
+    border: solid 1px transparent;
+    border-radius: 5px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #19191B inset;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    /* font-size: 16px;
+    font-weight: 400; */
 }
 
 .view:hover {
@@ -1496,6 +1513,7 @@ select.minimal {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    text-transform: capitalize;
 }
 
 .big-lbl {
@@ -1589,6 +1607,7 @@ select.minimal {
     padding: 1rem;
     background-color: #232323 !important;
     outline: none;
+    text-transform: capitalize;
 }
 
 .input-bg-blk {
@@ -1604,9 +1623,32 @@ input:-webkit-autofill:active {
 }
 
 .tagify {
-    --tags-border-color: #AAA !important;
-    --tags-hover-border-color: #AAA !important;
+    --tags-border-color: transparent !important;
+    --tags-hover-border-color: transparent !important;
     padding: 0.5rem !important;
+    --tag-text-color: rgba(251, 251, 251, 0.5) !important;
+    --placeholder-color: rgba(251, 251, 251, 0.5) !important;
+    --placeholder-color-focus: rgba(251, 251, 251, 0.5) !important;
+}
+
+.tagify__tag>div {
+    color: #000 !important;
+}
+
+.noti-lbl {
+    font-weight: 400;
+    font-size: 16px;
+    color: #F8F7F8;
+}
+
+.select-lbl {
+    font-weight: 400;
+    font-size: 26px;
+    color: #F8F7F8;
+}
+
+.user_radio {
+    width: 20px;
 }
 
 .bg-bank {
@@ -1629,9 +1671,9 @@ input:-webkit-autofill:active {
 
 .menu-h3 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
-    color: #1D262D;
+    color: #F8F7F8;
 }
 
 .pmypage {
@@ -1701,17 +1743,17 @@ input:-webkit-autofill:active {
 }
 
 .pur-date {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 16px;
-    color: #AAAAAA;
+    color: rgba(251, 251, 251, 0.5);
 }
 
 .products {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 21px;
-    color: #11110F;
+    color: #F8F7F8;
 }
 
 .price-num {
@@ -1780,7 +1822,8 @@ input:-webkit-autofill:active {
 
 hr {
     opacity: 1;
-    color: #005C46;
+    color: rgba(251, 251, 251, 0.2);
+    ;
     margin: 0;
 }
 
@@ -1820,26 +1863,32 @@ hr {
 
 .game-nav.active,
 .game-nav:hover {
-    color: #005C46;
+    color: rgba(251, 251, 251, 0.2);
+    ;
 }
 
 .game-nav.active {
-    border-bottom: 3px solid #005C46;
+    border-bottom: 3px solid rgba(251, 251, 251, 0.2);
+    ;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .border-nav {
-    border-bottom: 1px solid #005C46;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.2);
+    ;
 }
 
 .border-t {
-    border-top: 1px solid #005C46;
+    border-top: 1px solid rgba(251, 251, 251, 0.2);
+    ;
 }
 
 .border-tb {
-    border-bottom: 1px solid #005C46;
-    border-top: 1px solid #005C46;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.2);
+    ;
+    border-top: 1px solid rgba(251, 251, 251, 0.2);
+    ;
 }
 
 .margin-t {
@@ -1876,15 +1925,17 @@ hr {
 }
 
 .left-menu .current-page {
-    background-color: #005C46;
-    color: #fff;
+    color: #F8F7F8;
+    background: #272727;
+    border-radius: 5px;
+    border-left: 4px solid #E42575;
 }
 
 .left-menu a {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #1D262D;
+    color: #F8F7F8;
 }
 
 .dollar-p {

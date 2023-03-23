@@ -42,7 +42,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 bg-blk d-flex justify-content-center align-items-center">
-          <h4 class="mb-0 copy-h4">&copy;2023 Nakayoku, Inc. All Rights Reserved.</h4>
+          <p class="mb-0 copy-h4">&copy; <?php echo date("Y"); ?> Nakayoku, Inc. All Rights Reserved.</p>
         </div>
       </div>
         </div>
