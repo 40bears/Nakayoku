@@ -262,7 +262,7 @@
     <!-- Blue section starts -->
     <div class="container-fluid px-0 bg-lgreen">
         <div class="container padt-6">
-            <ul class="breadcrumb menu menu1">
+            {{-- <ul class="breadcrumb menu menu1">
                 <li class="breadcrumb-item"><a href="/">TOP</a></li>
                 <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">MyPage</a></li>
                 @if(Route::is('view-purchased-products'))
@@ -293,7 +293,7 @@
                 @elseif(Route::is('notifications'))
                 <li class="breadcrumb-item"><a href="{{ route('notifications') }}">Notification</a></li>
                 @endif
-            </ul>
+            </ul> --}}
         </div>
 
         <!-- My page starts -->
@@ -306,40 +306,43 @@
 
                         @if(Auth::user()->user_type == 'admin')
                         <!-- Fifth line starts -->
-                        <h3 class="menu-h3 border-nav pb-2 mb-0 pt-5">Admin Section</h3>
+                        <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
+                             <i class="fa-solid fa-user mb-0 white"></i>
+                             <h3 class="menu-h3 mb-0 ps-3">Admin Section</h3>
+                        </div>
                         <ul class="ps-0 left-menu">
                             <a href="{{ route('notification-mmt') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('notification-mmt') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('notification-mmt') ? 'current-page' : '' }}">
                                     Notification Portal
                                 </li>
                             </a>
                             <a href="{{ route('view-games') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-games') || Route::is('view-games-post') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-games') || Route::is('view-games-post') ? 'current-page' : '' }}">
                                     Game List
                                 </li>
                             </a>
                             <a href="{{ route('id-approvals') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('id-approvals') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('id-approvals') ? 'current-page' : '' }}">
                                     ID Approvals
                                 </li>
                             </a>
                             <a href="{{ route('cii-bank-accounts') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'current-page' : '' }}">
                                     CII Bank Details
                                 </li>
                             </a>
                             <a href="{{ route('transactions-management') }}">
-                                <li class=" border-nav ps-3 py-2 {{ Route::is('transactions-management') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('transactions-management') ? 'current-page' : '' }}">
                                     Transactions
                                 </li>
                             </a>
                             <a href="{{ route('withdraw-requests-management') }}">
-                                <li class="left-menu-lh border-nav ps-3 py-2 {{ Route::is('withdraw-requests-management') ? 'current-page' : '' }}">
+                                <li class="left-menu-lh ps-5 py-2 {{ Route::is('withdraw-requests-management') ? 'current-page' : '' }}">
                                     Withdraw Requests
                                 </li>
                             </a>
                             <a href="{{ route('view-pages') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-pages') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-pages') ? 'current-page' : '' }}">
                                     User Guide Pages
                                 </li>
                             </a>
@@ -348,20 +351,23 @@
                         @endif
 
                         <!-- First line starts -->
-                        <h3 class="menu-h3 border-nav pb-3 mb-0 pt-4">Sell Items</h3>
+                        <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
+                            <i class="fa-solid fa-user mb-0 white"></i>
+                            <h3 class="menu-h3 mb-0 ps-3">Sell Items</h3>
+                       </div>
                         <ul class="ps-0 left-menu">
                             <a href="{{ route('currently-on-display') }}" class="">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('currently-on-display') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('currently-on-display') ? 'current-page' : '' }}">
                                     Currently on display
                                 </li>
                             </a>
                             <a href="{{ route('view-sold-products') }}" class="">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-sold-products') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-sold-products') ? 'current-page' : '' }}">
                                     Sold items history
                                 </li>
                             </a>
                             <a href="{{ route('view-draft-products') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-draft-products') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-draft-products') ? 'current-page' : '' }}">
                                     Sell Drafts
                                 </li>
                             </a>
@@ -370,15 +376,18 @@
                         <!-- First line ends -->
 
                         <!-- Second line starts -->
-                        <h3 class="menu-h3 border-nav pb-3 mb-0 pt-4">Purchased Items</h3>
+                        <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h3 class="menu-h3 mb-0 ps-3">Purchased Items</h3>
+                       </div>
                         <ul class="ps-0 left-menu">
                             <a href="{{ route('view-purchased-products') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-purchased-products') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-purchased-products') ? 'current-page' : '' }}">
                                     Purchased Items
                                 </li>
                             </a>
                             <a href="{{ route('view-interested-products') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-interested-products') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-interested-products') ? 'current-page' : '' }}">
                                     Interested items
                                 </li>
                             </a>
@@ -387,20 +396,23 @@
                         <!-- Second line ends -->
 
                         <!-- Third line starts -->
-                        <h3 class="menu-h3 border-nav pb-3 mb-0 pt-4">Money Management</h3>
+                        <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <h3 class="menu-h3 mb-0 ps-3">Money Management</h3>
+                       </div>
                         <ul class="ps-0 left-menu">
                             <a href="{{ route('sales-and-deposits') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('sales-and-deposits') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('sales-and-deposits') ? 'current-page' : '' }}">
                                     Sales and Deposit
                                 </li>
                             </a>
                             <a href="{{ route('withdrawal-request') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('withdrawal-request') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('withdrawal-request') ? 'current-page' : '' }}">
                                     Transfer Request
                                 </li>
                             </a>
                             <a href="{{ route('withdrawal-request-history') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('withdrawal-request-history') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('withdrawal-request-history') ? 'current-page' : '' }}">
                                     Request History
                                 </li>
                             </a>
@@ -408,30 +420,33 @@
                         <!-- Third line ends -->
 
                         <!-- Fourth line starts -->
-                        <h3 class="menu-h3 border-nav pb-3 mb-0 pt-4">User Setting</h3>
+                        <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3 class="menu-h3 mb-0 ps-3">User Setting</h3>
+                       </div>
                         <ul class="ps-0 left-menu">
                             <a href="{{ route('notifications') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('notifications') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('notifications') ? 'current-page' : '' }}">
                                     Notification
                                 </li>
                             </a>
                             <a href="{{ route('view-password-details') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-password-details') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-password-details') ? 'current-page' : '' }}">
                                     Email and Password
                                 </li>
                             </a>
                             <a href="{{ route('view-bank-details') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-bank-details') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-bank-details') ? 'current-page' : '' }}">
                                     Bank Info
                                 </li>
                             </a>
                             <a href="{{ route('view-personal-info') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('view-personal-info') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('view-personal-info') ? 'current-page' : '' }}">
                                     Personal Info
                                 </li>
                             </a>
                             <a href="{{ route('identity-verification') }}">
-                                <li class="border-nav ps-3 py-2 {{ Route::is('identity-verification') ? 'current-page' : '' }}">
+                                <li class="ps-5 py-2 {{ Route::is('identity-verification') ? 'current-page' : '' }}">
                                     Identity Verification
                                 </li>
                             </a>
@@ -448,46 +463,49 @@
                     <div class="accordion" id="accordionExample">
                         @if(Auth::user()->user_type == 'admin')
                         <div class="accordion-item">
-                            <h2 class="accordion-header border-nav py-2" id="headingThree">
+                            <h2 class="accordion-header py-1" id="headingThree">
+                                <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                    <h3 class="menu-h3 mb-0">Admin Section</h3>
+                                   <i class="fa-solid fa-user mb-0 white"></i>
+                                    <h3 class="menu-h3 mb-0 ps-3">Admin Section</h3>
                                 </button>
+                                </div>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <ul class="ps-0 left-menu">
                                         <a href="{{ route('notification-mmt') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('notification-mmt') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('notification-mmt') ? 'current-page' : '' }}">
                                                 Notification Portal
                                             </li>
                                         </a>
                                         <a href="{{ route('view-games') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-games') || Route::is('view-games-post') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-games') || Route::is('view-games-post') ? 'current-page' : '' }}">
                                                 Games
                                             </li>
                                         </a>
                                         <a href="{{ route('id-approvals') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('id-approvals') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('id-approvals') ? 'current-page' : '' }}">
                                                 ID Approvals
                                             </li>
                                         </a>
                                         <a href="{{ route('cii-bank-accounts') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'current-page' : '' }}">
                                                 CII Bank Details
                                             </li>
                                         </a>
                                         <a href="{{ route('transactions-management') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('transactions-management') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('transactions-management') ? 'current-page' : '' }}">
                                                 Transactions
                                             </li>
                                         </a>
                                         <a href="{{ route('withdraw-requests-management') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('withdraw-requests-management') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('withdraw-requests-management') ? 'current-page' : '' }}">
                                                 Withdraw Requests
                                             </li>
                                         </a>
                                         <a href="{{ route('view-pages') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-pages') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-pages') ? 'current-page' : '' }}">
                                                 User Guide Pages
                                             </li>
                                         </a>
@@ -497,26 +515,29 @@
                         </div>
                         @endif
                         <div class="accordion-item">
-                            <h2 class="accordion-header border-nav py-2" id="headingOne">
+                            <h2 class="accordion-header py-1" id="headingOne">
+                                <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <h3 class="menu-h3 mb-0">Sell Items</h3>
+                                    <i class="fa-solid fa-user mb-0 white"></i>
+                                    <h3 class="menu-h3 mb-0 ps-3">Sell Items</h3>
                                 </button>
+                                </div>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <ul class="ps-0 left-menu">
                                         <a href="{{ route('currently-on-display') }}" class="">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('currently-on-display') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('currently-on-display') ? 'current-page' : '' }}">
                                                 Currently on display
                                             </li>
                                         </a>
                                         <a href="{{ route('view-sold-products') }}" class="">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-sold-products') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-sold-products') ? 'current-page' : '' }}">
                                                 Sold items history
                                             </li>
                                         </a>
                                         <a href="{{ route('view-draft-products') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-draft-products') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-draft-products') ? 'current-page' : '' }}">
                                                 Sell Drafts
                                             </li>
                                         </a>
@@ -525,21 +546,24 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header border-nav py-2" id="headingTwo">
+                            <h2 class="accordion-header py-1" id="headingTwo">
+                                <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h3 class="menu-h3 mb-0">Purchased Items</h3>
+                                    <i class="fa-solid fa-cart-shopping white"></i>
+                                    <h3 class="menu-h3 mb-0 ps-3">Purchased Items</h3>
                                 </button>
+                                </div>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <ul class="ps-0 left-menu">
                                         <a href="{{ route('view-purchased-products') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-purchased-products') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-purchased-products') ? 'current-page' : '' }}">
                                                 Purchased Items
                                             </li>
                                         </a>
                                         <a href="{{ route('view-interested-products') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-interested-products') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-interested-products') ? 'current-page' : '' }}">
                                                 Interested items
                                             </li>
                                         </a>
@@ -548,26 +572,29 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header border-nav py-2" id="headingThree">
+                            <h2 class="accordion-header py-1" id="headingThree">
+                                <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h3 class="menu-h3 mb-0">Money Management</h3>
+                                    <i class="fa-solid fa-money-check-dollar white"></i>
+                                    <h3 class="menu-h3 mb-0 ps-3">Money Management</h3>
                                 </button>
+                                </div>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <ul class="ps-0 left-menu">
                                         <a href="{{ route('sales-and-deposits') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('sales-and-deposits') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('sales-and-deposits') ? 'current-page' : '' }}">
                                                 Sales and Deposit
                                             </li>
                                         </a>
                                         <a href="{{ route('withdrawal-request') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('withdrawal-request') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('withdrawal-request') ? 'current-page' : '' }}">
                                                 Transfer Request
                                             </li>
                                         </a>
                                         <a href="{{ route('withdrawal-request-history') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('withdrawal-request-history') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('withdrawal-request-history') ? 'current-page' : '' }}">
                                                 Request History
                                             </li>
                                         </a>
@@ -576,36 +603,39 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header border-nav py-2" id="headingThree">
+                            <h2 class="accordion-header py-1" id="headingThree">
+                                <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    <h3 class="menu-h3 mb-0">User Setting</h3>
+                                    <i class="fa-solid fa-gears white"></i>
+                                    <h3 class="menu-h3 mb-0 ps-3">User Setting</h3>
                                 </button>
+                                </div>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <ul class="ps-0 left-menu">
                                         <a href="{{ route('notifications') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('notifications') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('notifications') ? 'current-page' : '' }}">
                                                 Notification
                                             </li>
                                         </a>
                                         <a href="{{ route('view-password-details') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-password-details') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-password-details') ? 'current-page' : '' }}">
                                                 Email and Password
                                             </li>
                                         </a>
                                         <a href="{{ route('view-bank-details') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-bank-details') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-bank-details') ? 'current-page' : '' }}">
                                                 Bank Info
                                             </li>
                                         </a>
                                         <a href="{{ route('view-personal-info') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('view-personal-info') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('view-personal-info') ? 'current-page' : '' }}">
                                                 Personal Info
                                             </li>
                                         </a>
                                         <a href="{{ route('identity-verification') }}">
-                                            <li class="border-nav ps-3 py-2 {{ Route::is('identity-verification') ? 'current-page' : '' }}">
+                                            <li class="ps-3 py-2 {{ Route::is('identity-verification') ? 'current-page' : '' }}">
                                                 Identity Verification
                                             </li>
                                         </a>

@@ -1,61 +1,35 @@
 @extends('layout.user')
-@section('title', 'Notification Portal | CII')
+@section('title', 'Notification Portal | Nakayoku')
 @section('main-container')
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Admin Section</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notification-mmt') ? 'active' : '' }}" href="{{ route('notification-mmt') }}">Notification Portal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-games') ? 'active' : '' }}" href="{{ route('view-games') }}">Game List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('id-approvals') ? 'active' : '' }}" href="{{ route('id-approvals') }}">Id Approvals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'active' : '' }}" href="{{ route('cii-bank-accounts') }}">CII Bank Details</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('transactions-management') ? 'active' : '' }}" href="{{ route('transactions-management') }}">Transactions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdraw-requests-management') ? 'active' : '' }}" href="{{ route('withdraw-requests-management') }}">Withdraw Requests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-pages') ? 'active' : '' }}" href="{{ route('view-pages') }}">USer Guide Pages</a>
-            </li>
-        </ul> 
-    </div>
-    <hr class="pb-5" />
+<div class="col-md-9 col-sm-12 ps-5 common-space pleft">
 
     <div class="container sp-100 w-80">
         <div class="d-flex flex-column justify-content-start align-items-start">
-
-    @if (\Session::has('success'))
-    <div class="alert alert-success">
-        <h6 class="m-0">{!! \Session::get('success') !!}</h6>
-    </div>
-    @endif
+            <h3 class="pb-3 signup-h3">Notification Portal</h3>   
+         
+            @if (\Session::has('success'))
+            <div class="alert alert-success">
+                <h6 class="m-0">{!! \Session::get('success') !!}</h6>
+            </div>
+            @endif
 
     <form action="{{ route('send-notifications') }}" method="POST" class="w-100">
         @csrf
         <div class="radiobuttons d-flex flex-column mt-5 mb-3">
             <div class="pb-3">
-                <label class="signup-lbl">Please select Users</label>
+                <label class="select-lbl">Please select Users</label>
             </div>
             <div class="d-flex">
                 <div class="rdio-primary radio-inline d-flex justify-content-center ">
                     <input name="radio" class="user_radio" value="selected" id="noti-user-sel" type="radio" checked>
-                    <label class="ps-3" for="noti-user-sel">Selected Users</label>
+                    <label class="ps-3 noti-lbl" for="noti-user-sel">Selected Users</label>
                 </div>
                 <div class="rdio-primary radio-inline d-flex justify-content-center ps-5">
                     <input name="radio" class="user_radio" value="all" id="noti-user-all" type="radio" >
-                    <label class="ps-3" for="noti-user-all">All Users</label>
+                    <label class="ps-3 noti-lbl" for="noti-user-all">All Users</label>
                 </div>
             </div>
             <input name="selected_users" value="" id="selected_users" type="hidden"/>
