@@ -1,34 +1,15 @@
 @extends('layout.user')
-@section('title', 'Password Details | CII')
+@section('title', 'Password Details | Nakayoku')
 @section('main-container')
 
 <!-- Right side starts -->
 
 <div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">User Setting</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notifications') ? 'active' : '' }}" href="{{ route('notifications') }}">Notification</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-password-details') ? 'active' : '' }}" href="{{ route('view-password-details') }}">Email and password</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-bank-details') ? 'active' : '' }}" href="{{ route('view-bank-details') }}">Bank info</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-personal-info') ? 'active' : '' }}" href="{{ route('view-personal-info') }}">Personal info</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('identity-verification') ? 'active' : '' }}" href="{{ route('identity-verification') }}">Identity Verification</a>
-            </li>
-        </ul>
-    </div>
-    <hr class="pb-5" />
 
     <!-- User profile starts -->
-    <div class="container w-50 pt-5">
+    <div class="container sp-100 w-80 padt-5">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+        <h3 class="pb-5 signup-h3 text-center">Email & Password</h3>
         <div class="d-flex flex-column align-items-center">
         @if(Session::has('successMsg'))
             <div class="d-flex align-items-start py-3 bg-s mb-5 w-100">
@@ -100,10 +81,11 @@
             </div>
 
             <div class="d-flex flex-column align-items-center">
-                <input type="submit" class="signup-btn w-100" id="change" name="change" value="Update" />
+                <input type="submit" class="signup-btn w-50" id="change" name="change" value="UPDATE" />
             </div>
         </form>
         </div>
+    </div>
     </div>
     <!-- User profile ends -->
 </div>

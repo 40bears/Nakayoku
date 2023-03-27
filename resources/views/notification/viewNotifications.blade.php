@@ -1,30 +1,10 @@
 @extends('layout.user')
-@section('title', 'Notification | CII')
+@section('title', 'Notification | Nakayoku')
 @section('main-container')
 
 <!-- Notification section starts -->
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-  <h3 class="pb-5 signup-h3 text-center">User Setting</h3>
-  <div class="menu menu-1 pt-4">
-      <ul class="navbar-nav scroll">
-          <li class="nav-item">
-              <a class="nav-link menu-blk {{ Route::is('notifications') ? 'active' : '' }}" href="{{ route('notifications') }}">Notification</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link menu-blk {{ Route::is('view-password-details') ? 'active' : '' }}" href="{{ route('view-password-details') }}">Email and password</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link menu-blk {{ Route::is('view-bank-details') ? 'active' : '' }}" href="{{ route('view-bank-details') }}">Bank info</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link menu-blk {{ Route::is('view-personal-info') ? 'active' : '' }}" href="{{ route('view-personal-info') }}">Personal info</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link menu-blk {{ Route::is('identity-verification') ? 'active' : '' }}" href="{{ route('identity-verification') }}">Identity Verification</a>
-          </li>
-      </ul>
-  </div>
-  <hr class="pb-5" />
+<div class="col-md-9 col-sm-12 ps-5 common-space pt-4">
+  <h3 class="py-5 signup-h3 text-center">Notification</h3>
 
     @if(count($notifications))
 
