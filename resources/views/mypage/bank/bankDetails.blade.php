@@ -1,39 +1,19 @@
 @extends('layout.user')
-@section('title', 'Bank Details | CII')
+@section('title', 'Bank Details | Nakayoku')
 @section('main-container')
 
 <!-- Right side starts -->
 
 <div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">User Setting</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notifications') ? 'active' : '' }}" href="{{ route('notifications') }}">Notification</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-password-details') ? 'active' : '' }}" href="{{ route('view-password-details') }}">Email and password</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-bank-details') ? 'active' : '' }}" href="{{ route('view-bank-details') }}">Bank info</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-personal-info') ? 'active' : '' }}" href="{{ route('view-personal-info') }}">Personal info</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('identity-verification') ? 'active' : '' }}" href="{{ route('identity-verification') }}">Identity Verification</a>
-            </li>
-        </ul> 
-    </div>
-    <hr class="pb-5" />
+
 
     <!-- Bank info starts -->
-    <div class="container w-50">
-        <div class="d-flex flex-column align-items-center">
+    <div class="container sp-100 w-80 padt-5">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <h3 class="pb-5 signup-h3 text-center">Bank Info</h3>
         <form action="{{ route('update-bank-details') }}" method="POST">
             @csrf
-            <div class="pb-4 d-flex flex-column align-items-start">
-                <label class="signup-lbl">Bank info</label>
+            <div class="d-flex flex-column align-items-start">
 
                 {{-- <div class="d-flex justify-content-between w-input py-4">
                     <p class="signup-lbl mb-0">Bank</p>
@@ -53,7 +33,7 @@
                         <p class="min-p mb-0 pe-4" id="textLabel">{{ $bankAccount != null ? $bankAccount->bank_name != null ? $bankAccount->bank_name : '--'  : '--'}}</p>
                         <input type="text" name="bank_name" autocomplete="off" class=" bank_name bank-input hide" id="textUpdate" value="{{ $bankAccount != null ? $bankAccount->bank_name != null ? $bankAccount->bank_name : '--'  : '--'}} " />
                         <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen"></i>
                         </a>
                     </div>
 
@@ -65,7 +45,7 @@
                             <option value="Current" {{$bankAccount != null && $bankAccount->account_type == 'Current' ? 'selected' : ''}}>当座</option>
                         </select>
                             <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-pen"></i>
                             </a>
                     </div>
 
@@ -74,7 +54,7 @@
                         <p class="min-p mb-0 pe-4" id="textLabel">{{ $bankAccount != null ? $bankAccount->branch_code != null ? $bankAccount->branch_code : '--'  : '--'}}</p>
                         <input type="text" name="branch_code" class="bank-input hide" id="textUpdate" value="{{ $bankAccount != null ? $bankAccount->branch_code != null ? $bankAccount->branch_code : '--'  : '--'}}" />
                         <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen"></i>
                         </a>
                 </div>
 
@@ -83,7 +63,7 @@
                         <p class="min-p mb-0 pe-4" id="textLabel">{{ $bankAccount != null ? $bankAccount->account_number != null ? $bankAccount->account_number : '--'  : '--'}}</p>
                         <input type="number" name="account_number" class="bank-input hide" id="textUpdate" value="{{ $bankAccount != null ? $bankAccount->account_number != null ? $bankAccount->account_number : '--'  : '--'}}" />
                         <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen"></i>
                         </a>
                 </div>
 
@@ -92,16 +72,16 @@
                         {{-- <p class="min-p mb-0 pe-4" id="textLabel">{{ $bankAccount != null ? $bankAccount->swift_code != null ? $bankAccount->swift_code : '--'  : '--'}}</p> --}}
                         <input type="text" name="swift_code" class="bank-input " id="textUpdate" value="{{ $bankAccount != null ? $bankAccount->swift_code != null ? $bankAccount->swift_code : '--'  : '--'}}" />
                         <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen"></i>
                         </a>
                 </div>
 
-                <p class="signup-lbl mb-0 py-3">Name</p>
+                <p class="signup-lbl mb-0 py-3">Name In Bank</p>
                 <div class="d-flex justify-content-between w-input py-3 px-2 w-100 bg-bank">
                         <p class="min-p mb-0 pe-4" id="textLabel">{{ $bankAccount != null ? $bankAccount->account_name != null ? $bankAccount->account_name : '--'  : '--'}}</p>
                         <input type="text" name="account_name" class="bank-input hide" id="textUpdate" value="{{ $bankAccount != null ? $bankAccount->account_name != null ? $bankAccount->account_name : '--'  : '--'}}" />
                         <a style="cursor: pointer;" id="edit" class="min-p show  pe-2">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen"></i>
                         </a>
                 </div>
 
@@ -116,7 +96,7 @@
             </div>
 
             <div class="d-flex flex-column align-items-center">
-                <input type="submit" class="signup-btn w-100" id="update" name="update" value="Update" />
+                <input type="submit" class="signup-btn w-50" id="update" name="update" value="UPDATE" />
             </div>
         </form>
         </div>
