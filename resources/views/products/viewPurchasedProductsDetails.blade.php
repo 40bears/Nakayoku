@@ -3,15 +3,15 @@
 @section('main-container')
 
 <!-- Blue section starts -->
-<div class="container-fluid px-0 bg-lgreen">
-  <div class="container padt-6">
+<div class="container-fluid px-0 bg-lgreen padt-6">
+  {{-- <div class="container padt-6">
     <ul class="breadcrumb menu menu1">
       <li class="breadcrumb-item"><a href="/">TOP</a></li>
       <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">My Page</a></li>
       <li class="breadcrumb-item"><a href="{{ route('view-purchased-products') }}">Purchased items</a></li>
       <li class="breadcrumb-item"><a href="{{ route('view-purchased-products-details', [  'id' => $transaction->id] ) }}">{{$transaction->id}}</a></li>
     </ul>
-  </div>
+  </div> --}}
 
   {{-- Container starts --}}
   <div class="container pb-5">
@@ -20,14 +20,14 @@
 
       <div class="bg-deal mb-5">
         @if($transaction->payment_status == 1)
-        <div class="d-flex align-items-start py-3 bg-s">
-          <i class="fa-solid fa-circle-check icon-s ps-3"></i>
-          <h4 class="s-head ps-2 mb-0">This deal has been succuessfully closed</h4>
+        <div class="d-flex justify-content-start align-items-center py-3">
+          <i class="fa-solid fa-circle-check icon-s ps-3 pink"></i>
+          <h4 class="s-head ps-2 mb-0 pink">This deal has been succuessfully closed</h4>
         </div>
         @else
-        <div class="d-flex align-items-start py-3 bg-p">
-          <i class="fa-solid fa-clock-rotate-left icon-s ps-3"></i>
-          <h4 class="s-head ps-2 mb-0">Your deal is still pending...</h4>
+        <div class="d-flex justify-content-start align-items-center py-3">
+          <i class="fa-solid fa-clock-rotate-left icon-s ps-3 red-1"></i>
+          <h4 class="s-head ps-2 mb-0 red-1">Your deal is still pending...</h4>
         </div>
           @endif
       </div>
