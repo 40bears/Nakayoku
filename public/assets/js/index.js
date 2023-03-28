@@ -873,3 +873,93 @@ window.addEventListener("scroll", function(){
         afterScrollBtn2?.classList.remove("view-2");
     }
 });
+
+
+
+// Ambalika's JS start
+// select show all by default in popular collections tab menu
+function viewCollections(elmnt) {
+    var i, tabcontent;
+    tabcontent = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].classList.remove('isActive');;
+    }
+    elmnt.classList.add("isActive");
+  }
+  // Get the element with id="defaultOpen" and click on it
+//   document.getElementById("defaultOpen").click();
+  
+  $('.slider')?.slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 6,
+    slidesToScroll: 4,
+    variableWidth:true,
+    nextArrow: '<span class="next-arrow"><i class="fa-solid fa-angle-right"></i></span>',
+    prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-angle-left"></i></span>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  
+  var isMenuOpen = false;
+  function menuToggle() {
+    const hamburger = document.getElementById("nav-button");
+    const nav = document.getElementById("navbar-parent");
+    const headerLeft = document.getElementById("header-left");
+    const navbarNav = document.getElementById("navbar-nav-mobile");
+    nav.classList.toggle('show');
+    navbarNav.classList.toggle('d-flex');
+    headerLeft.classList.toggle('flex-column');
+    hamburger.classList.toggle('d-none');
+    isMenuOpen = true;
+  }
+  
+  const containerFluid = document.getElementById("container-fluid");
+  function removePaddingClass() {
+    containerFluid.classList.remove('px-5');
+    containerFluid.classList.remove('py-5');
+  }
+  function addPaddingClass() {
+    containerFluid.classList.add('px-5');
+    containerFluid.classList.add('py-5');
+  }
+  if($(window).width() < 600) {
+    removePaddingClass();
+  }
+  
+  $(window).resize(function(){
+    if($(window).width() < 600) {
+      removePaddingClass();
+    }else {
+      addPaddingClass();
+    }
+  })
+  
+  function closeMenu() {
+  if(isMenuOpen === true) {
+      menuToggle();
+  }
+  return;
+  }
+// Ambalika's JS ends

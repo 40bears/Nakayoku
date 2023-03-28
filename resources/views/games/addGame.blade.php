@@ -18,7 +18,7 @@
     <div class="container form-container d-flex flex-column justify-content-center align-items-center pcontact">
 
         <h3 class="signup-h3 pb-4">Add Game</h3>
-        <div class="signup-box">
+        <div class="signup-box w-100">
             <form method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="pb-4 d-flex flex-column">

@@ -5,7 +5,7 @@
 
 <!-- Blue section starts -->
 <div class="container-fluid px-0 bg-lgreen">
-    <div class="container padt-6">
+    <div class="container padt-6 padt-mb-8">
         <ul class="breadcrumb menu menu1">
             <li class="breadcrumb-item"><a href="/">TOP</a></li>
             <li class="breadcrumb-item"><a href="{{ route('all-games') }}">ALL GAMES</a></li>
@@ -16,7 +16,7 @@
     </div>
 
     <!-- All games starts -->
-    <div class="container py-5">
+    <div class="container py-lg-5">
 
         @if($product->product_type == 'currency')
         <!-- Buying details starts for currency-->
@@ -34,7 +34,7 @@
                         @endif
                     </div> --}}
 
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column product-details-seller-section">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -88,7 +88,7 @@
 
             <!-- Middle side starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="">
+                <div class="product-details-seller-section">
                     @if($product->image != null)
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                     <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
@@ -97,7 +97,7 @@
                     @endif
                 </div>
                 <div>
-                    <p class="buy-page-product-name">{{$product->description}}</p>
+                    <p class="buy-page-product-name product-details-seller-section">{{$product->description}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
@@ -258,7 +258,7 @@
                         <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
                         @endif
                     </div> --}}
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column product-details-seller-section">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -300,7 +300,7 @@
 
             <!-- Middle section starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="">
+                <div class="product-details-seller-section">
                     @if($product->image != null)
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                     <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
@@ -309,7 +309,7 @@
                     @endif
                 </div>
                 <div>
-                    <p class="buy-page-product-name">{{$product->name}}</p>
+                    <p class="buy-page-product-name product-details-seller-section">{{$product->name}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
@@ -451,7 +451,7 @@
                         @endif
                     </div> --}}
 
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column product-details-seller-section">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -505,7 +505,7 @@
 
             <!-- Middle div starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="">
+                <div class="product-details-seller-section">
                     @if($product->image != null)
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                     <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
@@ -514,7 +514,7 @@
                     @endif
                 </div>
                 <div>
-                    <p class="buy-page-product-name">{{$product->name}}</p>
+                    <p class="buy-page-product-name product-details-seller-section">{{$product->name}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
                     <div class="vector-image-border">
@@ -594,7 +594,7 @@
                     <div class="d-flex flex-row justify-content-between pt-3 pb-1">
                         <p class="detail-p text-dark align-self-center mb-0">Price</p>
                         <input type="hidden" value="{{showConvertedPrice($product->price)}}" id="pricePerItem" name="">
-                        <p class="detail-p3 item-price">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($product->price))}} / M</p>
+                        <p class="detail-p3 item-price">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($product->price))}}</p>
                     </div>
 
                     <div class="d-flex flex-column align-items-end mb-4">
