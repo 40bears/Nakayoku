@@ -357,6 +357,10 @@ a:hover {
     height: 25px;
 }
 
+.red-1 {
+    color: #EE5353;
+}
+
 .green {
     background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%);
     -webkit-background-clip: text;
@@ -1851,7 +1855,7 @@ input:-webkit-autofill:active {
 .tag-red {
     width: 80px;
     height: 30px;
-    background: #BA0000;
+    background: #EE5353;
     border-radius: 5px;
     padding: 7.5px 16.5px;
     color: #fff;
@@ -1862,12 +1866,13 @@ input:-webkit-autofill:active {
     top: 0;
     right: 0;
     text-align: center;
+    z-index: 2;
 }
 
 .tag-green {
     width: 80px;
     height: 30px;
-    background: #4BAE4F;
+    background: #E42575;
     border-radius: 5px;
     padding: 7.5px 16.5px;
     color: #fff;
@@ -1878,6 +1883,7 @@ input:-webkit-autofill:active {
     top: 0;
     right: 0;
     text-align: center;
+    z-index: 2;
 }
 
 .menu-blk {
