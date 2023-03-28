@@ -28,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [AuthController::class, 'dashboard'])->name('dashboard');
+Route::get('/product-type/{product_type}', [AuthController::class, 'dashboardWithProductType'])->name('dashboard-by-product-type');
 Route::post('/search', [AuthController::class, 'dashboardSearch'])->name('dashboard-search');
 
 Route::get('page/{url_slug}', [PageController::class, 'viewPageDetails'])->name('view-page-details');

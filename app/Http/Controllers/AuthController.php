@@ -7,6 +7,7 @@ use App\Models\ForgetPassword;
 use App\Models\Game;
 use App\Models\Pages;
 use App\Models\Product;
+use App\Models\Transaction;
 use App\Models\User;
 use App\Notifications\GeneralNotification;
 use Carbon\Carbon;
@@ -191,7 +192,24 @@ class AuthController extends Controller
         $devices = Device::with('games')->get();
         $games = Game::with('products')->get();
         $pages = Pages::orderBy('created_at', 'asc')->get();
-        $data = compact('pages', 'games', 'devices');
+        $transactions = Transaction::with('seller', 'products')->paginate(5);
+        $popularProducts1 = Product::with('games')->inRandomOrder()->limit(4)->get();
+        $popularProducts2 = Product::with('games')->inRandomOrder()->limit(4)->get();
+        $popularProducts3 = Product::with('games')->inRandomOrder()->limit(4)->get();
+        $data = compact('pages', 'games', 'devices', 'popularProducts1', 'popularProducts2', 'popularProducts3', 'transactions');
+
+        return view('dashboard')->with($data);
+    }
+
+    public function dashboardWithProductType($productType){
+        $devices = Device::with('games')->get();
+        $games = Game::with('products')->get();
+        $pages = Pages::orderBy('created_at', 'asc')->get();
+        $transactions = Transaction::with('seller', 'products')->paginate(5);
+        $popularProducts1 = Product::with('games')->where('product_type', $productType)->inRandomOrder()->limit(4)->get();
+        $popularProducts2 = Product::with('games')->where('product_type', $productType)->inRandomOrder()->limit(4)->get();
+        $popularProducts3 = Product::with('games')->where('product_type', $productType)->inRandomOrder()->limit(4)->get();
+        $data = compact('pages', 'games', 'devices', 'popularProducts1', 'popularProducts2', 'popularProducts3', 'transactions');
 
         return view('dashboard')->with($data);
     }

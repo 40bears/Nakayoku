@@ -5,19 +5,67 @@
 <div class="container-fluid px-0 bg-lgreen">
 
     <!-- Buy  starts -->
-    <div class="container pmypage padt-6">
+    <div class="container pmypage padt-6 padt-mb-8">
         <img src="{{ url('assets/images/goback-mark.svg') }}" class="img-fluid" alt="goback" />
         <a href="{{ route('view-product-details', [ 'id' => $product->games->id, 'product_name' => makeURL($product->name) ] ) }}" class="go-back ps-3"> GO BACK</a>
 
         <!-- Buying details starts -->
         <div class="row pt-5">
 
+        <div class="col-md-12 col-sm-12">
+            <h4 class="buy-confirmation-page-heading py-lg-4 py-md-4 py-sm-5">Confirmation of purchase details</h4>
+        </div>
+
+        <div class="col-md-4 col-sm-12 pt-md-4">
+            <div>
+                @if($product->image != null)
+                <img src="{{ url('storage/uploads/' . $product->games->image ) }}" class="img-fluid w-100" alt="games" />
+                @else
+                <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid w-100" alt="games" />
+                @endif
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12 pt-md-4 ps-lg-5 ps-sm-2 pt-4">
+            <form action="{{ route('buy-product', [ 'id' => $product->id, 'selectedBank' => $selectedFelisBank->id ] ) }}" method="POST">
+            @csrf
+                <div class="w-75 w-mb-100 mb-3">
+                    <p class="buy-confirmation-product-details mb-0">Price</p>
+                    <p class="buy-confirmation-product-values mb-0"><span>{{showCurrencySymbol()}}</span> {{formatPrice($price)}} </p>
+                </div>
+                <div class="w-75 w-mb-100 mb-3">
+                    <p class="buy-confirmation-product-details mb-0">Payment</p>
+                    <p class="buy-confirmation-product-values mb-0"><span>{{showCurrencySymbol()}}</span> {{formatPrice($price)}} </p>
+                </div>
+
+                @if(request()->has('quantity'))
+                <div class="w-75 w-mb-100 mb-3">
+                    <p class="buy-confirmation-product-details mb-0">Quantity</p>
+                    <p class="buy-confirmation-product-values mb-0">{{request()->get('quantity')}}</p>
+                </div>
+                @endif
+                <input type="hidden" min="0" name="quantity" id="" value="{{$price / showConvertedPrice($product->price)}}" />
+
+                <p class="text-p mb-4 w-75 w-mb-100">
+                    By selecting Agree and countinue, I agree to CLASS INNOVATION INTERNATIONAL
+                    <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Conditions</a> and acknowledge the
+                    <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
+                </p>
+                <div class="d-flex justify-content-center w-75 w-mb-100">
+                    <button type="submit" class="text-center signup-btn d-flex justify-content-center align-items-center w-50 w-mb-100">
+                        Buy / Get confirm mail
+                    </button>
+                </div>
+            </form>
+        </div>
+
             <!-- Left side starts -->
-            <div class="col-md-7 col-sm-12">
+            <!-- <div class="col-md-7 col-sm-12"> -->
 
                 <!-- Purchase details  starts -->
-                <h4 class="pur-head pb-4">Confirmation of purchase details</h4>
-                <hr class="drop-hr">
+                <!-- <hr class="drop-hr">
                 <div class="d-flex flex-row justify-content-start px-3 pt-4">
                     <div class="pe-3">
                         @if($product->image != null)
@@ -41,7 +89,7 @@
                         <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
                     </div>
                 </div>
-                <hr class="drop-hr">
+                <hr class="drop-hr"> -->
                 <!-- Purchase details ends -->
 
                 <!-- Hidden Bank details starts for future use -->
@@ -97,12 +145,12 @@
                     <p class="detail-p mb-0">{{$selectedFelisBank->account_name}}</p>
                 </div> -->
                 <!-- Bank details ends -->
-            </div>
+            <!-- </div> -->
 
             <!-- Left side ends -->
 
             <!-- Right side starts -->
-            <div class="col-md-5 col-sm-12 ps-5 common-space">
+            <!-- <div class="col-md-5 col-sm-12 ps-5 common-space">
                 <form action="{{ route('buy-product', [ 'id' => $product->id, 'selectedBank' => $selectedFelisBank->id ] ) }}" method="POST">
                     @csrf
                     <div class="border-box">
@@ -139,7 +187,7 @@
                     </button>
                 </form>
 
-            </div>
+            </div> -->
             <!-- Right side ends -->
 
         </div>
