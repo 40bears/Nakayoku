@@ -514,9 +514,9 @@ a:hover {
 }
 
 .transaction-div {
-    border: 1px solid rgba(58, 53, 65, 0.12);
+    border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 0px;
-    background: #E6F8F3;
+    background: #FBFBFB33;
 }
 
 .transaction-heading-1,
@@ -526,7 +526,7 @@ a:hover {
     line-height: 24px;
     letter-spacing: 0.17px;
     text-transform: uppercase;
-    color: #1D262D;
+    color: #F8F7F8;
     width: 12%;
     text-align: center;
 }
@@ -537,7 +537,7 @@ a:hover {
     font-size: 12px;
     line-height: 157%;
     letter-spacing: 0.1px;
-    color: #1D262D;
+    color: rgba(251, 251, 251, 0.5);
     overflow: overlay;
     width: 12%;
     text-align: center;
@@ -626,15 +626,16 @@ a:hover {
     border: none;
 }
 
-.select-bank {
+.select-bank,
+.select-2 {
     outline: none;
 }
 
 .select-2 {
     height: 3.563rem;
-    background: #FEFFFF;
+    background-color: #232323;
     padding: 0.5rem 1rem;
-    border: 1px solid #AAAAAA;
+    border: none;
     border-radius: 5px;
     margin: 0;
     -webkit-box-sizing: border-box;
@@ -642,7 +643,7 @@ a:hover {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
-    color: #AAAAAA;
+    color: #F8F7F8;
 }
 
 .profile-img {
@@ -1190,6 +1191,19 @@ input[type="file"] {
     font-size: 19.008px;
     line-height: 19px;
     padding: 1rem;
+}
+
+.approve-btn {
+    background: #E42575;
+    border-radius: 5px;
+    color: #F5F7FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    padding: 10px 24px;
 }
 
 .view-2 {
@@ -2383,6 +2397,10 @@ ul.footer-links li {
 
     .request-pad {
         padding: 4rem 1rem 0 1rem !important;
+    }
+
+    .pad-sp-lr {
+        padding: 0 1rem;
     }
 
     .sp-column {

@@ -2,19 +2,11 @@
 @section('title', 'Withdraw Requests Management | CII')
 @section('main-container')
 
-<div class="container-fluid px-0 bg-lgreen">
-    <div class="container padt-6">
-        <ul class="breadcrumb menu menu1">
-            <li class="breadcrumb-item"><a href="/">TOP</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">My Page</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('withdraw-requests-management') }}">Withdraw Requests Management</a></li>
-        </ul>
-    </div>
+<div class="container-fluid px-0 bg-lgreen padt-6">
 
 <div class="container">
-        <h3 class="pb-5 signup-h3 text-center py-5">Admin Section</h3>
-        <h2 class="success-h4 text-left">WITHDRAW REQUESTS MANAGEMENT</h2>
-    <div class="py-5">
+        <h3 class="pb-5 signup-h3 text-center py-5">Withdraw Requests Management</h3>
+    <div class="py-5 pad-sp-lr">
         <div class="row ">
             <div class="d-flex align-items-center justify-content-start pb-3 pt-3  ms-sm-0 transaction-div">
                 <p class="mb-0 withdraw-heading-1 ipad-none">Request Date</p>
@@ -32,7 +24,7 @@
         </div>
         @foreach($withdrawRequests as $withdrawRequest)
         <div class="row">
-            <div class="d-flex align-items-center justify-content-start pb-3 pt-4  ms-sm-0 bg-white">
+            <div class="d-flex align-items-center justify-content-start pb-3 pt-4  ms-sm-0 background-gray">
                 <p class="mb-0 withdraw-data-1 ipad-none">{{$withdrawRequest->created_at->format('Y/m/d')}}</p>
                 <!-- <p class="mb-0 withdraw-data-1 display">{{$withdrawRequest->created_at->format('Y/M/d')}}</p> -->
                 <p class="mb-0 withdraw-data-1">{{$withdrawRequest->users->display_name ? $withdrawRequest->users->display_name : ($withdrawRequest->first_name . $withdrawRequest->last_name) }}</p>
@@ -48,7 +40,7 @@
                 @else
                 <form action="{{ route('update-withdraw-requests-status', [ 'id' => $withdrawRequest->id ] ) }}" method="POST">
                     @csrf
-                    <button type="submit" class="nav-link view-2 ">Approve</button>
+                    <button type="submit" class="nav-link approve-btn">Approve</button>
                 </form>
                 @endif
             </div>

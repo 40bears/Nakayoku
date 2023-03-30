@@ -2,38 +2,11 @@
 @section('title', 'Add CII Banks | CII')
 @section('main-container')
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Admin Section</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notification-mmt') ? 'active' : '' }}" href="{{ route('notification-mmt') }}">Notification Portal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-games') ? 'active' : '' }}" href="{{ route('view-games') }}">Game List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('id-approvals') ? 'active' : '' }}" href="{{ route('id-approvals') }}">Id Approvals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'active' : '' }}" href="{{ route('cii-bank-accounts') }}">CII Bank Details</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('transactions-management') ? 'active' : '' }}" href="{{ route('transactions-management') }}">Transactions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdraw-requests-management') ? 'active' : '' }}" href="{{ route('withdraw-requests-management') }}">Withdraw Requests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-pages') ? 'active' : '' }}" href="{{ route('view-pages') }}">User Guide Pages</a>
-            </li>
-        </ul> 
-    </div>
-    <hr class="pb-5" />
+<div class="col-md-9 col-sm-12 ps-5 request-pad padt-5">
 
-<div class="container sp-100 form-container d-flex flex-column justify-content-start align-items-center">
-
-    <h3 class="border-0 mb-5">Add Bank Account</h3>
+<div class="container sp-100  d-flex flex-column justify-content-start align-items-center">
+    <h3 class="pb-5 signup-h3 align-self-start">Bank Details</h3>
+    <h3 class="border-0 mb-5 align-self-start select-lbl">Add Bank Account</h3>
     <form method="POST" enctype="multipart/form-data">
         @csrf
         <div class="pb-4 d-flex flex-column">
@@ -125,7 +98,7 @@
             @if(Route::is('edit-cii-bank-account'))
             <input type="submit" formaction="{{ route('update-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}" class="signup-btn w-100 mb-4" id="update" name="update" value="Update" />
             @else
-            <input type="submit" formaction="{{ route('add-cii-bank-account') }}" class="signup-btn w-100 mb-4" id="submit" name="submit" value="Submit" />
+            <input type="submit" formaction="{{ route('add-cii-bank-account') }}" class="signup-btn w-50 mb-4" id="submit" name="submit" value="SUBMIT" />
             @endif
             <a href="{{ route('cii-bank-accounts') }}" class="signup-a">back</a>
 
