@@ -4,34 +4,8 @@
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Admin Section</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notification-mmt') ? 'active' : '' }}" href="{{ route('notification-mmt') }}">Notification Portal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-games') ? 'active' : '' }}" href="{{ route('view-games') }}">Game List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('id-approvals') ? 'active' : '' }}" href="{{ route('id-approvals') }}">Id Approvals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'active' : '' }}" href="{{ route('cii-bank-accounts') }}">CII Bank Details</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('transactions-management') ? 'active' : '' }}" href="{{ route('transactions-management') }}">Transactions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdraw-requests-management') ? 'active' : '' }}" href="{{ route('withdraw-requests-management') }}">Withdraw Requests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-pages') ? 'active' : '' }}" href="{{ route('view-pages') }}">USer Guide Pages</a>
-            </li>
-        </ul> 
-    </div>
-    <hr class="pb-5" />
+<div class="col-md-9 col-sm-12 ps-5 request-pad padt-5">
+    <h3 class="pb-5 signup-h3">ID Approvals</h3>
 
     <div class="d-flex justify-content-between mb-3">
         <form action="{{ route('id-approvals-search') }}" method="POST" class="w-50 sp-100">
@@ -54,16 +28,16 @@
         <div class="row">
             <a href="{{ route('id-approval-document', [ 'id' => $user->id ] ) }}">
                 <div class="d-flex align-items-center justify-content-between pb-3 pt-4">
-                    <p class="big-lbl mb-0 col-md-3 col-sm-6">{{$user->display_name ? $user->display_name : $user->first_name . ' ' . $user->last_name}}</p>
-                    <p class="big-lbl mb-0 col-md-3 text-center display">{{$user->document_type ? Str::title($user->document_type) : 'Not Uploaded'}}</p>
-                    <p class="big-lbl mb-0 col-md-3 col-sm-3 text-center">{{ $user->updated_at ? $user->updated_at->format('Y/m/d') : '--'}}</p>
+                    <p class="product-name mb-0 col-md-3 col-sm-6">{{$user->display_name ? $user->display_name : $user->first_name . ' ' . $user->last_name}}</p>
+                    <p class="product-name mb-0 col-md-3 text-center display">{{$user->document_type ? Str::title($user->document_type) : 'Not Uploaded'}}</p>
+                    <p class="product-name mb-0 col-md-3 col-sm-3 text-center">{{ $user->updated_at ? $user->updated_at->format('Y/m/d') : '--'}}</p>
                     <div class="d-flex col-md-3 col-sm-3 ms-5 ml-0">
                         @if($user->document_verification === 'VERIFIED')
                         <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid me-2" alt="games" />
-                        <p class="big-lbl mb-0 d-flex align-self-center">Verified</p>
+                        <p class="product-name mb-0 d-flex align-self-center">Verified</p>
                         @else
                         <img src="{{ url('assets/images/x-icon.svg') }}" class="img-fluid me-2" alt="games" />
-                        <p class="big-lbl mb-0 d-flex align-self-center">Not Verified</p>
+                        <p class="product-name mb-0 d-flex align-self-center">Not Verified</p>
                         @endif
 
                     </div>

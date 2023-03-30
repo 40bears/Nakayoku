@@ -4,15 +4,7 @@
 
 <div class="container-fluid px-0 bg-lgreen py-5">
 
-    <div class="container padt-5">
-        <ul class="breadcrumb menu menu1 pb-5">
-            <li class="breadcrumb-item"><a href="/">TOP</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">MyPage</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('view-pages') }}">User Guide Page</a></li>
-        </ul>
-    </div>
-
-    <div class="container  d-flex flex-column justify-content-center align-items-center">
+    <div class="container  d-flex flex-column justify-content-center align-items-center padt-5">
 
         <h3 class="signup-h3 pb-5">Add Page</h3>
         <form method="POST" enctype="multipart/form-data" class="wd-50">
@@ -87,7 +79,7 @@
             </div>
 
             <div class="d-flex flex-column align-items-center mt-5">
-                <input type="submit" formaction="{{ route('add-page-post') }}" class="signup-btn w-100" id="submit" name="submit" value="Submit" />
+                <input type="submit" formaction="{{ route('add-page-post') }}" class="signup-btn w-50" id="submit" name="submit" value="SUBMIT" />
             </div>
         </form>
     </div>
