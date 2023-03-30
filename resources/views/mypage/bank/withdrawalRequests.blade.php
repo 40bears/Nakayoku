@@ -4,29 +4,17 @@
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Money Management</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('sales-and-deposits') ? 'active' : '' }}" href="{{ route('sales-and-deposits') }}">Sales and deposit</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdrawal-request') ? 'active' : '' }}" href="{{ route('withdrawal-request') }}">Transfer request</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdrawal-request-history') ? 'active' : '' }}" href="{{ route('withdrawal-request-history') }}">Request history</a>
-            </li>
-        </ul>
-    </div>
-    <hr />
+<div class="col-md-9 col-sm-12 ps-5 request-pad padt-5">
+    <h3 class="pb-5 signup-h3">Transfer Request</h3>
 
     <div class=" align-items-center justify-content-center d-flex flex-column mt-5">
-        <div class="balance-box form-container">
-            <div class="d-flex align-items-start pb-2">
+        <div class="balance-box w-100 d-flex sp-column">
+            <div class="d-flex flex-column align-items-start me-5">
                 <p class="finish me-3">Balance</p>
                 <p class="dollar-p2 pe-2 mb-0">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice(Auth::user()->balance))}}</p>
+                <img src="{{ url('assets/images/transfer-icon.svg') }}" class="img-fluid pt-4" alt="transfer" />
             </div>
+            <div class="d-flex flex-column w-80 sp-dash">
             <p class="signup-lbl mb-0 pb-4">Price(per unit)</p>
             <form action="{{ route('withdrawal-request-post') }}" method="POST" id="withdraw-request-form">
                 @csrf
@@ -58,9 +46,9 @@
                     <p class="dollar-p2 mb-0">{{showCurrencySymbol()}} <span class="dollar-p1" id="total-withdrawal-amount">{{showConvertedPrice(0)}}</span></p>
                 </div>
                 <hr class="drop-hr"/>
-                <div class="d-flex justify-content-end pt-5">
-                    <button type="button" class="signup-btn w-100 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#basicModal2">
-                        Send Request
+                <div class="d-flex justify-content-center pt-5">
+                    <button type="button" class="signup-btn w-80 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#basicModal2">
+                        SEND REQUEST
                     </button>
                     <!-- <input type="submit" class="nav-link btn-blue button-1 w-40" id="submit-withdrawal-request" name="sendRequest" value="Send Request" /> -->
                 </div>
@@ -77,7 +65,7 @@
                                     <p class="sure-p2 text-center form-p mb-0 pt-0">(Your request will be processed and you will be informed via mail once it is approved by Administration)</p>
                                 </div>
                                 <div class="modal-footer border-0 d-flex flex-row flex-nowrap">
-                                    <a class="withdraw-modal-button-1 signup-btn cancel-bg w-50 text-center" data-dismiss="modal">Cancel</a>
+                                    <a class="withdraw-modal-button-1 view w-50 text-center" data-dismiss="modal">Cancel</a>
                                     <a id="withdraw-modal-button-2" class="signup-btn w-50 text-center">Confrim</a>
                                 </div>
                             </div>
@@ -86,6 +74,7 @@
                 </div>
                 <!-- modal ends -->
             </form>
+            </div>
         </div>
     </div>
 

@@ -4,8 +4,8 @@
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="signup-h3 pb-5 text-center">Sell items</h3>
+<div class="col-md-9 col-sm-12 ps-5 common-space padt-5">
+    <h3 class="signup-h3 pb-5">Currently On Display</h3>
 
     @if (\Session::has('success'))
 
@@ -22,7 +22,7 @@
                         <p class="sure-p2 text-center form-p mb-0 pt-0">You can check your <a class="show d-inline" href="{{ route('currently-on-display') }}">currently on display</a> product on My Page.</p>
                     </div>
                     <div class="modal-footer border-0 d-flex flex-row flex-nowrap">
-                        <a href="{{ route('view-product-details', ['id' => \Session::get('new_product_id'), 'product_name' => 'detail'] ) }}" class=" modal-button-1 signup-btn cancel-bg text-center w-50 ">Check Product</a>
+                        <a href="{{ route('view-product-details', ['id' => \Session::get('new_product_id'), 'product_name' => 'detail'] ) }}" class=" modal-button-1 view text-center w-50 ">Check Product</a>
                         <a href="{{ route('add-product') }}" class="nav-link signup-btn text-center w-50 border-0">Add New Product</a>
                     </div>
                 </div>
@@ -42,22 +42,6 @@
         }, 1000);
     </script>
     @endif
-
-
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link active menu-blk" href="{{ route('view-purchased-products') }}">Currently on display</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk" href="{{ route('view-sold-products') }}">Sold items history</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk" href="{{ route('view-draft-products') }}">Sell drafts</a>
-            </li>
-        </ul>
-    </div>
-    <hr />
 
     <!-- Product list component starts -->
     @if(count($products) == 0)

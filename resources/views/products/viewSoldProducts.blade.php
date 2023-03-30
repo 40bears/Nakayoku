@@ -6,22 +6,8 @@
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Sell items</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk" href="{{ route('view-purchased-products') }}">Currently on display</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active menu-blk" href="{{ route('view-sold-products') }}">Sold items history</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk" href="{{ route('view-draft-products') }}">Sell drafts</a>
-            </li>
-        </ul>
-    </div>
-    <hr />
+<div class="col-md-9 col-sm-12 ps-5 common-space padt-5">
+    <h3 class="pb-5 signup-h3">Sold Items History</h3>
 
     <!-- Product list component starts -->
     <div id="productlist2">
