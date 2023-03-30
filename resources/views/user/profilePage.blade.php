@@ -58,15 +58,14 @@
 
         <div class="d-flex justify-content-between align-items-start profile-page sp-column">
             <div class="carousal-nav ms-1 row tab sp-f-100">
-
-                <a class="{{str_contains(url()->current(), 'currency') ? 'active' : ''}} filter" href="{{ route('profile-page', [ 'id' => $user->id ]) }}">Show all</a>
-                <a class=" {{str_contains(url()->current(), 'item') ? 'active' : ''}} filter" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'item' ] ) }}">
+                <a class="{{ Route::is('profile-page', [ 'id' => $user->id ]) ? 'isActive' : '' }} filter" href="{{ route('profile-page', [ 'id' => $user->id ]) }}">Show all</a>
+                <a class=" {{str_contains(url()->current(), 'item') ? 'active' : ''}} filter justify-content-evenly" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'item' ] ) }}">
                     <img src="{{ url('assets/images/item-icon.svg') }}" class="img-fluid" alt="items" /> Items
                 </a>
-                <a class=" {{str_contains(url()->current(), 'account') ? 'active' : ''}} filter" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'account' ] ) }}">
+                <a class=" {{str_contains(url()->current(), 'account') ? 'active' : ''}} filter justify-content-evenly" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'account' ] ) }}">
                     <img src="{{ url('assets/images/account-icon.svg') }}" class="img-fluid" alt="account" /> Account
                 </a>
-                <a class=" {{str_contains(url()->current(), 'currency') ? 'active' : ''}} filter" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'currency' ] ) }}">
+                <a class=" {{str_contains(url()->current(), 'currency') ? 'active' : ''}} filter justify-content-evenly" href="{{ route('profile-page-product-type', [ 'id' => $user->id, 'type' => 'currency' ] ) }}">
                     <img src="{{ url('assets/images/currency-icon.svg') }}" class="img-fluid" alt="games" /> Currency
                 </a>
             </div>
