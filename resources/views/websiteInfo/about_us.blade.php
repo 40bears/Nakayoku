@@ -3,16 +3,10 @@
 @section('main-container')
 
 <!-- Blue section starts -->
-<div class="container-fluid px-0 bg-lgreen">
-    <div class="container padt-6">
-        <ul class="breadcrumb menu menu1">
-            <li class="breadcrumb-item"><a href="/">TOP</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('about-us') }}">About Us</a></li>
-        </ul>
-    </div>
+<div class="container-fluid px-0 bg-lgreen pt-5">
 
     <!-- My page starts -->
-    <div class="container padt-3">
+    <div class="container padt-6">
         <div class="row">
             <!-- Left side starts -->
             {{-- <div class="col-md-3 col-sm-12">
@@ -42,19 +36,18 @@
             <div class="col-md-12">
                 <h3 class="pb-5 signup-h3 text-center">Website Info</h3>
                 <div class="menu menu-1 pt-3">
-                    <ul class="navbar-nav sp-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link menu-blk active" href="{{ route('about-us') }}">About Us</a>
+                    <ul class="navbar-nav sp-scroll d-flex justify-content-center">
+                        <li class="nav-item">   
+                            <a class="nav-link active menu-blk" href="{{ route('about-us') }}"><i class="fa-solid fa-id-card white me-3"></i> About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-blk" href="{{ route('terms-and-conditions') }}">Terms & Conditions</a>
+                            <a class="nav-link menu-blk" href="{{ route('terms-and-conditions') }}"><img src="{{ url('assets/images/terms-pink-icon.svg') }}" class="img-fluid me-3" alt="terms" /> Terms & Conditions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-blk" href="{{ route('privacy-policy') }}">Privacy Policy</a>
+                            <a class="nav-link  menu-blk" href="{{ route('privacy-policy') }}"><i class="fa-solid fa-shield-heart pink me-3"></i> Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
-                <hr />
 
                 <div class="d-flex align-items-start justify-content-center py-5 sp-column">
                         <div class="col-md-6 col-sp-12">
@@ -105,7 +98,7 @@
                         <h2 class="story-head-2">Join Our Community</h2>
                         <div class="d-flex pt-3 justify-content-between ">
                             <p class="story-p me-5">For any enquiry</p>
-                            <a class="story-a green"  href="{{route('contact')}}">Click here</a>
+                            <a class="story-a"  href="{{route('contact')}}">Click here</a>
                         </div>
                     </div>
                  </div>
