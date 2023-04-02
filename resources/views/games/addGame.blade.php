@@ -26,6 +26,19 @@
                     <label class="signup-lbl py-2">Game Name</label>
                     <input type="text" class="signup-input" name="name" id="platforms" placeholder="GRAND THEFT AUTO V" value="{{ Route::is('edit-game') ? $game->name : ''}}" />
 
+                    <label class="signup-lbl pb-2 pt-4">Game Category</label>
+                    <select class="select-bank select-game w-100" name="category" id="exampleFormControlSelect3" value="{{ Route::is('edit-game') ? $game->device : ''}}">
+                        @foreach($categories as $category)
+                        <option value="{{$category->id}}" {{Route::is('edit-game') ? $game->category_id == $category->id ? 'selected' : '' : ''}}>{{Str::upper($category->name)}}</option>
+                        @endforeach
+                        <option value="other">OTHER</option>
+                    </select>
+                    
+                    <div id="otherCategoryInput" class="d-flex flex-column hide">
+                        <label class="signup-lbl pb-2 pt-4">Add new category</label>
+                        <input type="text" class="signup-input" name="other_category" placeholder="Add a category" />
+                    </div>
+
                     <label class="signup-lbl pb-2 pt-4">Device</label>
                     <div class="form-group">
                         <label for="exampleFormControlSelect2" class="d-none">Select</label>

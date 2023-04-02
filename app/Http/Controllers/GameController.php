@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Device;
+use App\Models\Category;
 use App\Models\Game;
 use App\Models\Product;
 use Carbon\Carbon;
@@ -15,7 +16,8 @@ class GameController extends Controller
     {
         if ($request->isMethod('get')) {
             $devices = Device::get();
-            $data = compact('devices');
+            $categories = Category::get();
+            $data = compact('devices', 'categories');
             return view('games.addGame')->with($data);
         } else {
             $game = new Game();
@@ -30,6 +32,17 @@ class GameController extends Controller
                 $game->device = $newDevice->id;
             } else {
                 $game->device = $request['device'];
+            }
+            if (!empty($request['other_category'])) {
+                $category = new Category();
+                $category->name = $request['other_category'];
+                $category->save();
+
+                $newCategory = Category::where('name', $request['other_category'])->first();
+
+                $game->category_id = $newCategory->id;
+            } else {
+                $game->category_id = $request['category'];
             }
             if (!empty($request->file('image'))) {
                 $game_image = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
@@ -85,8 +98,9 @@ class GameController extends Controller
     public function editGame($id)
     {
         $devices = Device::get();
+        $categories = Category::get();
         $game = Game::where('id', $id)->first();
-        $data = compact('devices', 'game');
+        $data = compact('devices', 'game', 'categories');
         return view('games.addGame')->with($data);
     }
 
@@ -104,6 +118,17 @@ class GameController extends Controller
             $game->device = $newDevice->id;
         } else {
             $game->device = $request['device'];
+        }
+        if (!empty($request['other_category'])) {
+            $category = new Category();
+            $category->name = $request['other_category'];
+            $category->save();
+
+            $newCategory = Category::where('name', $request['other_category'])->first();
+
+            $game->category_id = $newCategory->id;
+        } else {
+            $game->category_id = $request['category'];
         }
         if (!empty($request->file('image'))) {
             $game_image = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();

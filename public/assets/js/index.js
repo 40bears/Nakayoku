@@ -284,6 +284,18 @@ otherDevice?.addEventListener("change", function () {
     }
 });
 
+// Adding other device in the devices table
+const otherCategory = document.querySelector("#exampleFormControlSelect3");
+const otherCategoryInput = document.querySelector("#otherCategoryInput");
+
+otherCategory?.addEventListener("change", function () {
+    if (otherCategory.value == "other") {
+        otherCategoryInput.classList.remove("hide");
+    } else {
+        otherCategoryInput.classList.add("hide");
+    }
+});
+
 // Adding other category in add pages ( ADMIN )
 const otherHeading = document.querySelector("#category");
 otherHeading?.addEventListener("change", function () {
@@ -890,10 +902,10 @@ function viewCollections(elmnt) {
 //   document.getElementById("defaultOpen").click();
   
   $('.slider')?.slick({
-    infinite: false,
+    infinite: true,
     speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 3,
     variableWidth:true,
     nextArrow: '<span class="next-arrow"><i class="fa-solid fa-angle-right"></i></span>',
     prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-angle-left"></i></span>',
