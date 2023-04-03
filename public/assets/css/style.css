@@ -2021,6 +2021,23 @@ hr {
     padding-right: 20px;
 }
 
+.game-edit-btn, .game-edit-delete-btn{
+    padding: 12px 50px;
+    gap: 10px;
+    background: #232323;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    color: #FFF;
+}
+
+.game-edit-delete-btn{
+    color: #EE5353;
+}
+
+.game-edit-delete-btn:hover{
+    color: red;
+}
+
 .border-nav {
     border-bottom: 1px solid rgba(251, 251, 251, 0.2);
     ;
@@ -2433,7 +2450,7 @@ ul.footer-links li {
 
     .signup-box {
         width: 100%;
-        padding: 0;
+        padding: 1rem !important;
     }
 
     .currency-profile-pic {
