@@ -62,8 +62,9 @@ class GameController extends Controller
     public function allGames()
     {
         $devices = Device::get();
-        $games = Game::paginate(40);
-        $data = compact('games', 'devices');
+        $categories = Category::get();
+        $games = Game::inRandomOrder()->get();
+        $data = compact('games', 'devices', 'categories');
         return view('games.allGames')->with($data);
     }
 
@@ -71,8 +72,9 @@ class GameController extends Controller
     {
         $currentDevice = Device::where('name', $device)->first();
         $devices = Device::get();
-        $games = Game::where('device', $currentDevice->id)->paginate(40);
-        $data = compact('games', 'devices');
+        $categories = Category::get();
+        $games = Game::where('device', $currentDevice->id)->inRandomOrder()->get();
+        $data = compact('games','categories', 'devices');
         return view('games.allGames')->with($data);
     }
 
@@ -101,7 +103,7 @@ class GameController extends Controller
         $categories = Category::get();
         $game = Game::where('id', $id)->first();
         $data = compact('devices', 'game', 'categories');
-        return view('games.addGame')->with($data);
+        return view('games.editGame')->with($data);
     }
 
     public function updateGame($id, Request $request)

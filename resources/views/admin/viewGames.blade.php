@@ -32,8 +32,8 @@
     @foreach($games as $game)
     <div id="productlist pt-5">
         <a href="{{ route('view-products', [  'id' => $game->id] ) }}">
-            <div class="d-flex  justify-content-between border-nav py-4">
-                <div class="d-flex  justify-content-around">
+            <div class="d-flex justify-content-center justify-content-md-start border-nav ps-4 py-4">
+                <div class="d-flex flex-column flex-md-row justify-content-around">
                     <div class="pe-4">
                         @if($game->image)
                         <img src="{{ url('storage/uploads/' . $game->image) }}" class="img-fluid admin-games-list top-image" alt="games" />
@@ -41,7 +41,7 @@
                         <img src="{{ url('assets/images/default-game-new.jpeg') }}" class="img-fluid admin-games-list top-image" alt="games" />
                         @endif
                     </div>
-                    <div>
+                    <div class="d-flex flex-column justify-content-between align-items-start">
                         <div>
                             <p class="select-lbl mb-3">{{Str::upper($game->name)}}</p>
                             <div class="d-flex align-items-center">
@@ -49,19 +49,19 @@
                                  <p class="pur-date mb-2">{{$game->updated_at->format('Y/M/d')}}</p>
                             </div>
                         </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="game-edit-btn me-3" href="{{ route('edit-game', [ 'id' => $game->id ] ) }}">EDIT</a>
+                            @if($game->status == 'PUBLISHED')
+                            @if(count($game->products) == 0)
+                            <a class="game-edit-delete-btn" href="{{ route('delete-game', [ 'id' => $game->id ] ) }}" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
+                            @else
+                            <a class="game-edit-delete-btn" href="{{ route('update-game-status', [ 'id' => $game->id ] ) }}" onclick="return confirm('You can not delete the game as it have items attached to it. Do you want to put it in draft instead?')">DELETE</a>
+                            @endif
+                            @else
+                            <a class="game-edit-btn" href="{{ route('update-game-status', [ 'id' => $game->id ] ) }}" onclick="return confirm('Are you sure you want to publish this?')">PUBLISH</a>
+                            @endif
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <a class="nav-link view me-3" href="{{ route('edit-game', [ 'id' => $game->id ] ) }}">EDIT</a>
-                    @if($game->status == 'PUBLISHED')
-                    @if(count($game->products) == 0)
-                    <a class="nav-link view" href="{{ route('delete-game', [ 'id' => $game->id ] ) }}" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
-                    @else
-                    <a class="nav-link view" href="{{ route('update-game-status', [ 'id' => $game->id ] ) }}" onclick="return confirm('You can not delete the game as it have items attached to it. Do you want to put it in draft instead?')">DELETE</a>
-                    @endif
-                    @else
-                    <a class="nav-link view-2" href="{{ route('update-game-status', [ 'id' => $game->id ] ) }}" onclick="return confirm('Are you sure you want to publish this?')">PUBLISH</a>
-                    @endif
                 </div>
             </div>
         </a>
@@ -97,7 +97,7 @@
     {{-- </div> --}}
     @else
     <div class="text-center mt-4">
-        <h3>No Results</h3>
+        <h3 class="text-light">No Results</h3>
     </div>
     @endif
     <!-- Product list component ends -->
