@@ -1,18 +1,19 @@
 @if($base_currency != 'JPY')
 {{-- English email starts --}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
 
-<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
+<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <link href="https://www.cdnfonts.com/helvetica-neue-9.font;">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400;500;700&display=swap" rel="stylesheet">
+    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
         * {
             margin: 0;
             padding: 0;
             font-size: 100%;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             line-height: 1.65;
         }
 
@@ -32,7 +33,7 @@
         }
 
         a {
-            color: #005C46;
+            color: rgba(251, 251, 251, 0.82);
             text-decoration: underline;
         }
 
@@ -205,44 +206,44 @@
     </style>
 </head>
 
-<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
+<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
                 <!-- Message start -->
-                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 0px;background: #005C46;color: white;position:relative;">
+                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <img style="width: 10%;" src="http://cii.40bears.com/assets/images/email-logo.png">
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;background: white;">
-                            <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Inter', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
+                            <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
                                 <img style="width: 15%;" src="http://cii.40bears.com/assets/images/check.png">
                             </p> -->
-                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
-                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #005C46; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
+                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                        <p style="margin: 0;padding: 0;color: #E42575; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>Thank you for your payment.</span>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             Thank you for visiting the CII site.
                                             <br>
                                             <br>
                                             This email is to inform you that we have received the payment confirmation from the administrator.<br>
                                             Please continue to use the CII site. <br>
-                                            <span>Click<a style="color: #005C46;" href="http://cii.40bears.com/" target="_blank">here</a>to go to the website</span>
+                                            <span>Click<a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank"> here </a>to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 0px;background: #005C46;color: white;position:relative;">
-                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65;font-weight: normal;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: #F8F7F8;position:relative;">
+                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
                                 <span>©2023 CII</span>
                             </p>
                         </td>
@@ -260,18 +261,19 @@
 @else
 {{-- Japanese email starts --}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
 
-<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
+<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <link href="https://www.cdnfonts.com/helvetica-neue-9.font;">
+    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
         * {
             margin: 0;
             padding: 0;
             font-size: 100%;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             line-height: 1.65;
         }
 
@@ -291,7 +293,7 @@
         }
 
         a {
-            color: #005C46;
+            color: rgba(251, 251, 251, 0.82);
             text-decoration: none;
         }
 
@@ -472,49 +474,49 @@
     </style>
 </head>
 
-<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
+<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
                 <!-- Message start -->
-                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 0px;background: #005C46;color: white;position:relative;">
+                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <img style="width: 10%;" src="http://cii.40bears.com/assets/images/logo.png">
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;background: white;">
-                            <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Inter', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
+                            <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
                                 <img style="width: 15%;" src="http://cii.40bears.com/assets/images/check.png">
                             </p> -->
-                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
-                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #005C46; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
+                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                        <p style="margin: 0;padding: 0;color: #E42575; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>ご入金ありがとうございました。</span>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             この度はCIIサイトをご利用いただき、ありがとうございます。
                                             管理者より入金確認が取れましたのでご連絡いたします。
                                         </p>
                                         <br>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             ご購入商品の受け渡し方法に関しましては、追ってご連絡いたします。
                                         </p>
                                         <br>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             引き続きCIIサイトをご利用ください。<br>
-                                            <span>Webサイトの<a style="color: #005C46;" href="http://cii.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
+                                            <span>Webサイトの<a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
                                         </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 1.65;">
-                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Inter', sans-serif;line-height: 0px;background: #005C46;color: white;position:relative;">
-                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Inter', sans-serif;line-height: 1.65;font-weight: normal;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: #F8F7F8;position:relative;">
+                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
                                 <span>©2022 CII</span>
                             </p>
                         </td>
