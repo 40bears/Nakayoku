@@ -9,36 +9,38 @@
 
     <div class="container padt-6 pb-5 bank-info">
 
-        <h3 class="signup-h3 text-center">Rate Deal</h3>
+        <h3 class="signup-h3">Rate Deal</h3>
 
         <form action="{{ route('rate-purchase-post') }}" method="POST">
             @csrf
 
             <div class="row py-5">
                 <div class="col-md-6 col-sm-12">
-                    <div class="position-relative">
+                    <div>
                         @if($transaction->products->image != null)
                         <img src="{{ url('storage/uploads/' . $transaction->products->image) }}" class="img-fluid product-image" alt="games" />
                         @else
                         <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid" alt="games" />
                         @endif
-                        <div class="rating-div">
+                        <div class="pt-4">
                             <p class="rating-game mb-0">GRAND THEFT AUTO V Currency</p>
                             <p class="rating-amount mb-0 mt-2" id="textLabel">{{ Auth::user() ? Auth::user()->base_currency : Session::get('base_currency') }} {{$transaction->amount}}</p>
-                            <p class="rating-un mt-2">{{Str::title($transaction->seller->display_name)}}</p>
-                            {{-- <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="check mark" /> --}}
+                            <div class="d-flex mt-2 justigy-content-start align-items-start">
+                                 <p class="rating-un">{{Str::title($transaction->seller->display_name)}}</p>
+                                 <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid ms-1" alt="check mark" />
+                            </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="signup-box">
-                            <h5 class="mb-0">Payment</h5>
+                    <div class="">
+                            <h5 class="mb-0 product-name">Payment</h5>
                             <hr class="drop-hr mt-3" />
                             <p class="detail-p mb-0 mt-3 ms-3" id="textLabel">{{ Auth::user() ? Auth::user()->base_currency : Session::get('base_currency') }} {{$transaction->amount}}</p>
                             <hr class="drop-hr mt-3" />
 
-                            <h5 class="mb-0 mt-3">Case ID</h5>
+                            <h5 class="mb-0 mt-3 product-name">Case ID</h5>
                             <hr class="drop-hr mt-3" />
                             <p class="detail-p mb-0 ms-3 mt-3" id="textLabel">{{$transaction->id}}</p>
                             <hr class="drop-hr mt-3" />
@@ -59,7 +61,7 @@
                                 <h4 class="align-self-center pt-3 mb-0 rating-star">star</h4>
                             </div>
 
-                        <input type="submit" class="signup-btn w-100" id="update" name="update" value="Update" />
+                        <input type="submit" class="signup-btn w-100" id="update" name="update" value="CONTINUE" />
                     </div>
                 </div>
             </div>

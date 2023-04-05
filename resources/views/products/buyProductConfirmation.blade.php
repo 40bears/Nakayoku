@@ -6,8 +6,6 @@
 
     <!-- Buy  starts -->
     <div class="container pmypage padt-6 padt-mb-8">
-        <img src="{{ url('assets/images/goback-mark.svg') }}" class="img-fluid" alt="goback" />
-        <a href="{{ route('view-product-details', [ 'id' => $product->games->id, 'product_name' => makeURL($product->name) ] ) }}" class="go-back ps-3"> GO BACK</a>
 
         <!-- Buying details starts -->
         <div class="row pt-5">
@@ -17,12 +15,13 @@
         </div>
 
         <div class="col-md-4 col-sm-12 pt-md-4">
-            <div>
+            <div class="d-flex flex-column">
                 @if($product->image != null)
                 <img src="{{ url('storage/uploads/' . $product->games->image ) }}" class="img-fluid w-100" alt="games" />
                 @else
                 <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid w-100" alt="games" />
                 @endif
+                <p class="pt-3 product-name">{{$product->games->name}}</p>
             </div>
             <div>
 
@@ -55,7 +54,7 @@
                 </p>
                 <div class="d-flex justify-content-center w-75 w-mb-100">
                     <button type="submit" class="text-center signup-btn d-flex justify-content-center align-items-center w-50 w-mb-100">
-                        Buy / Get confirm mail
+                        BUY / GET CONFIRM MAIL
                     </button>
                 </div>
             </form>

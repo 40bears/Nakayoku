@@ -218,7 +218,7 @@ body {
     font-weight: 400;
     font-size: 48px;
     line-height: 24px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #F8F7F8;
 }
 
@@ -1516,7 +1516,7 @@ select.minimal {
 }
 
 .rating-count {
-    color: #D0D335;
+    color: #E42575;
     font-size: 81px;
     font-weight: 600;
     padding: 0;
@@ -1534,7 +1534,7 @@ select.minimal {
 }
 
 .yellow-star {
-    color: #D0D335;
+    color: #E42575;
     width: 44px;
     height: 44px;
 }
@@ -2021,7 +2021,8 @@ hr {
     padding-right: 20px;
 }
 
-.game-edit-btn, .game-edit-delete-btn{
+.game-edit-btn,
+.game-edit-delete-btn {
     padding: 12px 50px;
     gap: 10px;
     background: #232323;
@@ -2030,11 +2031,11 @@ hr {
     color: #FFF;
 }
 
-.game-edit-delete-btn{
+.game-edit-delete-btn {
     color: #EE5353;
 }
 
-.game-edit-delete-btn:hover{
+.game-edit-delete-btn:hover {
     color: red;
 }
 
