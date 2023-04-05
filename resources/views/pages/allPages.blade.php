@@ -4,38 +4,12 @@
 
 <!-- Right side starts -->
 
-<div class="col-md-9 col-sm-12 ps-5 common-space">
-    <h3 class="pb-5 signup-h3 text-center">Admin Section</h3>
-    <div class="menu menu-1 pt-4">
-        <ul class="navbar-nav scroll">
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('notification-mmt') ? 'active' : '' }}" href="{{ route('notification-mmt') }}">Notification Portal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-games') ? 'active' : '' }}" href="{{ route('view-games') }}">Game List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('id-approvals') ? 'active' : '' }}" href="{{ route('id-approvals') }}">Id Approvals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'active' : '' }}" href="{{ route('cii-bank-accounts') }}">CII Bank Details</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('transactions-management') ? 'active' : '' }}" href="{{ route('transactions-management') }}">Transactions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('withdraw-requests-management') ? 'active' : '' }}" href="{{ route('withdraw-requests-management') }}">Withdraw Requests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menu-blk {{ Route::is('view-pages') ? 'active' : '' }}" href="{{ route('view-pages') }}">User Guide Pages</a>
-            </li>
-        </ul> 
-    </div>
-    <hr class="pb-5" />
+<div class="col-md-9 col-sm-12 ps-5 request-pad padt-5">
+    <h3 class="pb-5 signup-h3 ">User Guide Pages</h3>
 
     <div class="d-flex justify-content-between align-items-center py-4 px-4 bank-wh mb-5">
-        <h3 class="bank-h3">User guide pages</h3>
-        <a class="nav-link view  bank-w" href="{{route('add-page-view')}}">
+        <h3 class="bank-h3">User Guide Pages</h3>
+        <a class="nav-link view" href="{{route('add-page-view')}}">
             <i class="fa-solid fa-circle-plus me-2"></i>
             Add page
         </a>
