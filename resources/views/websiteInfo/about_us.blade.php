@@ -2,113 +2,78 @@
 @section('title', 'About Us | CII')
 @section('main-container')
 
-<!-- Blue section starts -->
-<div class="container-fluid px-0 bg-lgreen pt-5">
+<!-- Main section starts -->
+<div class="container-fluid padt-6 px-0">
+    <div class="tree-img">
+    <div class="container">
+        <h3 class="pb-5 signup-h3 text-center">Website Info</h3>
+        <div class="menu menu-1 pt-3 pb-5">
+            <ul class="navbar-nav sp-scroll d-flex justify-content-center">
+                <li class="nav-item">   
+                    <a class="nav-link active menu-blk" href="{{ route('about-us') }}"><i class="fa-solid fa-id-card white me-3"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-blk" href="{{ route('terms-and-conditions') }}"><img src="{{ url('assets/images/terms-pink-icon.svg') }}" class="img-fluid me-3" alt="terms" /> Terms & Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  menu-blk" href="{{ route('privacy-policy') }}"><i class="fa-solid fa-shield-heart pink me-3"></i> Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pt-5">
+            <h2 class="story-head text-center">Everybody will get what they wants </h2>
+            <p class="about-p">
+                "Person in charge for this website is                                                                                             
+                Producer SASAKI-sanr-sasaki@physis-rs.com We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
+            </p>
 
-    <!-- My page starts -->
-    <div class="container padt-6">
-        <div class="row">
-            <!-- Left side starts -->
-            {{-- <div class="col-md-3 col-sm-12">
-                <h5 class="border-nav pb-3 mb-0">Website Info </h5>
-                <ul class="ps-0 left-menu">
-                    <a href="{{ route('about-us') }}" class="">
-                        <li class="border-nav ps-3 py-3 current-page">
-                            About Us
-                        </li>
-                    </a>
-                    <a href="{{ route('terms-and-conditions') }}">
-                        <li class="border-nav ps-3 py-3">
-                            Terms & Conditions
-                        </li>
-                    </a>
-                    <a href="{{ route('privacy-policy') }}">
-                        <li class="border-nav ps-3 py-3">
-                            Privacy Policy
-                        </li>
-                    </a>
-                </ul>
-            </div> --}}
-            <!-- Left side ends -->
+         </div>
+         <div class="pt-5">
+            <h2 class="story-head text-center">Info</h2>
+            <p class="about-p">
+                "We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
+            </p>
+         </div>
+    </div>
+    </div>
 
-            <!-- Right side starts -->
-
-            <div class="col-md-12">
-                <h3 class="pb-5 signup-h3 text-center">Website Info</h3>
-                <div class="menu menu-1 pt-3">
-                    <ul class="navbar-nav sp-scroll d-flex justify-content-center">
-                        <li class="nav-item">   
-                            <a class="nav-link active menu-blk" href="{{ route('about-us') }}"><i class="fa-solid fa-id-card white me-3"></i> About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-blk" href="{{ route('terms-and-conditions') }}"><img src="{{ url('assets/images/terms-pink-icon.svg') }}" class="img-fluid me-3" alt="terms" /> Terms & Conditions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  menu-blk" href="{{ route('privacy-policy') }}"><i class="fa-solid fa-shield-heart pink me-3"></i> Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="d-flex align-items-start justify-content-center py-5 sp-column">
-                        <div class="col-md-6 col-sp-12">
-                            <img src="{{ url('assets/images/about-1.jpg') }}" class="img-fluid">
-                        </div>
-
-                        <div class="col-md-6 col-sp-12 info-pl">
-                            <h2 class="story-head">Story</h2>
-                            <p class="about-p">
-                                “It’s not our goals that unite us, but the things we do to achieve them. Because although our training grounds and end goals might be different, sweat is our sport. And we’re a team of individuals who know that to go further, we go together. <br><br>
-
-                                Our legacy began in 2012, from a garage in Birmingham, UK with nothing but a sewing machine, a screen-printer and ambitions we had no right to hold. Today, we create the tools that help everyone become their personal best: the clothing you’ll sweat in, the content you’ll find inspiration in and the community you’ll become your best in. <br><br>
-
-                                Our Gymshark family of employees, athletes and followers is now over 10 million strong, with a total social media following of over 18 million and customers in over 230 countries across our 14 online stores. Our employee family is growing too, with over 900 employees across offices in five regions, including Solihull, UK (just outside our hometown) and Denver, Colorado.”
-                            </p>
-                        </div>
-                </div>
-
-                <div class="d-flex align-items-start justify-content-center py-5 sp-column">
-                    <div class="col-md-6 col-sp-12 info-pr">
-                        <h3 class="story-head-2">Info</h3>
-                        <p class="about-p">
-                            "We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-sp-12 info">
-                        <img src="{{ url('assets/images/about-4.png') }}" class="img-fluid">
-                    </div>
-                 </div>
-
-                 
-                <div class="d-flex align-items-start justify-content-center py-5 sp-column">
-                    <div class="col-md-6 col-sp-12">
-                        <img src="{{ url('assets/images/about-2.jpg') }}" class="img-fluid">
-                    </div>
-
-                    <div class="col-md-6 col-sp-12 info-pl">
-                        <h2 class="story-head-2">Everybody will get what they wants </h2>
-                        <p class="about-p">
-                            "Person in charge for this website is  <br>
-                             <span class="top-game">Producer SASAKI-sanr-sasaki@physis-rs.com</span>. We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
-                        </p>
-                    </div>
-                 </div>
-
-                 <div class="d-flex flex-column pb-5">
-                    <div class="col-md-6 col-sp-12">
-                        <h2 class="story-head-2">Join Our Community</h2>
-                        <div class="d-flex pt-3 justify-content-between ">
-                            <p class="story-p me-5">For any enquiry</p>
-                            <a class="story-a"  href="{{route('contact')}}">Click here</a>
-                        </div>
-                    </div>
-                 </div>
-
-            </div>
-            <!-- Right side ends -->
+    <div class="row py-5 px-5">
+        <div class="col-md-4 col-sm-12">
+            <img src="{{ url('assets/images/about-face-3.png') }}" class="img-fluid border-r" alt="terms" />
+        </div>
+        <div class="col-md-4 col-sm-12 sp-pad-3">
+            <img src="{{ url('assets/images/about-face-2.png') }}" class="img-fluid border-r" alt="terms" />
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img src="{{ url('assets/images/about-face-1.png') }}" class="img-fluid border-r" alt="terms" />
         </div>
     </div>
-    <!-- My page ends -->
+
+    <div class="cloud-img">
+        <div class="container">
+            <h2 class="story-head text-center">Story</h2>
+            <p class="about-p">
+                Once upon a time, in the early 1980s, two avid gamers in Japan named Takashi and Yuki realized that there was a huge demand for rare and collectible game items among their fellow gamers. They also noticed that there were no dedicated stores or companies catering to this niche market. Thus, they decided to team up and start their own trading company specializing in rare and vintage game items. <br><br>
+They began their business by acquiring a small collection of rare game cartridges and other gaming memorabilia. They then set up shop in a small storefront in Akihabara, a district in Tokyo known for its electronics and gaming shops. They started advertising their items through gaming magazines and word of mouth, and soon enough, their small store became a hub for collectors and enthusiasts alike. <br><br>
+As their reputation grew, Takashi and Yuki expanded their inventory and began importing rare items from overseas. They also hired more staff to help with the growing demand. Eventually, their company became one of the most respected game item trading companies in Japan, with a reputation for quality items and excellent customer service. And that's how a passion for gaming turned into a successful business venture.
+            </p>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 col-sp-12">
+                <h2 class="story-head">Join Our Community</h2>
+                <div class="d-flex pt-3 justify-content-between ">
+                    <p class="story-p me-5">For any enquiry</p>
+                    <a class="story-a"  href="{{route('contact')}}">Click here</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>    
 </div>
-<!-- Blue section ends -->
+
+<!-- Main section ends -->
 
 @endsection
