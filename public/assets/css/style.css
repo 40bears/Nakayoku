@@ -439,6 +439,11 @@ a:hover {
     background-size: cover;
 }
 
+.cloud-img {
+    background-image: url(/assets/images/about-cloud-2.png);
+    background-size: cover;
+}
+
 .bank-wh {
     background: #232323;
     box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.14);
@@ -1687,9 +1692,15 @@ select.minimal {
 }
 
 .story-head {
-    font-weight: 900;
-    font-size: 110px;
-    color: rgba(29, 38, 45, 0.85);
+    font-weight: 400;
+    font-size: 48px;
+    background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-r {
+    border-radius: 15px;
 }
 
 .story-head-2 {
@@ -2502,7 +2513,7 @@ ul.footer-links li {
     }
 
     .story-head {
-        font-size: 70px;
+        font-size: 40px;
     }
 
     .story-head-2 {
@@ -2531,6 +2542,11 @@ ul.footer-links li {
     .sp-pad {
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+
+    .sp-pad-3 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .signup-h3,
