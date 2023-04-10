@@ -38,13 +38,32 @@
 
         <!-- Price filter starts -->
         <div class="col-md-12 col-sm-12">
-        <div class="d-flex flex-row pb-5 justify-content-between f-column">
+        <div class="d-flex flex-row justify-content-between f-column">
 
             <!-- Checkbox starts -->
             <div class="d-flex justify-content-center align-items-center">
-                <p class="keyword-p">ALL</p>
+                <!-- <p class="keyword-p">ALL</p> -->
                 <ul class="ps-0 left-menu d-flex justify-content-center align-items-center">
-                    <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}">
+                    <div class="carousal-nav mx-1 row tab" >
+                        <!-- <button class="col tablinks" id="tablinks" onclick="viewCollections(this)"> -->
+                        <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'item'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
+                            <img src="{{ url('assets/images/TopPageImages/itemsIcon.svg') }}" alt="items" loading="lazy">
+                            Items
+                        </a>
+                        <!-- </button> -->
+                        <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'account') ? 'isActive' : '' }}" id="tablinks">
+                            <img src="{{ url('assets/images/TopPageImages/accountIcon.svg') }}" alt="account" loading="lazy">
+                            Account
+                        </a>
+                        <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'currency'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'currency') ? 'isActive' : '' }}" id="tablinks">
+                            <img src="{{ url('assets/images/TopPageImages/currencyIcon.svg') }}" alt="currency" loading="lazy">
+                            Currency
+                        </a>
+                        <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
+                                Show all
+                        </a>
+                    </div>
+                    <!-- <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}">
                         <li class="border-nav border-t ps-3 py-2 {{str_contains(url()->current(), 'account') ? 'current-page' : ''}}">
                             <div class="d-flex justify-content-between"> 
                                ACCOUNT  <span>({{$accounts}})</span>
@@ -64,7 +83,7 @@
                                 ITEM  <span class="ps-5">({{$items}})</span>
                             </div>
                         </li>
-                    </a>
+                    </a> -->
                 </ul>
                 {{-- <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="account">
@@ -96,20 +115,48 @@
             </div>    
              <!-- Checkbox ends -->
 
-            <div class="p-right">
-                <p class="keyword-p pt-3">Keyword filters</p>
+            <div class="p-right d-flex ">
+                <!-- <p class="keyword-p pt-3">Keyword filters</p> -->
                 <form action="{{ route('view-products-search', [ 'id' => $game->id ] ) }}">
 
-                    <div class="search-div">
+                    <div class="search-div w-100">
                         <input type="text" class="searchTerm" name="search_product" placeholder="GRAND THEFT AUTO V" value="{{ request()->get('search_product')  }}" />
                         <button type="submit" class="searchButton">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
                 </form>
+                <form action="" class="time-dropdown w-50">
+                    <select class="dropdown minimal select-platform change_platform w-100 pt-0" id="exampleFormControlSelect1" name="change_platform">
+                        <option>Change Platform</option>
+                        @foreach($devices as $device)
+                        @if(count($device->games) != 0)
+                        @foreach($device->games as $game)
+                        <option value="{{$game->id}}">{{Str::upper($device->name)}}</option>
+                        @endforeach
+                        @endif
+                        @endforeach
+                    </select>
+                </form>
+
+                <div class="d-flex">
+                    <a class="w-100 go" id="search-filter-btn">GO</a>
+                    <!-- <a href="" class="d-flex justify-content-center align-items-center col tablinks isActive" id="defaultOpen">GO</a> -->
+                </div>
             </div>
 
-            <div class=" width-100 padding-tb">
+
+            <!-- <div class="time-dropdown">
+                  <select name="platform" id="cars" class="dropdown">
+                    <option value="PS5">PS5</option>
+                    <option value="PS4">PS4</option>
+                    <option value="Last 6 hours">Last 6 hours</option>
+                  </select>
+                </div> -->
+
+            
+
+            <!-- <div class=" width-100 padding-tb">
                 <p class="keyword-p pt-4">Price Range Filters</p>
 
                 @if(str_contains(url()->current(), 'account'))
@@ -170,10 +217,8 @@
                         </form>
                     </div>
                 </form>
-            </div>
-            <div class="d-flex pt-4">
-                <a class="w-100 go" id="search-filter-btn">GO</a>
-            </div>
+            </div> -->
+            
         </div>
         <!-- Price filter ends -->
 
