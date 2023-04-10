@@ -336,6 +336,19 @@ a:hover {
     object-fit: cover;
 }
 
+#search-filter-btn{
+    background: #272727;
+    border-radius: 8px;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.add-game-background{
+    background-image: url('../images/add-game-bg.png');
+    background-size: 100% 100%;
+}
+
 .error-p {
     font-weight: 400;
     font-size: 12px;
