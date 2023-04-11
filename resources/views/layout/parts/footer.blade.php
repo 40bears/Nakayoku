@@ -11,7 +11,7 @@
               <p class="lh-p">info@sample-email.com.</p>
             </ul> --}}
           </div>
-          <div class="w-20">
+          <div class="w-20 sp-padtb">
             <ul class="footer-links sp-padl">
               <h4 class="mb-0">Marketplace</h4>
               <li><a href="{{ route('about-us') }}">About Us</a></li>

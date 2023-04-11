@@ -22,6 +22,16 @@
                         <nav id="navbar_top" class="navbar">
                             <div class="container header sp-pad">
                                 <div class="header-left">
+
+                                     {{-- sp menu starts--}}
+                                     <div class="menu-outer">
+                                        <span class="line first"></span>
+                                        <span class="line second"></span>
+                                        <span class="line third"></span>
+                                        <span class="m-name m-close msb">back</span>
+                                    </div>
+                                    {{-- sp menu ends --}}
+
                                     <a href="/"> <img src="{{ url('assets/images/Nakayoku-logo.svg') }}" alt="logo"></a>    
                                     <a class="nav-link view-2 d-md-none d-sm-block" href="{{route('add-product')}}">SELL</a>
                                     <div id="navbarNav" class="display">
@@ -249,6 +259,58 @@
     </div>
     {{-- Modal ends --}}
 
+      {{-- sp menu open starts --}}
+      <div class="menu-area">
+        <div class="menu-container">
+          <nav class="pt-3 sp-nav">
+            <ul>
+              <li>
+                <a class="navbar-menus nav-link" href="/">
+                  <i class="fa-solid fa-house pe-4"></i>Home
+                </a></li>
+              <li>
+                <a class="navbar-menus nav-link" data-toggle="modal" data-target="#basicModal">
+                    <img src="{{ url('assets/images/currency.svg') }}" class="img-fluid pe-4" alt="currency">
+                    {{Auth::user() ? Auth::user()->base_currency : Session::get('base_currency')}}
+                </a>
+                </li>
+                {{-- <li><a class="navbar-menus nav-link" href="#">Settings</a></li> --}}
+                <li>
+                    <a class="navbar-menus nav-link" href="{{ route('notifications') }}">
+                        <i class="fa-solid fa-message pe-4"></i>Notifications
+                    </a>
+                </li>
+                <hr class="pb-4">
+                <li>
+                    <a class="navbar-menus nav-link" href="{{ route('all-games') }}">
+                        <img src="{{ url('assets/images/game-icon.svg') }}" alt="game" class="pe-4">Games
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-menus nav-link" href="{{ route('view-my-page') }}">
+                        <i class="fa-regular fa-user pe-4"></i>My Page
+                    </a>
+                </li>
+                <hr class="pb-4">
+                @if(!Auth::user())
+                <li>
+                    <a class="navbar-menus nav-link" href="{{ route('login') }}">
+                        <img src="{{ url('assets/images/signin-icon.svg') }}" alt="signin" class="pe-4">Sign In
+                    </a>
+                </li>
+                @else
+                <li>
+                    <a class="navbar-menus nav-link" href="{{ route('logout') }}">
+                        <img src="{{ url('assets/images/signin-icon.svg') }}" alt="signout" class="pe-4">Sign Out
+                    </a>
+                </li>
+                @endif
+            </ul>
+          </nav>
+        </div>
+      </div>
+    {{-- sp menu open ends --}}
+
     <!-- Blue section starts -->
     <div class="container-fluid px-0 bg-lgreen padt-6">
 
@@ -311,156 +373,6 @@
     <!-- Footer starts -->
     @include('layout.parts.footer')
     <!-- Footer ends -->
-
-    <!-- Fixed bottom menu starts -->
-    <div id="bottom-fix">
-        <div class="d-flex justify-content-around align-items-center mt-1">
-            <a href="/">
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <i class="fa-solid fa-house c-green"></i>
-                    <p class="bottom-menu">Top</p>
-                </div>
-            </a>
-            <a href="{{route('add-product')}}">
-                <div class="d-flex flex-column align-items-center  justify-content-center">
-                    <i class="fa-solid fa-gamepad c-green"></i>
-                    <p class="bottom-menu">Sell</p>
-                </div>
-            </a>
-            <a href="{{ route('notifications') }}">
-                <div class="d-flex flex-column align-items-center  justify-content-center">
-                    <i class="fa-solid fa-bell c-green"></i>
-                    <p class="bottom-menu">Notification</p>
-                </div>
-            </a>
-            <a href="#" class="bottom-a">
-                <div class="d-flex flex-column align-items-center  justify-content-center">
-                    <i class="fa-solid fa-bars c-green"></i>
-                    <p class="bottom-menu">Menu</p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="dropdown-bottom d-none">
-        <ul class="dropdown-content">
-            <li class="bg-green border-radius">
-                @if(Auth::user())
-                <a href="{{ route('profile-page', ['id' => Auth::id()] ) }}" class="p-0">
-                    <div class="d-flex justify-content-between align-items-center mx-3">
-                        <div class="d-flex py-3">
-                            @if(Auth::user() && Auth::user()->profile_picture != null)
-                            <img src="{{ url('storage/uploads/' . Auth::user()->profile_picture) }}" class="align-self-center img-fluid dropdown-profile-img-w me-2" alt="games" />
-                            @else
-                            <img src="{{ url('assets/images/profile-new.svg') }}" class="align-self-center img-fluid dropdown-profile-img me-2" alt="games" />
-                            @endif
-
-                            <div class="d-flex flex-column ps-2">
-                                @if(Auth::user() && Auth::user()->display_name != null)
-                                <p class="text-start name pb-1">{{Auth::user()->display_name}}</p>
-                                @else
-                                <p class="text-start name pb-1">{{Auth::user()->first_name . ' ' . Auth::user()->last_name}}</p>
-                                @endif
-                                <div class="d-flex justify-content-around align-items-center">
-                                    @for ($i = 1; $i
-                                    <= Auth::user()->user_rating; $i++) <img src="{{ url('assets/images/star-solid-green.svg') }}" class="img-fluid" alt="rating" />
-                                        @endfor
-                                        @for ($j = 1; $j
-                                        <= ( 5 - Auth::user()->user_rating); $j++) <img src="{{ url('assets/images/rating-gray.png') }}" class="img-fluid" alt="rating" />
-                                            @endfor
-                                            <span class="rating-top">{{showUserRatingPercentage(Auth::id())}}% ({{Auth::user()->total_ratings}})</span>
-                                </div>
-                                <div class="d-flex justify-content-around align-items-center">
-                                    @if(Auth::user()->document_verification == 'VERIFIED')
-                                    <img src="{{ url('assets/images/identity-confirm.svg') }}" class="img-fluid me-2" alt="games" />
-                                    <p class="identity mb-0">Identity confirmed</p>
-                                    @else
-                                    <img src="{{ url('assets/images/cancel.svg') }}" class="img-fluid me-2" alt="games" />
-                                    <p class="identity mb-0">Identity not confirmed</p>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-                        <img src="{{ url('assets/images/white-arrow.svg') }}" class="img-fluid" alt="goback" />
-                    </div>
-                    {{-- <hr /> --}}
-                </a>
-                @endif
-            </li>
-            <li>
-                <a href="{{ route('view-my-page') }}" class="drop-menu">
-                    <div class="d-flex justify-content-between me-1 ms-2">
-                        <div class="d-flex">
-                            <img src="{{ url('assets/images/page-icon.svg') }}" class="img-fluid me-3">
-                            My Page
-                        </div>
-                        <img src="{{ url('assets/images/green-arrow.svg') }}" class="img-fluid" alt="goback" />
-                    </div>
-                </a>
-                <hr class="drop-hr">
-            </li>
-            <li>
-                <a href="{{ route('currently-on-display') }}" class="drop-menu">
-                    <div class="d-flex justify-content-between me-1 ms-2">
-                        <div class="d-flex">
-                            <img src="{{ url('assets/images/tv-icon.svg') }}" class="img-fluid me-3">
-                            Currently on display
-                        </div>
-                        <img src="{{ url('assets/images/green-arrow.svg') }}" class="img-fluid" alt="goback" />
-                    </div>
-                </a>
-                <hr class="drop-hr">
-            </li>
-            <li>
-                <a href="{{ route('view-interested-products') }}" class="drop-menu">
-                    <div class="d-flex justify-content-between me-1 ms-2">
-                        <div class="d-flex">
-                            <img src="{{ url('assets/images/interested-items.svg') }}" class="img-fluid me-3">
-                            Interested Items
-                        </div>
-                        <img src="{{ url('assets/images/green-arrow.svg') }}" class="img-fluid" alt="goback" />
-                    </div>
-                </a>
-                <hr class="drop-hr">
-            </li>
-
-            @if(Auth::user() && Auth::user()->user_type == 'admin')
-            <li>
-                <a href="{{ route('add-game') }}" class="drop-menu">
-                    <div class="d-flex justify-content-between me-1 ms-2">
-                        <div class="d-flex">
-                            <img src="{{ url('assets/images/add-game.svg') }}" class="img-fluid me-3">
-                            Add Game
-                        </div>
-                        <img src="{{ url('assets/images/green-arrow.svg') }}" class="img-fluid" alt="goback" />
-                    </div>
-                </a>
-                <hr class="drop-hr">
-            </li>
-            @endif
-
-            @if(Auth::user())
-            <li>
-                <a href="{{ route('logout') }}" class="drop-menu green">
-                    <div class="d-flex">
-                        <img src="{{ url('assets/images/sign-out.svg') }}" class="img-fluid me-3 ms-2">
-                        Sign Out
-                    </div>
-                </a>
-            </li>
-            @else
-            <li>
-                <a class="green" href="{{ route('login') }}">
-                    <div class="d-flex">
-                        <img src="{{ url('assets/images/sign-out.svg') }}" class="img-fluid me-3 ms-2">
-                        Sign in
-                    </div>
-                </a>
-            </li>
-            @endif
-        </ul>
-    </div>
-    <!-- Fixed bottom menu ends -->
 
        {{-- Page proofer starts --}}
     
