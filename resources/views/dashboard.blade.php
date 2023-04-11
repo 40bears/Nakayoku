@@ -7,7 +7,7 @@
       <!-- Ambalika's code starts -->
       <div id="main-open-container" onclick="closeMenu()" class="container-fluid px-0 main-open-container">
       <div class=" container py-4 top-heading-container" style="margin-top: 10rem">
-          <h5 class="top-heading">Discover The Ultimate</h5>
+          <h5 class="top-heading sp-pad6">Discover The Ultimate</h5>
           <h1 class="top-sub-heading">Gaming Marketplace</h1>
       </div>
 

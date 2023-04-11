@@ -8,6 +8,24 @@ window.onload = () => {
     }, 1000);
 };
 
+// sp menu starts
+
+$(".menu-outer").click(function () {
+    $("body").toggleClass("noscroll");
+    $(".menu-area").toggleClass("open-inner");
+    $(".navbar-brand").toggleClass("hide");
+    $(this).toggleClass("open");
+});
+
+const navbarMenus = document.querySelectorAll('.navbar-menus');
+const menuOuter = document.querySelector(".menu-outer");
+
+navbarMenus.forEach((element) => {
+    element.addEventListener('click', function () {
+        menuOuter.click();
+    })
+})
+
 // Cookie concent button functionality
 document.getElementById("agree")?.addEventListener("click", function () {
     document?.getElementById("banner-top").classList.add("fade");
@@ -720,117 +738,117 @@ $(function () {
 });
 
 // HomePage hover images
-    // Carousel 1
-    const carouselOneHoverDiv = document.querySelector(".carousel-1-hover-div");
-    const carouselOneHoverImage = document.querySelector(".carousel-1-hover-image");
-    const carouselOneImages = document.querySelectorAll(".carousel-1-images");
+// Carousel 1
+const carouselOneHoverDiv = document.querySelector(".carousel-1-hover-div");
+const carouselOneHoverImage = document.querySelector(".carousel-1-hover-image");
+const carouselOneImages = document.querySelectorAll(".carousel-1-images");
 
-    carouselOneImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselOneHoverDiv?.classList.remove("hide");
-            carouselOneHoverImage.src = element.src;
-        });
-
-        element?.addEventListener("mouseleave", function(){
-            carouselOneHoverDiv?.classList.add("hide");
-        });
+carouselOneImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselOneHoverDiv?.classList.remove("hide");
+        carouselOneHoverImage.src = element.src;
     });
 
-    // Carousel 2
-    const carouselTwoHoverDiv = document.querySelector(".carousel-2-hover-div");
-    const carouselTwoHoverImage = document.querySelector(".carousel-2-hover-image");
-    const carouselTwoImages = document.querySelectorAll(".carousel-2-images");
+    element?.addEventListener("mouseleave", function () {
+        carouselOneHoverDiv?.classList.add("hide");
+    });
+});
 
-    carouselTwoImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselTwoHoverDiv?.classList.remove("hide");
-            carouselTwoHoverImage.src = element.src;
-        });
+// Carousel 2
+const carouselTwoHoverDiv = document.querySelector(".carousel-2-hover-div");
+const carouselTwoHoverImage = document.querySelector(".carousel-2-hover-image");
+const carouselTwoImages = document.querySelectorAll(".carousel-2-images");
 
-        element?.addEventListener("mouseleave", function(){
-            carouselTwoHoverDiv?.classList.add("hide");
-        });
+carouselTwoImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselTwoHoverDiv?.classList.remove("hide");
+        carouselTwoHoverImage.src = element.src;
     });
 
-    // Carousel 3
-    const carouselThreeHoverDiv = document.querySelector(".carousel-3-hover-div");
-    const carouselThreeHoverImage = document.querySelector(".carousel-3-hover-image");
-    const carouselThreeImages = document.querySelectorAll(".carousel-3-images");
+    element?.addEventListener("mouseleave", function () {
+        carouselTwoHoverDiv?.classList.add("hide");
+    });
+});
 
-    carouselThreeImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselThreeHoverDiv?.classList.remove("hide");
-            carouselThreeHoverImage.src = element.src;
-        });
+// Carousel 3
+const carouselThreeHoverDiv = document.querySelector(".carousel-3-hover-div");
+const carouselThreeHoverImage = document.querySelector(".carousel-3-hover-image");
+const carouselThreeImages = document.querySelectorAll(".carousel-3-images");
 
-        element?.addEventListener("mouseleave", function(){
-            carouselThreeHoverDiv?.classList.add("hide");
-        });
+carouselThreeImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselThreeHoverDiv?.classList.remove("hide");
+        carouselThreeHoverImage.src = element.src;
     });
 
-    // Carousel 4
-    const carouselFourHoverDiv = document.querySelector(".carousel-4-hover-div");
-    const carouselFourHoverImage = document.querySelector(".carousel-4-hover-image");
-    const carouselFourImages = document.querySelectorAll(".carousel-4-images");
+    element?.addEventListener("mouseleave", function () {
+        carouselThreeHoverDiv?.classList.add("hide");
+    });
+});
 
-    carouselFourImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselFourHoverDiv?.classList.remove("hide");
-            carouselFourHoverImage.src = element.src;
-        });
+// Carousel 4
+const carouselFourHoverDiv = document.querySelector(".carousel-4-hover-div");
+const carouselFourHoverImage = document.querySelector(".carousel-4-hover-image");
+const carouselFourImages = document.querySelectorAll(".carousel-4-images");
 
-        element?.addEventListener("mouseleave", function(){
-            carouselFourHoverDiv?.classList.add("hide");
-        });
+carouselFourImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselFourHoverDiv?.classList.remove("hide");
+        carouselFourHoverImage.src = element.src;
     });
 
-    // Carousel 5
-    const carouselFiveHoverDiv = document.querySelector(".carousel-5-hover-div");
-    const carouselFiveHoverImage = document.querySelector(".carousel-5-hover-image");
-    const carouselFiveImages = document.querySelectorAll(".carousel-5-images");
+    element?.addEventListener("mouseleave", function () {
+        carouselFourHoverDiv?.classList.add("hide");
+    });
+});
 
-    carouselFiveImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselFiveHoverDiv?.classList.remove("hide");
-            carouselFiveHoverImage.src = element.src;
-        });
+// Carousel 5
+const carouselFiveHoverDiv = document.querySelector(".carousel-5-hover-div");
+const carouselFiveHoverImage = document.querySelector(".carousel-5-hover-image");
+const carouselFiveImages = document.querySelectorAll(".carousel-5-images");
 
-        element?.addEventListener("mouseleave", function(){
-            carouselFiveHoverDiv?.classList.add("hide");
-        });
+carouselFiveImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselFiveHoverDiv?.classList.remove("hide");
+        carouselFiveHoverImage.src = element.src;
     });
 
-    // Carousel 6
-    const carouselSixHoverDiv = document.querySelector(".carousel-6-hover-div");
-    const carouselSixHoverImage = document.querySelector(".carousel-6-hover-image");
-    const carouselSixImages = document.querySelectorAll(".carousel-6-images");
+    element?.addEventListener("mouseleave", function () {
+        carouselFiveHoverDiv?.classList.add("hide");
+    });
+});
 
-    carouselSixImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselSixHoverDiv?.classList.remove("hide");
-            carouselSixHoverImage.src = element.src;
-        });
+// Carousel 6
+const carouselSixHoverDiv = document.querySelector(".carousel-6-hover-div");
+const carouselSixHoverImage = document.querySelector(".carousel-6-hover-image");
+const carouselSixImages = document.querySelectorAll(".carousel-6-images");
 
-        element?.addEventListener("mouseleave", function(){
-            carouselSixHoverDiv?.classList.add("hide");
-        });
+carouselSixImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselSixHoverDiv?.classList.remove("hide");
+        carouselSixHoverImage.src = element.src;
     });
 
-    // Carousel 7
-    const carouselSevenHoverDiv = document.querySelector(".carousel-7-hover-div");
-    const carouselSevenHoverImage = document.querySelector(".carousel-7-hover-image");
-    const carouselSevenImages = document.querySelectorAll(".carousel-7-images");
-
-    carouselSevenImages?.forEach((element) => {
-        element?.addEventListener("mouseenter", function(){
-            carouselSevenHoverDiv?.classList.remove("hide");
-            carouselSevenHoverImage.src = element.src;
-        });
-
-        element?.addEventListener("mouseleave", function(){
-            carouselSevenHoverDiv?.classList.add("hide");
-        });
+    element?.addEventListener("mouseleave", function () {
+        carouselSixHoverDiv?.classList.add("hide");
     });
+});
+
+// Carousel 7
+const carouselSevenHoverDiv = document.querySelector(".carousel-7-hover-div");
+const carouselSevenHoverImage = document.querySelector(".carousel-7-hover-image");
+const carouselSevenImages = document.querySelectorAll(".carousel-7-images");
+
+carouselSevenImages?.forEach((element) => {
+    element?.addEventListener("mouseenter", function () {
+        carouselSevenHoverDiv?.classList.remove("hide");
+        carouselSevenHoverImage.src = element.src;
+    });
+
+    element?.addEventListener("mouseleave", function () {
+        carouselSevenHoverDiv?.classList.add("hide");
+    });
+});
 
 // Dashboard Fixed Navbar
 
@@ -842,7 +860,7 @@ const afterScrollBtn1 = document.querySelector(".after-scroll-btn-1");
 const afterScrollBtn2 = document.querySelector(".after-scroll-btn-2");
 
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         navbarTop?.classList.remove("position-absolute");
         navbarTop?.classList.add("position-fixed");
@@ -894,48 +912,48 @@ function viewCollections(elmnt) {
     var i, tabcontent;
     tabcontent = document.getElementsByClassName("tablinks");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].classList.remove('isActive');;
+        tabcontent[i].classList.remove('isActive');;
     }
     elmnt.classList.add("isActive");
-  }
-  // Get the element with id="defaultOpen" and click on it
+}
+// Get the element with id="defaultOpen" and click on it
 //   document.getElementById("defaultOpen").click();
-  
-  $('.slider')?.slick({
+
+$('.slider')?.slick({
     infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 3,
-    variableWidth:true,
+    variableWidth: true,
     nextArrow: '<span class="next-arrow"><i class="fa-solid fa-angle-right"></i></span>',
     prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-angle-left"></i></span>',
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
     ]
-  });
-  
-  var isMenuOpen = false;
-  function menuToggle() {
+});
+
+var isMenuOpen = false;
+function menuToggle() {
     const hamburger = document.getElementById("nav-button");
     const nav = document.getElementById("navbar-parent");
     const headerLeft = document.getElementById("header-left");
@@ -945,33 +963,33 @@ function viewCollections(elmnt) {
     headerLeft.classList.toggle('flex-column');
     hamburger.classList.toggle('d-none');
     isMenuOpen = true;
-  }
-  
-  const containerFluid = document.getElementById("container-fluid");
-  function removePaddingClass() {
+}
+
+const containerFluid = document.getElementById("container-fluid");
+function removePaddingClass() {
     containerFluid.classList.remove('px-5');
     containerFluid.classList.remove('py-5');
-  }
-  function addPaddingClass() {
+}
+function addPaddingClass() {
     containerFluid.classList.add('px-5');
     containerFluid.classList.add('py-5');
-  }
-  if($(window).width() < 600) {
+}
+if ($(window).width() < 600) {
     removePaddingClass();
-  }
-  
-  $(window).resize(function(){
-    if($(window).width() < 600) {
-      removePaddingClass();
-    }else {
-      addPaddingClass();
+}
+
+$(window).resize(function () {
+    if ($(window).width() < 600) {
+        removePaddingClass();
+    } else {
+        addPaddingClass();
     }
-  })
-  
-  function closeMenu() {
-  if(isMenuOpen === true) {
-      menuToggle();
-  }
-  return;
-  }
+})
+
+function closeMenu() {
+    if (isMenuOpen === true) {
+        menuToggle();
+    }
+    return;
+}
 // Ambalika's JS ends
