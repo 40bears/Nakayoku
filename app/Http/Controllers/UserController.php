@@ -67,22 +67,40 @@ class UserController extends Controller
         if ($request->isMethod('get')) {
             return view('mypage.setting.identityVerificationDocument');
         } else {
-            $request->validate([
-                'image1' => 'required',
-                'image3' => 'required'
-            ]);
+            if($request['document-1-delete'] == true){
+                $request->validate([
+                    'image1' => 'required',
+                ]);
+            }
+            if($request['document-2-delete'] == true){
+                $request->validate([
+                    'image2' => 'required',
+                ]);
+            }
+            if($request['document-3-delete'] == true){
+                $request->validate([
+                    'image3' => 'required'
+                ]);
+            }
             $user = User::where('id', $id)->first();
-            if (!empty($request->file('image'))) {
-                $image = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
-                $request->file('image')->storeAs('uploads', $image, 'public');
+            if (!empty($request->file('image1'))) {
+                $image = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image1')->getClientOriginalExtension();
+                $request->file('image1')->storeAs('uploads', $image, 'public');
 
                 $user->document = $image;
             }
-            if (!empty($request->file('image2'))) {
-                $image2 = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image2')->getClientOriginalExtension();
-                $request->file('image2')->storeAs('uploads', $image2, 'public');
-
-                $user->document_two = $image2;
+            if($request['document_type'] == "driving_license"){
+                $request->validate([
+                    'image2' => 'required',
+                ]);
+                if (!empty($request->file('image2'))) {
+                    $image2 = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image2')->getClientOriginalExtension();
+                    $request->file('image2')->storeAs('uploads', $image2, 'public');
+    
+                    $user->document_two = $image2;
+                }
+            } else {
+                $user->document_two = null;
             }
             if (!empty($request->file('image3'))) {
                 $image3 = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image3')->getClientOriginalExtension();

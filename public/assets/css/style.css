@@ -555,31 +555,60 @@ a:hover {
 }
 
 .identity-div.active {
-    border: 1px solid #005C46;
+    border: 1px solid #F8F7F8;
 }
 
 .identity-div {
-    width: 207px;
-    height: 165px;
+    /* width: 207px; */
+    width: 25%;
+    /* height: 165px; */
+    height: auto;
     border-radius: 5px;
     border: 1px solid #acacac;
 }
 
+.passport-icon-div,
+.license-icon-div{
+    background: #272727;
+    border-radius: 5px; 
+    width:100%;
+}
+
+.id-select-passport-div,
+.id-select-driving-license-div{
+    cursor: pointer;
+}
+
+.active-document-border{
+    width:5px;height:30px; 
+    background-color:#E42575;
+    margin-right:0.5rem;
+}
+
 .passport {
-    width: 86px;
-    height: 98px;
+    /* width: 86px; */
+    height: 30px;
     color: #AAAAAA;
 }
 
 .passport.active,
 .license.active {
-    color: #005C46;
+    color: #E42575;
 }
 
 .license {
-    width: 90px;
-    height: 80px;
+    /* width: 90px; */
+    height: 30px;
     color: #AAAAAA;
+}
+
+.residence-certificate-label{
+    align-self: center;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    color: #F8F7F8;
 }
 
 .account-p1 {
@@ -2246,8 +2275,8 @@ hr {
 }
 
 .upload-img {
-    width: 20px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
 }
 
 .request-a {

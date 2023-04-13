@@ -11,7 +11,7 @@
         </ul>
     </div>
     <div class="container d-flex flex-column justify-content-center align-items-center plogin">
-        <h3 class="border-0 pb-5">Identity Verification Submitted</h3>
+        <h3 class="border-0 pb-5 text-light">Identity Verification Submitted</h3>
     </div>
 </div>
 <!-- Rating thanks ends -->

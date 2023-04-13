@@ -5,18 +5,34 @@
 
 {{-- Identity Verification Document starts --}}
 
-<div class="container-fluid px-0 bg-lgreen py-5">
+<div class="container-fluid px-0 bg-lgreen pb-5 padt-6">
+<div class="row">
+    <div class="col-md-3 col-12 py-5 px-5">
+        <div class="d-flex justify-content-start align-items-center id-select-passport-div">
+            <div class="{{$user->document_type == 'passport' ? 'active-document-border' : ''}} " style=""></div>
+            <div class="d-flex justify-content-start align-items-center ps-2 pe-4 py-1 passport-icon-div">
+                <i class="fa-solid fa-passport passport {{$user->document_type == 'passport' ? 'active' : ''}}"></i>
+                <p class="text-light mb-0 ms-3">Passport</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-start align-items-center mt-3 id-select-driving-license-div">
+            <div class="{{$user->document_type == 'driving_license' ? 'active-document-border' : ''}} " style=""></div>
+            <div class="d-flex justify-content-start align-items-center ps-2 pe-4 py-1 license-icon-div">
+                <i class="fa-solid fa-id-card license {{$user->document_type == 'driving_license' ? 'active' : ''}}"></i>
+                <p class="text-light mb-0 ms-3">Driving License</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9 col-12 container d-flex flex-column justify-content-center align-items-center pb-5 px-5 bank-info padt-5">
 
-    <div class="container form-container-ID d-flex flex-column justify-content-center align-items-center pb-5 bank-info padt-5">
-
-        <h3 class="border-0">Identity Verification</h3>
-
-        <p class="profile-p">Your photo ID and actions captured during the ID verification process may constitute biometric data. Please see our Privacy Policy for more information about how we store and use your biometric data. Select ID type to proceed.</p>
+    <h3 class="signup-h3">IDENTITY VERIFICATION</h3>
+    
+    <p class="select-game pt-4">Your photo ID and actions captured during the ID verification process may constitute biometric data. Please see our Privacy Policy for more information about how we store and use your biometric data. Select ID type to proceed.</p>
 
         <input type="hidden" value="{{$user->document_type}}" id="document_type" name="document_type" />
 
         <!-- {{-- Radio starts --}} -->
-        <div class="d-flex flex-column sp-identity justify-content-around pb-5">
+        <!-- <div class="d-flex flex-column sp-identity justify-content-around pb-5">
             <div class="radiobuttons d-flex align-items-center align-self-center text-center pe-4">
                 <div class="rdio rdio-primary radio-inline d-flex pe-4">
                     <input name="radio" value="1" id="radio1" type="radio" {{$user->document_type == 'passport' ? 'checked' : ''}}>
@@ -46,7 +62,7 @@
                         <label for="radio2" class="signup-lbl {{$user->document_type == 'driving_license' ? 'lbl active' : ''}}" id="radio2-label">Driver’s License</label>
                     </div>
             </div>
-        </div>
+        </div> -->
         <!-- {{-- Radio ends --}} -->
 
         <!-- Image select starts -->
@@ -74,17 +90,17 @@
         <!-- Image select ends -->
 
         <div class="radiobuttons d-flex flex-column align-items-center">
-            <div class="pb-3">
-                <label for="radio3" class="buy-p lbl active" id="radio3-label">Residence Certificate</label>
-            </div>
-            <div class="rdio rdio-primary radio-inline pb-4" for="radio3" id="radio3-border">
-                <div class="d-flex justify-content-center align-items-center identity-div active">
-                    <img src="{{ url('assets/images/others.svg') }}" class="img-fluid" alt="others" />
+        <div class="d-flex sp-identity justify-content-around pb-5">
+                <div class="radiobuttons d-flex align-items-center align-self-center">
+                    <div class="d-flex rdio rdio-primary radio-inline pb-4" for="radio3" id="radio3-border">
+                        <div class="d-flex justify-content-center align-items-center identity-div active p-2">
+                            <img src="{{ url('assets/images/residence-certificate-icon.png') }}" class="img-fluid" alt="others" />
+                        </div>
+                        <div class="residence-certificate-label">
+                            <label for="radio3" class="buy-p lbl active " id="radio3-label">Certificate of residence</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="rdio rdio-primary radio-inline d-flex">
-                <!-- <input name="radio" value="3" id="radio3" type="radio">
-                    <label for="radio3" class="disabled"></label> -->
             </div>
         </div>
 
@@ -116,6 +132,7 @@
         </div>
         @endif
     </div>
+</div>
 
 </div>
 {{-- Identity Verification Document ends --}}
