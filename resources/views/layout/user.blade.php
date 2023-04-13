@@ -380,7 +380,7 @@
                             </a>
                             <a href="{{ route('cii-bank-accounts') }}">
                                 <li class="ps-5 py-2 {{ Route::is('cii-bank-accounts') || Route::is('edit-cii-bank-account') || Route::is('add-cii-bank-account') ? 'current-page' : '' }}">
-                                    CII Bank Details
+                                    Bank Details
                                 </li>
                             </a>
                             <a href="{{ route('transactions-management') }}">
