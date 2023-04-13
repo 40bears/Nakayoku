@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="col-8 my-3">
+        <div class="col-8 my-3 mx-4">
           <!-- searchbar -->
           <!-- <form class="d-flex w-100 display" action="{{ route('dashboard-search') }}" method="POST">
             @csrf
