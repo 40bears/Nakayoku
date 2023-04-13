@@ -4,14 +4,6 @@
 
 <!-- Blue section starts -->
 <div class="container-fluid px-0 bg-lgreen padt-6">
-  {{-- <div class="container padt-6">
-    <ul class="breadcrumb menu menu1">
-      <li class="breadcrumb-item"><a href="/">TOP</a></li>
-      <li class="breadcrumb-item"><a href="{{ route('view-my-page') }}">My Page</a></li>
-      <li class="breadcrumb-item"><a href="{{ route('view-purchased-products') }}">Purchased items</a></li>
-      <li class="breadcrumb-item"><a href="{{ route('view-purchased-products-details', [  'id' => $transaction->id] ) }}">{{$transaction->id}}</a></li>
-    </ul>
-  </div> --}}
 
   {{-- Container starts --}}
   <div class="container pb-5">
@@ -35,13 +27,13 @@
       {{-- Left side starts --}}
       <div class="col-md-6 col-sm-12 py-5">
 
-        <div class="position-relative mb-5">
+        <div class="mb-3">
           @if($transaction->products->image != null)
           <img src="{{ url('storage/uploads/' . $transaction->products->image) }}" class="img-fluid" alt="games" />
           @else
           <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid" alt="games" />
           @endif
-          <div class="rating-div pb-4">
+          <div class="mt-3">
               <p class="rating-game mb-0">{{Str::upper($transaction->games->name)}} {{Str::upper($transaction->products->product_type)}}</p>
               <p class="rating-amount mb-0 mt-2" id="textLabel">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($transaction->amount))}}</p>
           </div>
@@ -83,47 +75,61 @@
       {{-- Right side starts --}}
       <div class="col-md-6 col-sm-12 ps-5 py-5 common-space">
         <h4 class="pur-head pb-4">Seller Information</h4>
-        <div class="profile-div wd-50">
-          <div class="d-flex align-items-center justify-content-center">
-              <div>
+        <div class="profile-div">
+          <div class="d-flex align-items-start justify-content-start">
+              <div class="d-flex justify-content-start">
                   @if(Auth::user() && Auth::user()->profile_picture != null)
-                  <img src="{{ url('storage/uploads/' . Auth::user()->profile_picture) }}" class="align-self-center img-fluid dropdown-profile-img me-2" alt="games" />
+                  <img src="{{ url('storage/uploads/' . Auth::user()->profile_picture) }}" class="align-self-center img-fluid dropdown-profile-img me-5" alt="games" />
                   @else
-                  <img src="{{ url('assets/images/default-profile-picture.png') }}" class="align-self-center img-fluid profile-img me-2" alt="games" />
+                  <img src="{{ url('assets/images/default-profile-picture.png') }}" class="align-self-center img-fluid profile-img me-5" alt="games" />
                   @endif
               </div>
               <div>
-                  <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-space pt-2">
                       <div class="me-2">
                           @if(Auth::user() && Auth::user()->display_name != null)
-                          <p class="mb-0">{{Auth::user()->display_name}}</p>
+                          <p class="mb-0 signup-p text-capitalize">{{Auth::user()->display_name}}</p>
                           @else
-                          <p class="mb-0">{{Auth::user()->first_name}}</p>
+                          <p class="mb-0 signup-p text-capitalize">{{Auth::user()->first_name}}</p>
                           @endif
                       </div>
                       <div>
                           @if(Auth::user()->document_verification == 'VERIFIED')
-                          <img src="{{ url('assets/images/identity-confirm.svg') }}" class="img-fluid" alt="games" />
+                          <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid mb-3" alt="games" />
                           @else
-                          <img src="{{ url('assets/images/cancel.svg') }}" class="img-fluid me-2" alt="games" />
+                          <img src="{{ url('assets/images/x-icon.svg') }}" class="img-fluid mb-3" alt="games" />
                           @endif
                       </div>
                   </div>
-                  <div class="d-flex justify-content-space pt-3">
-                      <img src="{{ url('assets/images/star-solid-green.svg') }}" class="img-fluid me-2" alt="rating" />
-                       <span class="">{{showUserRatingPercentage(Auth::id())}}% ({{Auth::user()->total_ratings}})</span>
+                  <div class="d-flex justify-content-space pt-1">
+                    @for ($i = 1; $i
+                    <= Auth::user()->user_rating; $i++) <i class="fa-solid fa-star pink pe-2"></i> 
+                        @endfor
+                        @for ($j = 1; $j
+                        <= ( 5 - Auth::user()->user_rating); $j++) <i class="fa-solid fa-star gray pe-2"></i> 
+                            @endfor
+                            <a class="signup-lbl">{{showUserRatingPercentage(Auth::id())}}% ({{Auth::user()->total_ratings}})</a>
                   </div>
+                  <div class="pt-1">
+                    @if(Auth::user()->document_verification == 'VERIFIED')
+                    {{-- <img src="{{ url('assets/images/identity-confirm.svg') }}" class="img-fluid" alt="games" /> --}}
+                    <p class="profile-p mb-0">Identity Confirmed</p>
+                    @else
+                    {{-- <img src="{{ url('assets/images/cancel.svg') }}" class="img-fluid me-2" alt="games" /> --}}
+                    <p class="profile-p mb-0">Identity Not Confirmed</p>
+                    @endif
+                </div>
               </div>
           </div>
-          <div class="d-flex justify-content-center align-items-center pt-4">
+          {{-- <div class="d-flex justify-content-center align-items-center">
               @if(Auth::user()->document_verification == 'VERIFIED')
               <img src="{{ url('assets/images/identity-confirm.svg') }}" class="img-fluid" alt="games" />
-              <p class="profile-p mb-0">Identity confirmed</p>
+              <p class="profile-p mb-0">Identity Confirmed</p>
               @else
               <img src="{{ url('assets/images/cancel.svg') }}" class="img-fluid me-2" alt="games" />
-              <p class="profile-p mb-0">Identity not confirmed</p>
+              <p class="profile-p mb-0">Identity Not Confirmed</p>
               @endif
-          </div>
+          </div> --}}
       </div>
 
         {{-- <div class="d-flex flex-row justify-content-between py-4">

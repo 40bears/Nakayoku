@@ -83,20 +83,20 @@
                                                                             @endif
                                                                             <div class="d-flex justify-content-around align-items-center">
                                                                                 @for ($i = 1; $i
-                                                                                <= Auth::user()->user_rating; $i++) <img src="{{ url('assets/images/star-solid-green.svg') }}" class="img-fluid" alt="rating" />
+                                                                                <= Auth::user()->user_rating; $i++) <i class="fa-solid fa-star pink pe-1"></i> 
                                                                                     @endfor
                                                                                     @for ($j = 1; $j
-                                                                                    <= ( 5 - Auth::user()->user_rating); $j++) <img src="{{ url('assets/images/rating-gray.png') }}" class="img-fluid" alt="rating" />
+                                                                                    <= ( 5 - Auth::user()->user_rating); $j++) <i class="fa-solid fa-star gray pe-1"></i> 
                                                                                         @endfor
                                                                                         <span class="rating-top">{{showUserRatingPercentage(Auth::id())}}% ({{Auth::user()->total_ratings}})</span>
                                                                             </div>
-                                                                            <div class="d-flex justify-content-around align-items-center">
+                                                                            <div class="d-flex justify-content-start align-items-center pt-1">
                                                                                 @if(Auth::user()->document_verification == 'VERIFIED')
-                                                                                <img src="{{ url('assets/images/identity-confirm.svg') }}" class="img-fluid" alt="games" />
-                                                                                <p class="identity mb-0">Identity confirmed</p>
+                                                                                <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid me-2" alt="games" />
+                                                                                <p class="identity mb-0">Identity Confirmed</p>
                                                                                 @else
-                                                                                <img src="{{ url('assets/images/cancel.svg') }}" class="img-fluid me-2" alt="games" />
-                                                                                <p class="identity mb-0">Identity not confirmed</p>
+                                                                                <img src="{{ url('assets/images/x-icon.svg') }}" class="img-fluid me-2" alt="games" />
+                                                                                <p class="identity mb-0">Identity Not Confirmed</p>
                                                                                 @endif
                                                                             </div>
                                                                         </div>
@@ -110,8 +110,8 @@
                                                         <li>
                                                             <a href="{{ route('view-my-page') }}" class="drop-menu">
                                                                 <div class="d-flex justify-content-between me-3 ms-4">
-                                                                    <div class="d-flex">
-                                                                        <img src="{{ url('assets/images/page-icon.svg') }}" class="img-fluid me-3">
+                                                                    <div class="d-flex menu-w">
+                                                                        <img src="{{ url('assets/images/page-icon.svg') }}" class="img-fluid me-3 w-11">
                                                                         My Page
                                                                     </div>
                                                                     <img src="{{ url('assets/images/white-arrow.svg') }}" class="img-fluid" alt="goback" />
@@ -122,8 +122,8 @@
                                                         <li>
                                                             <a href="{{ route('currently-on-display') }}" class="drop-menu">
                                                                 <div class="d-flex justify-content-between me-3 ms-4">
-                                                                    <div class="d-flex">
-                                                                        <img src="{{ url('assets/images/tv-icon.svg') }}" class="img-fluid me-3">
+                                                                    <div class="d-flex menu-w">
+                                                                        <img src="{{ url('assets/images/tv-icon.svg') }}" class="img-fluid me-3 w-11">
                                                                         Currently on display
                                                                     </div>
                                                                     <img src="{{ url('assets/images/white-arrow.svg') }}" class="img-fluid" alt="goback" />
@@ -134,8 +134,8 @@
                                                         <li>
                                                             <a href="{{ route('view-interested-products') }}" class="drop-menu">
                                                                 <div class="d-flex justify-content-between me-3 ms-4">
-                                                                    <div class="d-flex">
-                                                                        <img src="{{ url('assets/images/interested-items.svg') }}" class="img-fluid me-3">
+                                                                    <div class="d-flex menu-w">
+                                                                        <img src="{{ url('assets/images/interested-items.svg') }}" class="img-fluid me-3 w-11">
                                                                         Interested Items
                                                                     </div>
                                                                     <img src="{{ url('assets/images/white-arrow.svg') }}" class="img-fluid" alt="goback" />
@@ -148,8 +148,8 @@
                                                         <li>
                                                             <a href="{{ route('add-game') }}" class="drop-menu">
                                                                 <div class="d-flex justify-content-between me-3 ms-4">
-                                                                    <div class="d-flex">
-                                                                        <img src="{{ url('assets/images/add-game.svg') }}" class="img-fluid me-3">
+                                                                    <div class="d-flex menu-w">
+                                                                        <img src="{{ url('assets/images/add-game.svg') }}" class="img-fluid me-3 w-11">
                                                                         Add Game
                                                                     </div>
                                                                     <img src="{{ url('assets/images/white-arrow.svg') }}" class="img-fluid" alt="goback" />
@@ -162,7 +162,7 @@
                                                         @if(Auth::user())
                                                         <li>
                                                             <a href="{{ route('logout') }}" class="drop-menu">
-                                                                <div class="d-flex">
+                                                                <div class="d-flex menu-w">
                                                                     <img src="{{ url('assets/images/sign-out.svg') }}" class="img-fluid me-3 ms-4">
                                                                     Sign Out
                                                                 </div>

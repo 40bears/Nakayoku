@@ -108,6 +108,14 @@ body {
     display: none;
 }
 
+.menu-w {
+    width: 88%;
+}
+
+.w-11 {
+    width: 11%;
+}
+
 .increase:hover,
 .decrease:hover,
 .increase:active,
@@ -402,8 +410,9 @@ a:hover {
 }
 
 .profile-div {
-    background-color: #fff;
+    background-color: #272727;
     padding: 1rem;
+    border-radius: 26px;
 }
 
 .s-head {
@@ -1591,7 +1600,7 @@ select.minimal {
 
 .rating-amount {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 28px;
     color: #F5F7FB;
 }
@@ -1723,7 +1732,7 @@ select.minimal {
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;
-    color: #1D262D;
+    color: #F8F7F8;
 }
 
 .pur-amount {
@@ -2882,9 +2891,9 @@ ul.footer-links li {
     }
 
     .common-space {
-        padding-left: 0 !important;
+        padding-left: 0.5rem !important;
         padding-top: 4rem;
-        padding-right: 0;
+        padding-right: 0.5rem;
     }
 
     .thank-p {

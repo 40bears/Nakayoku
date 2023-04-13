@@ -234,7 +234,7 @@
                                             <br>
                                             This email is to inform you that we have received the payment confirmation from the administrator.<br>
                                             Please continue to use the CII site. <br>
-                                            <span>Click<a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank"> here </a>to go to the website</span>
+                                            <span>Click <a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>

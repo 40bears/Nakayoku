@@ -5,11 +5,11 @@
 <!-- Blue section starts -->
 <div class="container-fluid px-0 bg-lgreen">
     <div class="container padt-6">
-        <ul class="breadcrumb menu menu1">
+        {{-- <ul class="breadcrumb menu menu1">
             <li class="breadcrumb-item"><a href="/">TOP</a></li>
             <li class="breadcrumb-item"><a href="{{ route('all-games') }}">ALL GAMES</a></li>
             <li class="breadcrumb-item"><a href="{{ route('view-products', [ 'id' => $game->id ] ) }}">{{Str::upper($game->name)}}</a></li>
-        </ul>
+        </ul> --}}
         <h2 class="games-head text-center py-5">{{$game->name}}</h2>
         {{-- <p class="detail-p text-center">({{Str::upper($game->devices->name)}})</p> --}}
     </div>
