@@ -427,6 +427,18 @@
         </script>
         <!-- Autocomplete Prediction ends -->
 
+         <!-- Pageproofer section starts-->
+         <script type="text/javascript">
+            (function (d, t) {
+            var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            pp.src = '//app.pageproofer.com/embed/ef059085-7ee9-598f-9742-f0245924ede6';
+            pp.type = 'text/javascript';
+            pp.async = true;
+            s.parentNode.insertBefore(pp, s);
+            })(document, 'script');
+            </script>
+        <!-- Pageproofer section ends-->
+
 </body>
 
 </html>
