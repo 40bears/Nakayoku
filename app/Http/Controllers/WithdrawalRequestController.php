@@ -40,7 +40,7 @@ class WithdrawalRequestController extends Controller
                     $user['to'] = env("MAIL_FROM_ADDRESS");
                     Mail::send('mypage.bank.withdrawalMail', $data, function ($messages) use ($user) {
                         $messages->to($user['to']);
-                        $messages->subject('Withdrawal Request throught mail');
+                        $messages->subject('Withdrawal Request through mail');
                     });
 
                     $withdrawalRequest = new WithdrawalRequest();

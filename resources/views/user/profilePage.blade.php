@@ -25,10 +25,10 @@
                     @endif
                     <div class="d-flex justify-content-center align-items-center pt-1 pb-2">
                         @if(Auth::user()->document_verification == 'VERIFIED')  
-                        <p class="profile-p1 mb-0 text-capitalize">Identity confirmed</p>
+                        <p class="profile-p1 mb-0 text-capitalize">Identity Confirmed</p>
                         <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid mb-3 ms-1" alt="games" />
                         @else
-                        <p class="profile-p1 mb-0 text-capitalize">Identity not confirmed</p>
+                        <p class="profile-p1 mb-0 text-capitalize">Identity Not Confirmed</p>
                         <img src="{{ url('assets/images/x-icon.svg') }}" class="img-fluid mb-3 ms-1" alt="games" />
                         @endif
                     </div>
