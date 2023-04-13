@@ -388,6 +388,7 @@ changeBankSelect?.addEventListener("change", function () {
 const uploadProfilePic = document.querySelector(".upload-profile-pic");
 const inputProfilePic = document.querySelector("#inputProfilePic");
 const removeProfilePic = document.querySelector(".remove-profile-pic");
+const deleteBtnClickListener = document.querySelector(".delete-btn-click-listener");
 
 uploadProfilePic?.addEventListener("click", function () {
     inputProfilePic.click();
@@ -396,6 +397,7 @@ uploadProfilePic?.addEventListener("click", function () {
 inputProfilePic?.addEventListener("change", function (e) {
     let preview = URL.createObjectURL(e.target.files[0]);
     uploadProfilePic.src = preview;
+    deleteBtnClickListener.checked = false;
 });
 
 removeProfilePic?.addEventListener("click", function () {
@@ -403,6 +405,29 @@ removeProfilePic?.addEventListener("click", function () {
     let preview =
         window.location.origin + "/assets/images/default-profile-mypage.png";
     uploadProfilePic.src = preview;
+    deleteBtnClickListener.checked = true;
+});
+
+const imageUploadNew = document.querySelector("#image-upload-new");
+const imageSelectDivNew = document.querySelector(".image-select-div-new");
+const imagePreviewNew = document.querySelector(".image-preview-new");
+const imageUploadPreviewNew = document.querySelector(".image-upload-preview-new");
+const removeUploadedPicNew = document.querySelector(".remove-uploaded-pic-new");
+
+
+imageUploadNew?.addEventListener("change", function(e){
+    imageSelectDivNew.classList.add("hide");
+    imagePreviewNew.classList.remove("hide");
+    let preview = URL.createObjectURL(e.target.files[0]);
+    imageUploadPreviewNew.src = preview;
+    deleteBtnClickListener.checked = false;
+});
+
+removeUploadedPicNew?.addEventListener("click", function(){
+    imageSelectDivNew.classList.remove("hide");
+    imagePreviewNew.classList.add("hide");
+    imageUploadNew.value = null;
+    deleteBtnClickListener.checked = true;
 });
 
 // For image preview during adding adding games and products

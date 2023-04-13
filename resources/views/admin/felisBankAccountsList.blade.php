@@ -35,7 +35,7 @@
 
     <div class="d-flex justify-content-between align-items-center py-4 px-4 bank-wh mb-4">
         <h3 class="bank-h3">CII Bank Accounts</h3>
-        <a class="nav-link view  bank-w" href="{{route('add-cii-bank-account')}}">
+        <a class="nav-link view add-bank-button" href="{{route('add-cii-bank-account')}}">
             <i class="fa-solid fa-circle-plus me-2"></i>
             ADD ACCOUNT
         </a>
@@ -45,25 +45,28 @@
         @if(count($bankAccounts) != 0)
         <div class="row py-4">
         @foreach($bankAccounts as $bankAccount)
-
-            <div class="col-md-4 col-sm-12 sp-mb mb-4">
-                <div class="white-box">
-                    <div class="bank-div text-center py-3">
+            <div class="col-md-12 col-sm-12 sp-mb mb-4">
+                <div class="white-box bank-list-div d-flex justify-content-center">
+                    <div class="col-4 text-center py-3">
                          <i class="fa-solid fa-building-columns bank-icon"></i>
                     </div>
-                    <p class="signup-lbl my-3">{{$bankAccount->bank_name}}</p>
-                    <form action="{{ route('change-default-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}" id="default_bank_form">
-                        <div class="d-flex justify-content-around">
-                            @if($bankAccount->default_product != null)
-                            <p class="min-p mb-0 pe-4" id="textLabel">({{Str::title($bankAccount->default_product)}})</p>
-                            @endif
+                    <div class="col-8 bank-details">
+                        <p class=" my-3 bank-name">{{$bankAccount->bank_name}}</p>
+                        <div class="d-flex">
+                            <p class=" mb-0 col-md-4 display bank-account-number">{{$bankAccount->account_number}}</p>
+                            <p class=" mb-0 col-md-4 text-center display bank-update-date">{{$bankAccount->updated_at->format('d/m/Y')}}</p>
+                            <form class="col-md-4" action="{{ route('change-default-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}" id="default_bank_form">
+                                <div class="d-flex justify-content-around">
+                                    @if($bankAccount->default_product != null)
+                                    <p class="min-p mb-0 pe-4" id="textLabel">({{Str::title($bankAccount->default_product)}})</p>
+                                    @endif
+                                </div>
+                            </form>
                         </div>
-                    </form>
-                <p class="account-p1 mb-0 col-md-2 text-center display">{{$bankAccount->account_number}}</p>
-                <p class="account-p2 mb-0 col-md-2 text-center display mt-2">{{$bankAccount->updated_at->format('d/m/Y')}}</p>
-                <div class="d-flex align-items-center justify-content-between mt-3">
-                    <a class="nav-link view-2" href="{{ route('edit-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}">EDIT</a>
-                    <a class="nav-link view sell" href="{{ route('delete-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
+                    <div class="d-flex align-items-center justify-content-between mt-4 ">
+                        <a class="bank-edit-button" href="{{ route('edit-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}">EDIT</a>
+                        <a class="bank-delete-button" href="{{ route('delete-cii-bank-account', [ 'id' => $bankAccount->id ] ) }}" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
+                    </div>
                 </div>
             </div>
         </div>

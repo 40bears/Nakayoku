@@ -57,7 +57,7 @@
                 <div class="white-box">
                     <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                          @if($product->image != null)
-                         <img src="{{ url('storage/uploads/' . $product->games->image ) }}" class="img-fluid sell-product-image" alt="product" />
+                         <img src="{{ !Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->games->image) : url('storage/uploads/' . $product->image ) }}" class="img-fluid sell-product-image" alt="product" />
                          @else
                          <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
                          @endif

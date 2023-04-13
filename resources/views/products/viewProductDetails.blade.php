@@ -90,8 +90,8 @@
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
                 <div class="product-details-seller-section">
                     @if($product->image != null)
-                    <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
-                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
+                    <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
                     @else
                     <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
@@ -201,15 +201,15 @@
                     @endif
                     @if($product->user_id == Auth::id())
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="signup-btn me-2" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn me-2 w-50 d-flex justify-content-center" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
                             EDIT
                         </a>
                         @if($product->status == 'published')
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             DRAFT
                         </a>
                         @else
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             PUBLISH
                         </a>
                         @endif
@@ -302,8 +302,9 @@
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
                 <div class="product-details-seller-section">
                     @if($product->image != null)
+                    <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
-                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
                     @else
                     <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
@@ -394,15 +395,15 @@
 
                     @if($product->user_id == Auth::id())
                     <div class="d-flex justify-content-between align-items-center mt-5">
-                        <a class="signup-btn me-2" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn me-2 w-50 d-flex justify-content-center" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
                             EDIT
                         </a>
                         @if($product->status == 'published')
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             DRAFT
                         </a>
                         @else
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             PUBLISH
                         </a>
                         @endif
@@ -507,8 +508,9 @@
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
                 <div class="product-details-seller-section">
                     @if($product->image != null)
+                    <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
-                    <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" />
+                    <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
                     @else
                     <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
@@ -614,15 +616,15 @@
                     </div>
                     @if($product->user_id == Auth::id())
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="signup-btn me-2" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn me-2 w-50 d-flex justify-content-center" href="{{ route('edit-product', [ 'id' => $product->id ] ) }}">
                             EDIT
                         </a>
                         @if($product->status == 'published')
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             DRAFT
                         </a>
                         @else
-                        <a class="signup-btn ms-2" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
+                        <a class="signup-btn ms-2 w-50 d-flex justify-content-center" href="{{ route('update-product-status', [ 'id' => $product->id ] ) }}">
                             PUBLISH
                         </a>
                         @endif
@@ -722,7 +724,7 @@
                     </div>
                 </div> -->
                 
-                <div class="col-md-4 col-sm-12 sp-mb mb-4">
+                <div class="col-md-3 col-sm-12 sp-mb mb-4">
                     <div class="white-box">
                         <a class="w-15" href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($item->image != null)

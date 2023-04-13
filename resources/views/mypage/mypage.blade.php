@@ -59,6 +59,7 @@
     <div class="pt-5 w-100">
         <form action="{{ route('update-my-page') }}" method="POST" enctype="multipart/form-data" class="w-100">
             @csrf
+            <input type="checkbox" class="delete-btn-click-listener" name="delete-image-confirmation" id="" hidden/>
             <input type="file" name="image" id="inputProfilePic" value="">
             <div class="pb-4 d-flex flex-column">
                 <label class="signup-lbl pb-2">Your display name</label>

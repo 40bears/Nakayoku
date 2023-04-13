@@ -16,7 +16,7 @@
     </div>
     <h3 class="signup-h3 pb-4 text-center pt-5 my-4">Add Game</h3>
     <div class="add-game-background" style="width: 90%; margin:auto; border-radius:25px;">
-        <div class="container form-container d-flex flex-column justify-content-center align-items-center pcontact">
+        <div class="container form-container d-flex flex-column justify-content-center align-items-center pcontact pcontact-sp">
 
             <div class="signup-box w-100">
                 <form method="POST" enctype="multipart/form-data">

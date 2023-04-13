@@ -31,7 +31,56 @@
                 </div>
                 @endif
 
-                <label class="signup-lbl pb-2 pt-4">Upload Image</label>
+                <input type="checkbox" class="delete-btn-click-listener" name="delete-image-confirmation" id="" hidden/>
+
+                @if(Route::is('add-product'))
+                <div class="d-flex flex-column justify-content-center">
+                    <p class="signup-lbl pt-4 pb-2">Upload image</p>
+
+                    <div class="d-flex flex-column image-box image-select-div-new">
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                            <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                            <span class="profile-p text-center py-3">Upload image</span>
+                            <label for="image-upload-new" class="custom-file-upload">
+                                <span class="browse-txt">Browse</span>
+                            </label>
+                            <input type="file" name="image" id="image-upload-new">
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center image-box image-preview-new hide">
+                        <img src="" class="upload-game-img image-upload-preview-new" id="" alt="">
+                    </div>
+                    <p class="image-preview-para">Please select JPG or PNG files under 3 MB. Square photos are recommended. Changes will not take effect until you save</p>
+                    <div class="d-flex justify-content-end mt-2">
+                        <a class="request-a remove-uploaded-pic-new px-4 py-2 text-end">Delete</a>
+                    </div>
+                </div>
+                @elseif(Route::is('edit-product'))
+                <div class="d-flex flex-column justify-content-center">
+                    <p class="signup-lbl pt-4 pb-2">Upload image</p>
+
+                    <div class="d-flex flex-column image-box image-select-div-new {{ $product->image != null ? 'hide' : ''}}">
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                            <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                            <span class="profile-p text-center py-3">Upload image</span>
+                            <label for="image-upload-new" class="custom-file-upload">
+                                <span class="browse-txt">Browse</span>
+                            </label>
+                            <input type="file" name="image" id="image-upload-new">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center image-box image-preview-new {{ $product->image != null ? '' : 'hide'}}">
+                        <img src="{{ url('storage/uploads/' . $product->image ) }}" class="upload-game-img image-upload-preview-new" id="" alt="">
+                    </div>
+                    <p class="image-preview-para">Please select JPG or PNG files under 3 MB. Square photos are recommended. Changes will not take effect until you save</p>
+                    <div class="d-flex justify-content-end mt-2">
+                        <a class="request-a remove-uploaded-pic-new px-4 py-2 text-end">Delete</a>
+                    </div>
+                </div>
+                @endif
+
+                <!-- <label class="signup-lbl pb-2 pt-4">Upload Image</label>
                 <div class="d-flex flex-column image-box image-select-div">
 
                     <div class="d-flex justify-content-center text-center flex-column align-items-center">
@@ -66,7 +115,7 @@
                 <div class="d-flex flex-column align-items-center image-box image-preview-div hide">
                     <img src="" class="top-image" id="image-upload-preview" alt="">
                     <a class="request-a remove-uploaded-pic py-2 text-danger">Delete</a>
-                </div>
+                </div> -->
 
                 <!-- <label class="form-label pb-2 pt-4">Platforms</label>
                 <input type="text" class="form-input-2 font-pswd " id="platforms" placeholder="PC" /> -->
