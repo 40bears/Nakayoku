@@ -351,7 +351,7 @@ class ProductController extends Controller
                 $request->file('image')->storeAs('uploads', $product_image, 'public');
 
                 $product->image = $product_image;
-            } else {
+            } elseif($request['delete-image-confirmation'] == true) {
                 $product->image = null;
             }
             $product->status = 'published';

@@ -3,7 +3,7 @@
 @section('main-container')
 
 <header class="padt-5">
-    <img class="w-100" src="{{ url('assets/images/allGamesHeader.png') }}" alt="">
+    <img class="w-100 all-games-heading" src="{{ url('assets/images/allGamesHeader.png') }}" alt="">
 </header>
 
 <div class="container-fluid px-0 bg-lgreen padt-5">
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="d-flex flex-column flex-md-row">
             <h2 class="carousal-heading me-3">Popular Collections</h2>
-            <div class="carousal-nav mx-1 row tab" >
+            <div class="carousal-nav mx-1 row tab mb-3 overflow-scroll" >
                 <a href="{{ route('all-games') }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('all-games') ? 'isActive' : '' }}" id="defaultOpen">
                 Show all
                 </a>
@@ -40,8 +40,8 @@
                 <img src="{{ url('assets/images/TopPageImages/currencyIcon.svg') }}" alt="currency" loading="lazy">
                     PS5
                 </a>
-        </div>  
-    </div>
+            </div>  
+        </div>
     </div>
 
     <!-- Inner menu starts -->

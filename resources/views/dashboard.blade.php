@@ -188,7 +188,7 @@
                 </form>
                 <h2 class="carousal-heading">Popular Collections</h2>
                 <div class="time-dropdown">
-                  <select name="Last 24 hours" id="cars" class="dropdown">
+                  <select name="Last 24 hours" id="cars" class="dropdown dashboard-time-dropdown">
                     <option value="Last 12 hours">Last 12 hours</option>
                     <option value="Last 8 hours">Last 8 hours</option>
                     <option value="Last 6 hours">Last 6 hours</option>

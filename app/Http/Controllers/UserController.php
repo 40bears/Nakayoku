@@ -134,13 +134,12 @@ class UserController extends Controller
             $request->file('image')->storeAs('uploads', $profile_picture, 'public');
 
             $user->profile_picture = $profile_picture;
-        } else {
+        } elseif($request['delete-image-confirmation'] == true) {
             $user->profile_picture = null;
         }
         $user->display_name = $request['display_name'];
         $user->introduction = $request['introduction'];
         $user->save();
-
         return redirect()->route('view-my-page');
     }
 

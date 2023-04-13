@@ -478,11 +478,71 @@ a:hover {
 .bank-icon {
     width: 131px;
     height: 131px;
-    color: rgba(0, 92, 70, 0.65);
+    /* color: rgba(0, 92, 70, 0.65); */
+    color: #87878780;
+}
+.add-bank-button{
+    border: 1px solid #AAA !important;
+    background: transparent !important;
 }
 
 .bank-div {
     background: #F2F2F2;
+}
+
+.bank-list-div{
+    background-color: #232323;
+}
+
+.bank-name{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    color: #F8F7F8;
+}
+
+.bank-details{
+    padding: 0 10%;
+}
+
+.bank-update-date{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(251, 251, 251, 0.5);
+    align-self: center;
+}
+
+.bank-account-number{
+    font-weight: 400;
+    font-size: 18px;
+    color: #F8F7F8;
+    line-height: 24px;
+}
+
+.bank-edit-button{
+    padding: 10px 24px;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    background: #181818;
+    width: 45%;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bank-delete-button{
+    padding: 10px 24px;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    background: #272727;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #EE5353;
+    width: 45%;
 }
 
 .identity-div.active {
@@ -2549,6 +2609,12 @@ ul.footer-links li {
         padding-top: 6rem;
     }
 
+    .bank-details {
+        padding: 0px 0% 0 10%;
+    }
+    .bank-edit-button, .bank-delete-button{
+        font-size: 13px;
+    }
     .request-pad {
         padding: 4rem 1rem 0 1rem !important;
     }
@@ -4206,6 +4272,9 @@ h1 {
     .hero-section {
         height: 50vh !important;
     }
+    .form-container{
+        width: 80%;
+    }
 }
 
 /* Medium devices (landscape tablets, 950px and down) */
@@ -4278,6 +4347,9 @@ h1 {
     .top-heading-container {
         margin-top: 60px !important;
         margin-bottom: 30px !important;
+    }
+    .form-container{
+        width: 80%;
     }
 }
 
@@ -4483,10 +4555,11 @@ h1 {
         background-clip: content-box, border-box;
         display: grid;
         grid-auto-flow: column;
+        grid-template-columns: max-content;
     }
 
     .tab {
-        overflow: hidden;
+        overflow-y: hidden !important; 
         border-image-slice: 1;
         border-radius: 50px;
         font-weight: 500;
@@ -4504,6 +4577,15 @@ h1 {
     #navbar-nav-mobile {
         display: none;
         width: 150%;
+    }
+    .all-games-heading{
+        margin-top: 3rem;
+    }
+    .pcontact-sp{
+        padding: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 
 }
