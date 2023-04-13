@@ -39,7 +39,7 @@
 
                     <div class="d-flex flex-column image-box image-select-div-new">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                            <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                            <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
                             <span class="profile-p text-center py-3">Upload image</span>
                             <label for="image-upload-new" class="custom-file-upload">
                                 <span class="browse-txt">Browse</span>
@@ -62,7 +62,7 @@
 
                     <div class="d-flex flex-column image-box image-select-div-new {{ $product->image != null ? 'hide' : ''}}">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                            <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                            <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
                             <span class="profile-p text-center py-3">Upload image</span>
                             <label for="image-upload-new" class="custom-file-upload">
                                 <span class="browse-txt">Browse</span>
@@ -80,45 +80,6 @@
                 </div>
                 @endif
 
-                <!-- <label class="signup-lbl pb-2 pt-4">Upload Image</label>
-                <div class="d-flex flex-column image-box image-select-div">
-
-                    <div class="d-flex justify-content-center text-center flex-column align-items-center">
-                        {{-- <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" /> --}}
-                        <i class="fa-solid fa-cloud-arrow-up cloud-upload"></i>
-                            <span class="profile-p text-center py-3">Upload Image</span>
-                        @if(Route::is('edit-product'))
-                        <div class="d-flex flex-column">
-                            @if($product->image != null)
-                            <img src="{{ url('storage/uploads/' . $product->image) }}" class="top-image" alt="" id="delete-image-upload">
-                            @else
-                            <img src="{{ url('assets/images/default-product.jpeg') }}" class="top-image" alt="" id="delete-image-upload">
-                            @endif
-                            <div class="d-flex pt-2 justify-content-center align-items-center">
-                                <label for="image-upload">
-                                    <span class="browse-txt">Browse</span>
-                                </label>
-                            </div>
-                            <a class="request-a align-self-center remove-uploaded-pic">Delete</a>
-                            <input type="file" name="image" id="image-upload">
-                        </div>
-                        @else
-                        <label for="image-upload" class="custom-file-upload">
-                            <span class="browse-txt">Browse</span>
-                        </label>
-                        <input type="file" name="image" id="image-upload">
-                        @endif
-                    </div>
-
-                </div>
-
-                <div class="d-flex flex-column align-items-center image-box image-preview-div hide">
-                    <img src="" class="top-image" id="image-upload-preview" alt="">
-                    <a class="request-a remove-uploaded-pic py-2 text-danger">Delete</a>
-                </div> -->
-
-                <!-- <label class="form-label pb-2 pt-4">Platforms</label>
-                <input type="text" class="form-input-2 font-pswd " id="platforms" placeholder="PC" /> -->
 
                 <label class="signup-lbl pb-2 pt-4">Product Name</label>
                 <input type="text" class="signup-input" name="name" id="platforms" placeholder="Enter Product Name" value="{{Route::is('edit-product') ? $product->name : ''}}" />

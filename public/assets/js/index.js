@@ -438,17 +438,23 @@ const deleteImageUpload = document.querySelector("#delete-image-upload");
 const imageUploadPreview = document.querySelector("#image-upload-preview");
 const removeUploadedPic = document.querySelector(".remove-uploaded-pic");
 
+const document1delete = document.querySelector(".document-1-delete");
+const document2delete = document.querySelector(".document-2-delete");
+const document3delete = document.querySelector(".document-3-delete");
+
 imageUpload?.addEventListener("change", function (e) {
     imageSelectDiv.classList.add("hide");
     imagePreviewDiv.classList.remove("hide");
     let preview = URL.createObjectURL(e.target.files[0]);
     imageUploadPreview.src = preview;
+    document1delete.checked = false;
 });
 
 removeUploadedPic?.addEventListener("click", function () {
     imageUpload.value = null;
     imageSelectDiv.classList.remove("hide");
     imagePreviewDiv.classList.add("hide");
+    document1delete.checked = true;
     deleteImageUpload.src =
         window.location.origin + "/assets/images/default-game.png";
 });
@@ -465,12 +471,14 @@ imageUpload2?.addEventListener("change", function (e) {
     imagePreviewDiv2.classList.remove("hide");
     let preview2 = URL.createObjectURL(e.target.files[0]);
     imageUploadPreview2.src = preview2;
+    document2delete.checked = false;
 });
 
 removeUploadedPic2?.addEventListener("click", function () {
     imageUpload2.value = null;
     imageSelectDiv2.classList.remove("hide");
     imagePreviewDiv2.classList.add("hide");
+    document2delete.checked = true;
     deleteImageUpload2.src =
         window.location.origin + "/assets/images/default-game.png";
 });
@@ -487,12 +495,14 @@ imageUpload3?.addEventListener("change", function (e) {
     imagePreviewDiv3.classList.remove("hide");
     let preview3 = URL.createObjectURL(e.target.files[0]);
     imageUploadPreview3.src = preview3;
+    document3delete.checked = false;
 });
 
 removeUploadedPic3?.addEventListener("click", function () {
     imageUpload3.value = null;
     imageSelectDiv3.classList.remove("hide");
     imagePreviewDiv3.classList.add("hide");
+    document3delete.checked = true;
     deleteImageUpload3.src =
         window.location.origin + "/assets/images/default-game.png";
 });
@@ -535,6 +545,29 @@ radio2?.addEventListener("click", function () {
     // radio3Border.classList.add("opacity");
     // radio3Border.firstElementChild.classList.remove("active");
     documentType.value = "driving_license";
+    secondDocument?.classList.remove("hide");
+});
+
+
+const idTypePassport = document.querySelector(".id-select-passport-div");
+const idTypeDrivingLicense = document.querySelector(".id-select-driving-license-div");
+const passportIconDiv = document.querySelector(".passport-icon-div");
+const licenseIconDiv = document.querySelector(".license-icon-div");
+
+idTypePassport?.addEventListener("click", function(){
+    documentType.value = "passport";
+    idTypePassport.firstElementChild.classList.add("active-document-border");
+    idTypeDrivingLicense.firstElementChild.classList.remove("active-document-border");
+    passportIconDiv.firstElementChild.classList.add("active");
+    licenseIconDiv.firstElementChild.classList.remove("active");
+    secondDocument?.classList.add("hide");
+});
+idTypeDrivingLicense?.addEventListener("click", function(){
+    documentType.value = "driving_license";
+    idTypeDrivingLicense.firstElementChild.classList.add("active-document-border");
+    idTypePassport.firstElementChild.classList.remove("active-document-border");
+    passportIconDiv.firstElementChild.classList.remove("active");
+    licenseIconDiv.firstElementChild.classList.add("active");
     secondDocument?.classList.remove("hide");
 });
 

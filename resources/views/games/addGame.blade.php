@@ -59,7 +59,7 @@
                         <div class="d-flex flex-column image-box image-select-div">
                             
                             <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                                <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
+                                <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
                                 <span class="profile-p text-center py-3">Upload image</span>
                                 <label for="image-upload" class="custom-file-upload">
                                     <span class="browse-txt">Browse</span>
