@@ -490,7 +490,8 @@ a:hover {
     /* color: rgba(0, 92, 70, 0.65); */
     color: #87878780;
 }
-.add-bank-button{
+
+.add-bank-button {
     border: 1px solid #AAA !important;
     background: transparent !important;
 }
@@ -499,22 +500,22 @@ a:hover {
     background: #F2F2F2;
 }
 
-.bank-list-div{
+.bank-list-div {
     background-color: #232323;
 }
 
-.bank-name{
+.bank-name {
     font-weight: 400;
     font-size: 26px;
     line-height: 39px;
     color: #F8F7F8;
 }
 
-.bank-details{
+.bank-details {
     padding: 0 10%;
 }
 
-.bank-update-date{
+.bank-update-date {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -522,14 +523,14 @@ a:hover {
     align-self: center;
 }
 
-.bank-account-number{
+.bank-account-number {
     font-weight: 400;
     font-size: 18px;
     color: #F8F7F8;
     line-height: 24px;
 }
 
-.bank-edit-button{
+.bank-edit-button {
     padding: 10px 24px;
     backdrop-filter: blur(2px);
     border-radius: 50px;
@@ -542,7 +543,7 @@ a:hover {
     line-height: 24px;
 }
 
-.bank-delete-button{
+.bank-delete-button {
     padding: 10px 24px;
     backdrop-filter: blur(2px);
     border-radius: 50px;
@@ -568,21 +569,22 @@ a:hover {
 }
 
 .passport-icon-div,
-.license-icon-div{
+.license-icon-div {
     background: #272727;
-    border-radius: 5px; 
-    width:100%;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .id-select-passport-div,
-.id-select-driving-license-div{
+.id-select-driving-license-div {
     cursor: pointer;
 }
 
-.active-document-border{
-    width:5px;height:30px; 
-    background-color:#E42575;
-    margin-right:0.5rem;
+.active-document-border {
+    width: 5px;
+    height: 30px;
+    background-color: #E42575;
+    margin-right: 0.5rem;
 }
 
 .passport {
@@ -602,7 +604,7 @@ a:hover {
     color: #AAAAAA;
 }
 
-.residence-certificate-label{
+.residence-certificate-label {
     align-self: center;
     margin-left: 5%;
     font-weight: 400;
@@ -1876,7 +1878,6 @@ select.minimal {
     padding: 1rem;
     background-color: #232323 !important;
     outline: none;
-    text-transform: capitalize;
 }
 
 .input-bg-blk {
@@ -2650,9 +2651,12 @@ ul.footer-links li {
     .bank-details {
         padding: 0px 0% 0 10%;
     }
-    .bank-edit-button, .bank-delete-button{
+
+    .bank-edit-button,
+    .bank-delete-button {
         font-size: 13px;
     }
+
     .request-pad {
         padding: 4rem 1rem 0 1rem !important;
     }
@@ -4310,7 +4314,8 @@ h1 {
     .hero-section {
         height: 50vh !important;
     }
-    .form-container{
+
+    .form-container {
         width: 80%;
     }
 }
@@ -4386,7 +4391,8 @@ h1 {
         margin-top: 60px !important;
         margin-bottom: 30px !important;
     }
-    .form-container{
+
+    .form-container {
         width: 80%;
     }
 }
@@ -4597,7 +4603,7 @@ h1 {
     }
 
     .tab {
-        overflow-y: hidden !important; 
+        overflow-y: hidden !important;
         border-image-slice: 1;
         border-radius: 50px;
         font-weight: 500;
@@ -4616,10 +4622,12 @@ h1 {
         display: none;
         width: 150%;
     }
-    .all-games-heading{
+
+    .all-games-heading {
         margin-top: 3rem;
     }
-    .pcontact-sp{
+
+    .pcontact-sp {
         padding: 0;
         padding: 0;
         margin: 0;

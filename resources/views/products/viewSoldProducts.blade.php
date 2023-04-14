@@ -13,7 +13,7 @@
     <div id="productlist2">
         @if(count($transactions) == 0)
         <br><br>
-        <h3 class="pt-5">There are no sales till date.</h3>
+        <h3 class="pt-5 signin-h3">There are no sales till date.</h3>
         @else
         <div class="row py-4">
         @foreach($transactions as $transaction)
