@@ -31,11 +31,11 @@
                             @foreach($categories as $category)
                             <option value="{{$category->id}}" {{Route::is('edit-game') ? $game->category_id == $category->id ? 'selected' : '' : ''}}>{{Str::upper($category->name)}}</option>
                             @endforeach
-                            <option value="other">OTHER</option>
+                            <option value="other">Other</option>
                         </select>
                         
                         <div id="otherCategoryInput" class="d-flex flex-column hide">
-                            <label class="signup-lbl pb-2 pt-4">Add new category</label>
+                            <label class="signup-lbl pb-2 pt-4">Add New Category</label>
                             <input type="text" class="signup-input" name="other_category" placeholder="Add a category" />
                         </div>
 
@@ -46,12 +46,12 @@
                                 @foreach($devices as $device)
                                 <option value="{{$device->id}}" {{Route::is('edit-game') ? $game->device == $device->id ? 'selected' : '' : ''}}>{{Str::upper($device->name)}}</option>
                                 @endforeach
-                                <option value="other">OTHER</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
 
                         <div id="otherDeviceInput" class="d-flex flex-column hide">
-                            <label class="signup-lbl pb-2 pt-4">Add new device</label>
+                            <label class="signup-lbl pb-2 pt-4">Add New Device</label>
                             <input type="text" class="signup-input" name="other_device" placeholder="Add a device" />
                         </div>
 
@@ -60,7 +60,7 @@
                             
                             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
-                                <span class="profile-p text-center py-3">Upload image</span>
+                                <span class="profile-p text-center py-3">Upload Image</span>
                                 <label for="image-upload" class="custom-file-upload">
                                     <span class="browse-txt">Browse</span>
                                 </label>

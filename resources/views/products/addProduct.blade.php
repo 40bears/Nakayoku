@@ -35,12 +35,12 @@
 
                 @if(Route::is('add-product'))
                 <div class="d-flex flex-column justify-content-center">
-                    <p class="signup-lbl pt-4 pb-2">Upload image</p>
+                    <p class="signup-lbl pt-4 pb-2">Upload Image</p>
 
                     <div class="d-flex flex-column image-box image-select-div-new">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
                             <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
-                            <span class="profile-p text-center py-3">Upload image</span>
+                            <span class="profile-p text-center py-3">Upload Image</span>
                             <label for="image-upload-new" class="custom-file-upload">
                                 <span class="browse-txt">Browse</span>
                             </label>
@@ -58,12 +58,12 @@
                 </div>
                 @elseif(Route::is('edit-product'))
                 <div class="d-flex flex-column justify-content-center">
-                    <p class="signup-lbl pt-4 pb-2">Upload image</p>
+                    <p class="signup-lbl pt-4 pb-2">Upload Image</p>
 
                     <div class="d-flex flex-column image-box image-select-div-new {{ $product->image != null ? 'hide' : ''}}">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
                             <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
-                            <span class="profile-p text-center py-3">Upload image</span>
+                            <span class="profile-p text-center py-3">Upload Image</span>
                             <label for="image-upload-new" class="custom-file-upload">
                                 <span class="browse-txt">Browse</span>
                             </label>
@@ -148,7 +148,7 @@
 
                 <label class="signup-lbl pt-5 pb-2">Product Description</label>
 
-                <textarea class="signup-input h-100 contact_field" id="description" name="description" rows="5" cols="50" placeholder=" Please write product description...">{{Route::is('edit-product') ? $product->description : ''}}</textarea>
+                <textarea class="signup-input h-100 contact_field" id="description" name="description" rows="5" cols="50" placeholder=" Please Write Product Description...">{{Route::is('edit-product') ? $product->description : ''}}</textarea>
 
             </div>
 

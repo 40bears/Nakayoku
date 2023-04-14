@@ -19,7 +19,7 @@
                     </div>
                     <div class="modal-body mt-5">
                         <h4 class="sure-p1 pb-3 border-0 text-center pt-2">{{ \Session::get('success') }}</h4>
-                        <p class="sure-p2 text-center form-p mb-0 pt-0">You can check your <a class="show d-inline" href="{{ route('view-draft-products') }}">sell draft</a> product on My Page.</p>
+                        <p class="sure-p2 text-center form-p mb-0 pt-0">You can check your <a class="show d-inline sure-p2" href="{{ route('view-draft-products') }}">sell draft</a> product on My Page.</p>
                     </div>
                     <div class="modal-footer border-0 d-flex flex-row flex-nowrap">
                         <a href="{{ route('view-product-details', ['id' => \Session::get('new_product_id'), 'product_name' => 'detail'] ) }}" class=" modal-button-1 view text-center w-50 ">Check Product</a>

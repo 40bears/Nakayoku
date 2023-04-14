@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="modal-footer border-0 d-flex flex-row flex-nowrap">
                                     <a class="withdraw-modal-button-1 view w-50 text-center" data-dismiss="modal">Cancel</a>
-                                    <a id="withdraw-modal-button-2" class="signup-btn w-50 text-center">Confrim</a>
+                                    <a id="withdraw-modal-button-2" class="signup-btn w-50 text-center">Confirm</a>
                                 </div>
                             </div>
                         </div>

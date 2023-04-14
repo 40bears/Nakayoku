@@ -46,8 +46,10 @@
                                             @endif
                                             <li class="nav-item menu menu1">
                                                 <div class="d-flex justify-content-around">
-                                                    <img src="{{ url('assets/images/currency.svg') }}" class="img-fluid pe-2" alt="currency">
-                                                    <a class="nav-link" data-toggle="modal" data-target="#basicModal">{{Auth::user() ? Auth::user()->base_currency : Session::get('base_currency')}}</a>
+                                                    <a class="nav-link" data-toggle="modal" data-target="#basicModal">
+                                                        <img src="{{ url('assets/images/currency.svg') }}" class="img-fluid pe-2" alt="currency">
+                                                        {{Auth::user() ? Auth::user()->base_currency : Session::get('base_currency')}}
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li class="nav-item dropdown">

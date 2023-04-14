@@ -23,7 +23,7 @@
     <!-- Product list component starts -->
     @if(count($transactions) == 0)
     <br><br>
-    <h3 class="pb-5 border-0">There are no sales till date.</h3>
+    <h3 class="pb-5 border-0 signin-h3">There are no sales till date.</h3>
     @else
     <div class="row py-4">
     @foreach($transactions as $transaction)

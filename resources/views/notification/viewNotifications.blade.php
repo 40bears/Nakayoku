@@ -27,8 +27,8 @@
     @endforeach
 
     @else
-    <div class=" border-nav pb-5">
-        <p class="notification-p my-5 text-center">No notifications yet.</p>
+    <div class=" border-tb pb-3">
+        <p class="signin-h3 my-5 text-center">No notifications yet.</p>
     </div>
 
     @endif
