@@ -2644,6 +2644,10 @@ ul.footer-links li {
 
     /* sp menu ends */
 
+    .modal-content {
+        margin-top: 15rem;
+    }
+
     .sp-req {
         font-size: 14px !important;
     }
