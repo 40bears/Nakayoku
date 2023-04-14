@@ -406,7 +406,8 @@
 
                         <!-- First line starts -->
                         <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
-                            <i class="fa-solid fa-user mb-0 white"></i>
+                            {{-- <i class="fa-solid fa-user mb-0 white"></i> --}}
+                            <img src="{{ url('assets/images/sell-item-icon.svg') }}" alt="sell item">
                             <h3 class="menu-h3 mb-0 ps-3">Sell Items</h3>
                        </div>
                         <ul class="ps-0 left-menu">
@@ -572,7 +573,8 @@
                             <h2 class="accordion-header py-1" id="headingOne">
                                 <div class="d-flex align-items-center justify-contant-center menu-div mb-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <i class="fa-solid fa-user mb-0 white"></i>
+                                    {{-- <i class="fa-solid fa-user mb-0 white"></i> --}}
+                                    <img src="{{ url('assets/images/sell-item-icon.svg') }}" alt="sell item">
                                     <h3 class="menu-h3 mb-0 ps-3">Sell Items</h3>
                                 </button>
                                 </div>

@@ -28,7 +28,7 @@
 
     @else
     <div class=" border-tb pb-3">
-        <p class="signin-h3 my-5 text-center">No notifications yet.</p>
+        <p class="signin-h3 my-5 text-center">No Notifications Yet.</p>
     </div>
 
     @endif
