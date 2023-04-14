@@ -362,7 +362,7 @@
                     </div>
 
                     <div>
-                        <h3 class="py-5 border-0 lh-base text-center s-head">Please click one of the links on the left to check pages</h3>
+                        <h3 class="py-5 border-0 lh-base text-center s-head">Please click one of the links to check pages</h3>
                     </div>
                 </div>
                 <!-- Right side ends -->

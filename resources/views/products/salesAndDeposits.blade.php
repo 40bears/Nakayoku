@@ -14,7 +14,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-start ms-5">
                     <p class="finish">Balance</p>
                     <p class="dollar-p mt-1">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice(Auth::user()->balance))}}</p>
-                    <a class="nav-link view-2 w-100 text-capitalize mt-3" href="{{ route('withdrawal-request') }}">Withdraw request</a>
+                    <a class="nav-link view-2 w-100 text-capitalize mt-3 sp-req" href="{{ route('withdrawal-request') }}">Withdraw request</a>
                 </div>
             </div>    
         </div>
