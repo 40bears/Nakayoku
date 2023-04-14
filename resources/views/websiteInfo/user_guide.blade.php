@@ -186,7 +186,7 @@
                                                     @if(Auth::user() && Auth::user()->unreadNotifications()->count() > 9)
                                                     <p class="text-light bg-danger rounded-circle px-1">{{Auth::user()->unreadNotifications()->count()}}</p>
                                                     @elseif(Auth::user() && Auth::user()->unreadNotifications()->count() > 0)
-                                                    <p class="text-light bg-danger rounded-circle w-100 px-2">{{Auth::user()->unreadNotifications()->count()}}</p>
+                                                    <p class="text-light bg-danger rounded-circle px-2">{{Auth::user()->unreadNotifications()->count()}}</p>
                                                     @endif
                                                 </div>
                                             </li>
