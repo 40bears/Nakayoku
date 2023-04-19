@@ -728,8 +728,8 @@
                     <div class="white-box">
                         <a class="w-15" href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($item->image != null)
-                            <!-- <img src="{{ url('storage/uploads/' . $item->image ) }}" class="img-fluid " alt="product" /> -->
-                            <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" />
+                            <img src="{{ url('storage/uploads/' . $item->games->image ) }}" class="img-fluid " alt="product" />
+                            <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                             @else
                             <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid " alt="product" />
                             @endif

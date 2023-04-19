@@ -46,6 +46,9 @@
                 <ul class="ps-0 left-menu d-flex justify-content-center align-items-center">
                     <div class="carousal-nav mx-1 row tab" >
                         <!-- <button class="col tablinks" id="tablinks" onclick="viewCollections(this)"> -->
+                        <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
+                                Show all
+                        </a>
                         <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'item'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
                             <img src="{{ url('assets/images/TopPageImages/itemsIcon.svg') }}" alt="items" loading="lazy">
                             Items
@@ -58,9 +61,6 @@
                         <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'currency'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'currency') ? 'isActive' : '' }}" id="tablinks">
                             <img src="{{ url('assets/images/TopPageImages/currencyIcon.svg') }}" alt="currency" loading="lazy">
                             Currency
-                        </a>
-                        <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
-                                Show all
                         </a>
                     </div>
                     <!-- <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}">
@@ -85,33 +85,6 @@
                         </li>
                     </a> -->
                 </ul>
-                {{-- <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="account">
-                    <div class="d-flex justify-content-between">
-                        <label class="form-check-label big-lbl" for="account">
-                        ACCOUNT 
-                        </label>
-                        <span class="text-p">({{$accounts}})</span>
-                    </div>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="currency">
-                    <div class="d-flex justify-content-between">
-                        <label class="form-check-label big-lbl" for="currency">
-                        CURRENCY 
-                        </label>
-                        <span class="text-p">({{$currencies}})</span>
-                    </div>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="item">
-                    <div class="d-flex justify-content-between">
-                        <label class="form-check-label big-lbl" for="item">
-                        ITEM 
-                        </label>
-                        <span class="text-p">({{$items}})</span>
-                    </div>
-                  </div> --}}
             </div>    
              <!-- Checkbox ends -->
 

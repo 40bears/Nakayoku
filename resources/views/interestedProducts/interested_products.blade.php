@@ -9,6 +9,7 @@
 
     <!-- Product list component starts -->
     <div class="row py-4">
+    @if($user->interestedProducts->count() > 0)
     @foreach($user->interestedProducts as $products)
     <div class="col-md-4 col-sm-12 sp-mb">
         <div class="white-box">
@@ -27,6 +28,10 @@
         </div>
     </div>
     @endforeach
+    @else
+    <br><br>
+    <h3 class="pt-5 text-light">There are no items in the wishlist.</h3>
+    @endif
     </div>
     <!-- Product list component ends -->
 </div>
