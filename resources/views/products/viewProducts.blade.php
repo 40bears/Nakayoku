@@ -38,12 +38,12 @@
 
         <!-- Price filter starts -->
         <div class="col-md-12 col-sm-12">
-        <div class="d-flex flex-row justify-content-between f-column">
+        <div class="product-details-filters-div f-column">
 
             <!-- Checkbox starts -->
             <div class="d-flex justify-content-center align-items-center">
                 <!-- <p class="keyword-p">ALL</p> -->
-                <ul class="ps-0 left-menu d-flex justify-content-center align-items-center">
+                <ul class="ps-0 left-menu d-flex justify-content-center align-items-center mb-0">
                     <div class="carousal-nav mx-1 row tab" >
                         <!-- <button class="col tablinks" id="tablinks" onclick="viewCollections(this)"> -->
                         <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
@@ -88,7 +88,7 @@
             </div>    
              <!-- Checkbox ends -->
 
-            <div class="p-right d-flex ">
+            <div class="p-right d-flex flex-column flex-md-row pt-4 pt-lg-0 filters-right-section">
                 <!-- <p class="keyword-p pt-3">Keyword filters</p> -->
                 <form action="{{ route('view-products-search', [ 'id' => $game->id ] ) }}">
 
@@ -99,7 +99,7 @@
                         </button>
                     </div>
                 </form>
-                <form action="" class="time-dropdown w-50">
+                <form action="" class="time-dropdown product-details-filter w-50 ">
                     <select class="dropdown minimal select-platform change_platform w-100 pt-0" id="exampleFormControlSelect1" name="change_platform">
                         <option>Change Platform</option>
                         @foreach($devices as $device)
