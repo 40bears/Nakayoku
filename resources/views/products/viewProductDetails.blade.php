@@ -34,7 +34,7 @@
                         @endif
                     </div> --}}
 
-                    <div class="d-flex flex-column product-details-seller-section">
+                    <div class="d-flex flex-column product-details-seller-section ">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -53,13 +53,14 @@
                             </div> -->
                         </div>
                         @if($product->user->introduction != null)
-                        <div class="mt-3">
-                            <p>{product->user->introduction}</p>
+                        <div class="mt-3 vector-image-text">
+                            <p>{{{$product->user->introduction}}}</p>
                         </div>
-                        @endif
+                        @else
                         <div class="mt-3 vector-image-text">
                             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
                         </div>
+                        @endif
                         <div class="d-flex">
 
                             <div class="d-flex mb-3 mt-3">
@@ -88,7 +89,7 @@
 
             <!-- Middle side starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="product-details-seller-section">
+                <div class="product-details-seller-section product-details-seller-section-2">
                     @if($product->image != null)
                     <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
@@ -96,7 +97,7 @@
                     <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
                 </div>
-                <div>
+                <div class="product-details-seller-section-2-description">
                     <p class="buy-page-product-name product-details-seller-section">{{$product->description}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
@@ -149,7 +150,7 @@
             <!-- Middle side ends -->
 
             <!-- Right side starts -->
-            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center h-100 align-self-end">
                 <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
@@ -277,13 +278,14 @@
                             </div> -->
                         </div>
                         @if($product->user->introduction != null)
-                        <div class="mt-3">
-                            <p>{product->user->introduction}</p>
+                        <div class="mt-3 vector-image-text">
+                            <p>{{{$product->user->introduction}}}</p>
                         </div>
-                        @endif
+                        @else
                         <div class="mt-3 vector-image-text">
                             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
                         </div>
+                        @endif
                         <div class="d-flex mb-3 mt-3">
                             <div class="vector-image-border" >
                                 <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
@@ -300,7 +302,7 @@
 
             <!-- Middle section starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="product-details-seller-section">
+                <div class="product-details-seller-section product-details-seller-section-2">
                     @if($product->image != null)
                     <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
@@ -309,7 +311,7 @@
                     <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
                 </div>
-                <div>
+                <div class="product-details-seller-section-2-description">
                     <p class="buy-page-product-name product-details-seller-section">{{$product->name}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
@@ -363,7 +365,7 @@
 
             <!-- Right side starts -->
 
-            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-12 white-box white-box-border bank-wh d-flex justify-content-center align-items-center h-100 align-self-end">
                 <form style="color: wheat;" class="w-100" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
@@ -471,13 +473,14 @@
                             </div> -->
                         </div>
                         @if($product->user->introduction != null)
-                        <div class="mt-3">
-                            <p>{product->user->introduction}</p>
+                        <div class="mt-3 vector-image-text">
+                            <p>{{{$product->user->introduction}}}</p>
                         </div>
-                        @endif
+                        @else
                         <div class="mt-3 vector-image-text">
                             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
                         </div>
+                        @endif
                         <div class="d-flex">
 
                             <div class="d-flex mb-3 mt-3">
@@ -506,16 +509,16 @@
 
             <!-- Middle div starts -->
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-end">
-                <div class="product-details-seller-section">
+                <div class="product-details-seller-section product-details-seller-section-2">
                     @if($product->image != null)
                     <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid profile-image-w" alt="games" /> -->
                     <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
                     @else
-                    <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
+                    <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
                 </div>
-                <div>
+                <div class="product-details-seller-section-2-description">
                     <p class="buy-page-product-name product-details-seller-section">{{$product->name}}</p>
                 </div>
                 <!-- <div class="d-flex mb-3">
@@ -569,7 +572,7 @@
 
             <!-- Right side starts -->
 
-            <div class="col-md-3 col-sm-12  white-box bank-wh d-flex justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-12  white-box bank-wh d-flex justify-content-center align-items-center h-100 align-self-end">
                 <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}">
                     <!-- <form style="color: wheat;" action="{{ route('buy-product-confirmation', [ 'id' => $product->id ] ) }}" method="POST"> -->
                     @csrf
@@ -724,7 +727,7 @@
                     </div>
                 </div> -->
                 
-                <div class="col-md-3 col-sm-12 sp-mb mb-4">
+                <div class="col-lg-3 col-md-4 col-sm-12 sp-mb mb-4">
                     <div class="white-box">
                         <a class="w-15" href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($item->image != null)

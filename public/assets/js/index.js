@@ -1028,12 +1028,12 @@ function menuToggle() {
 
 const containerFluid = document.getElementById("container-fluid");
 function removePaddingClass() {
-    containerFluid.classList.remove('px-5');
-    containerFluid.classList.remove('py-5');
+    containerFluid?.classList.remove('px-5');
+    containerFluid?.classList.remove('py-5');
 }
 function addPaddingClass() {
-    containerFluid.classList.add('px-5');
-    containerFluid.classList.add('py-5');
+    containerFluid?.classList.add('px-5');
+    containerFluid?.classList.add('py-5');
 }
 if ($(window).width() < 600) {
     removePaddingClass();

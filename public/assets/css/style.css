@@ -2501,6 +2501,9 @@ ul.footer-links li {
     .sign-txt {
         font-size: 33px;
     }
+    .padt-mb-3{
+        padding-top: 3rem;
+    }
 }
 
 @media only screen and (max-width: 834px) {
@@ -4248,6 +4251,91 @@ h1 {
     border-radius: 50px;
 }
 
+.product-details-filters-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-details-seller-section-2{
+    /* width: 60%; */
+    padding: 3rem 10rem 0 2rem;
+}
+.product-details-seller-section-2-description{
+    border-left: 1px dotted white;
+    padding-left: 2rem;
+    margin-top: 5%;
+}
+.product-details-seller-section-2-description p{
+    margin: 0;
+}
+.purchased-products-user-details-div,
+.purchased-products-item-details-div{
+    box-sizing: border-box;
+    background: #232323;
+    border-right: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 20px;
+    padding: 2rem 5rem;
+}
+.purchased-products-item-details-div{
+    padding: 2rem 2rem;
+}
+.purchased-products-user-intro{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #F8F7F8;
+    font-style: normal;
+    margin-top: 5%;
+}
+.purchased-products-item-img{
+    width: 30%;
+}
+.purchased-products-item-details-heading{
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.36px;
+    color: #F8F7F8;
+    line-height: 39px;
+}
+.purchased-products-payment-amount-div{
+    background: #181818;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgba(251, 251, 251, 0.5);
+}
+.purchased-products-user-name{
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.364px;
+    color: #F8F7F8;
+    line-height: 39px;
+}
+.purchased-products-name{
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #F8F7F8;
+    line-height: 24px;
+}
+.purchased-products-game-name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F7FB;
+    margin:1rem 0 0.5rem 0;
+}
+.purchased-products-amount{
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.36px;
+    color: #F5F7FB;
+    line-height: 39px;
+}
+
 @media only screen and (min-width: 2000px) {
     .top-heading-container {
         margin-top: 60px;
@@ -4357,6 +4445,14 @@ h1 {
         width: 40% !important;
         margin: 0px 0px 15px 5px !important;
     }
+    .filters-right-section{
+        width: 80%;
+    }
+
+    .filters-right-section form{
+        width: 100% !important;
+        margin-right: 0.5rem !important;
+    }
 
     .game-cards {
         display: block !important;
@@ -4404,7 +4500,9 @@ h1 {
     .hide-hero-card {
         display: none;
     }
-
+    .product-details-filters-div{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 884px) {
@@ -4424,6 +4522,9 @@ h1 {
 
     .form-container {
         width: 80%;
+    }
+    .purchased-products-user-details-div{
+        padding: 2rem;
     }
 }
 
@@ -4452,6 +4553,15 @@ h1 {
     .hero-section {
         height: 52vh !important;
         margin-bottom: 80px !important;
+    }
+    .product-details-seller-section-2{
+        width: 100%;
+        padding: 0;
+    }
+    .product-details-seller-section-2-description{
+        border-left: none;
+        padding-left: 0rem;
+        margin-top: 5%;
     }
 }
 
@@ -4569,6 +4679,10 @@ h1 {
     .company-table {
         margin-top: 20px !important;
         padding-top: 80px !important;
+    }
+    .product-details-filter{
+        margin: 1rem 0 !important;
+        width: 100% !important;
     }
 }
 
