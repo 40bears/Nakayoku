@@ -137,7 +137,8 @@ withdrawalAmount?.addEventListener("keyup", function () {
                     .toString()
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
                 " ";
-            submitWithdrawalRequest.removeAttribute("disabled");
+                submitWithdrawalRequest.removeAttribute("disabled");
+                submitWithdrawalRequest.classList.remove("disabled");
         } else {
             totalWithdrawalAmount.innerHTML =
                 " " +
@@ -149,10 +150,12 @@ withdrawalAmount?.addEventListener("keyup", function () {
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
                 " ";
             submitWithdrawalRequest?.removeAttribute("disabled");
+            submitWithdrawalRequest.classList.remove("disabled");
         }
     } else {
         totalWithdrawalAmount.innerHTML = " 0 ";
         submitWithdrawalRequest.setAttribute("disabled", true);
+        submitWithdrawalRequest.classList.add("disabled");
     }
 });
 

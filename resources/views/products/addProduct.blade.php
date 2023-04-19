@@ -13,8 +13,8 @@
             <div class="pb-4 d-flex flex-column">
 
                 <label class="signup-lbl pb-2">Select Game Name</label>
-                <input type="text" class="signup-input" autocomplete="off" name="game_name" id="game_name" placeholder="Select Game Name" value="{{Route::is('edit-product') ? $product->games->name : ''}}" />
-                <input type="hidden" class="signup-input" name="game_id" id="game_id" value="{{Route::is('edit-product') ? $product->game_id : ''}}" />
+                <input type="text" class="signup-input" autocomplete="off" name="game_name" id="game_name" placeholder="Select Game Name" value="{{Route::is('edit-product') ? $product->games->name : old('game_name')}}" />
+                <input type="hidden" class="signup-input" name="game_id" id="game_id" value="{{Route::is('edit-product') ? $product->game_id : old('game_id')}}" />
                 <div class="form-group hide">
                     <label for="exampleFormControlSelect1" class="d-none">Select</label>
                     <select class="select-bank w-100" name="" id="exampleFormControlSelect1">
@@ -82,7 +82,7 @@
 
 
                 <label class="signup-lbl pb-2 pt-4">Product Name</label>
-                <input type="text" class="signup-input" name="name" id="platforms" placeholder="Enter Product Name" value="{{Route::is('edit-product') ? $product->name : ''}}" />
+                <input type="text" class="signup-input" name="name" id="platforms" placeholder="Enter Product Name" value="{{Route::is('edit-product') ? $product->name : old("name")}}" />
                 @if($errors->has('name'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
@@ -95,9 +95,9 @@
                     <label for="exampleFormControlSelect2" class="d-none">Select</label>
                     <select class="select-bank w-100 minimal" name="product_type" id="exampleFormControlSelect2" value="{{Route::is('edit-product') ? $product->product_type : ''}}">
                         <option value="">Please Select</option>
-                        <option value="account" {{Route::is('edit-product') ? $product->product_type == 'account' ? 'selected': '' : ''}}>Account</option>
-                        <option value="item" {{Route::is('edit-product') ? $product->product_type == 'item' ? 'selected': '' : ''}}>Item</option>
-                        <option value="currency" {{Route::is('edit-product') ? $product->product_type == 'currency' ? 'selected': '' : ''}}>Currency</option>
+                        <option value="account" {{Route::is('edit-product') ? ($product->product_type == 'account' ? 'selected': '') : (old('product_type') == 'account' ? 'selected': '')}}>Account</option>
+                        <option value="item" {{Route::is('edit-product') ? ($product->product_type == 'item' ? 'selected': '') : (old('product_type') == 'item' ? 'selected': '')}}>Item</option>
+                        <option value="currency" {{Route::is('edit-product') ? ($product->product_type == 'currency' ? 'selected': '') : (old('product_type') == 'currency' ? 'selected': '')}}>Currency</option>
                     </select>
                 </div>
                 @if($errors->has('product_type'))
@@ -110,9 +110,9 @@
                 <label class="signup-lbl pb-2 pt-4">Price (per unit)</label>
                 <div class="d-flex justify-content-between align-items-center form-input-2">
                     <span class="big-lbl">{{ Auth::user()->base_currency  }}</span>
-                    <input type="number" class="input-text text-end big-lbl flex-grow-1" id="number" name="price" placeholder="0" min="0" value="{{Route::is('edit-product') ? round(showConvertedPrice($product->price)) : ''}}" />
+                    <input type="number" class="input-text text-end big-lbl flex-grow-1" id="number" name="price" placeholder="0" min="0" value="{{Route::is('edit-product') ? round(showConvertedPrice($product->price)) : old("price")}}" />
                 </div>
-                @if($errors->has('price]'))
+                @if($errors->has('price'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
                     <p class="error-p">{{$errors->first('price')}}</p>
@@ -120,7 +120,7 @@
                 @endif
 
                 <label class="signup-lbl pb-2 pt-4">Unit</label>
-                <input type="number" class="signup-input text-end big-lbl flex-grow-1" id="unit" name="stock_quantity" placeholder="0" min="0" value="{{Route::is('edit-product') ? $product->stock_quantity : ''}}" />
+                <input type="number" class="signup-input text-end big-lbl flex-grow-1" id="unit" name="stock_quantity" placeholder="0" min="0" value="{{Route::is('edit-product') ? $product->stock_quantity : old("stock_quantity")}}" />
                 @if($errors->has('stock_quantity'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
@@ -129,7 +129,7 @@
                 @endif
 
                 <label class="signup-lbl pb-2 pt-4">Delivery Time (in minutes)</label>
-                <input type="text" class="signup-input" name="delivery_time" id="platforms" placeholder="Enter Delivery Time" value="{{Route::is('edit-product') ? $product->delivery_time : ''}}" />
+                <input type="text" class="signup-input" name="delivery_time" id="platforms" placeholder="Enter Delivery Time" value="{{Route::is('edit-product') ? $product->delivery_time : old("delivery_time")}}" />
                 @if($errors->has('delivery_time'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
@@ -138,7 +138,7 @@
                 @endif
 
                 <label class="signup-lbl pb-2 pt-4">Minimum Quantity</label>
-                <input type="text" class="signup-input" name="min_quantity" id="platforms" placeholder="Enter Minimum Quantity" value="{{Route::is('edit-product') ? $product->min_quantity : ''}}" />
+                <input type="text" class="signup-input" name="min_quantity" id="platforms" placeholder="Enter Minimum Quantity" value="{{Route::is('edit-product') ? $product->min_quantity : old("min_quantity")}}" />
                 @if($errors->has('min_quantity'))
                 <div class="d-flex align-items-center">
                     <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
@@ -148,7 +148,7 @@
 
                 <label class="signup-lbl pt-5 pb-2">Product Description</label>
 
-                <textarea class="signup-input h-100 contact_field" id="description" name="description" rows="5" cols="50" placeholder=" Please Write Product Description...">{{Route::is('edit-product') ? $product->description : ''}}</textarea>
+                <textarea class="signup-input h-100 contact_field" id="description" name="description" rows="5" cols="50" placeholder=" Please Write Product Description...">{{Route::is('edit-product') ? $product->description : old("description")}}</textarea>
 
             </div>
 

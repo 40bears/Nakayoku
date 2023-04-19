@@ -16,7 +16,7 @@
         <div class="col w-16 animate__animated animate__slow animate__slideInUp">
 
             <div class="row hero-card">
-              <a href="javascript:void(0)">
+            <a href="{{route('view-products', [ 'id' => 23 ] )}}">
                 <img src="{{ url('assets/images/TopPageImages/WorldCraft.jpg') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay-left">
                 </div>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="row hero-card card1">
-              <a href="javascript:void(0)">
+            <a href="{{route('view-products', [ 'id' => 7 ] )}}">
                 <img src="{{ url('assets/images/TopPageImages/ApexLegends.jpg') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay-left-second">
                 </div>
@@ -59,25 +59,25 @@
           <div class="row">
 
             <div class="col hero-card w-16 card1 animate__animated animate__slow animate__slideInUp	">
-              <a href="javascript:void(0)">
+            <a href="{{route('view-products', [ 'id' => 1 ] )}}">
                 <img src="{{ url('assets/images/TopPageImages/GrandTheft.jpg') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay">
                 </div></a>
             </div>
             <div class="col hero-card w-16 card2 animate__animated animate__slow animate__slideInUp">
-              <a href="javascript:void(0)">
+              <a href="{{route('view-products', [ 'id' => 2 ] )}}">
               <img src="{{ url('assets/images/TopPageImages/Dota 2.png') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay">
                 </div></a>
             </div>
             <div class="col hero-card hide-hero-card w-16 animate__animated animate__slow animate__slideInUp">
-              <a href="javascript:void(0)">
+            <a href="{{route('view-products', [ 'id' => 21 ] )}}">
               <img src="{{ url('assets/images/TopPageImages/Fallout76.jpg') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay">
                 </div></a>
             </div>
             <div class="col hero-card w-16 card4 animate__animated animate__slow animate__slideInUp">
-              <a href="javascript:void(0)">
+            <a href="{{route('view-products', [ 'id' => 34 ] )}}">
               <img src="{{ url('assets/images/TopPageImages/Freefire.png') }}" class="size-md hero-img" alt="game-image">
                 <div class="img-overlay">
                 </div></a>
@@ -89,14 +89,14 @@
         
         <div class="col w-16 card5 animate__animated animate__slow animate__slideInUp">
           <div class="hero-card" data-aos="fade-up">
-            <a href="javascript:void(0)">
+          <a href="{{route('view-products', [ 'id' => 22 ] )}}">
             <img src="{{ url('assets/images/TopPageImages/ClassicRoyale.jpg') }}" class="size-md hero-img" alt="game-image">
               <div class="">
               </div></a>
           </div>
 
           <div class="hero-card card1" data-aos="fade-up">
-            <a href="javascript:void(0)">
+          <a href="{{route('view-products', [ 'id' => 13 ] )}}">
             <img src="{{ url('assets/images/TopPageImages/BlackDessert.jpg') }}" class="size-md hero-img" alt="game-image">
               <div class="">
               </div></a>

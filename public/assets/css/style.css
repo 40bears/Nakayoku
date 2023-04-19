@@ -675,7 +675,11 @@ a:hover {
     width: 12%;
     text-align: center;
 }
-
+a.disabled,
+button.disabled{
+    background: gray;
+    color: white;
+}
 .bl {
     border-left: 1px solid #AAA;
 }
@@ -3673,6 +3677,15 @@ li.nav-item {
     top: 296px;
     background: rgba(253, 253, 255, 0.1);
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar div{
+    width: 80% !important;
+}
+.hero-card:hover .img-overlay{
+    opacity: 1;
 }
 
 .search-icon {
@@ -4230,7 +4243,7 @@ h1 {
 }
 
 .isActive {
-    background-image: linear-gradient(to right, #09FBD3, #FE53BB);
+    background-image: linear-gradient(to right, #09FBD3, #FE53BB) !important;
     height: 45px;
     border-radius: 50px;
 }
@@ -4625,6 +4638,10 @@ h1 {
         border-radius: 50px;
         font-weight: 500;
         font-size: 0.8rem;
+    }
+
+    .tab::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
     }
 
     .hero-section-mobile {

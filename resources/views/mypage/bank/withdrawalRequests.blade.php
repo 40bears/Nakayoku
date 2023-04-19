@@ -47,7 +47,7 @@
                 </div>
                 <hr class="drop-hr"/>
                 <div class="d-flex justify-content-center pt-5">
-                    <button type="button" class="signup-btn w-80 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#basicModal2">
+                    <button type="button" id="submit-withdrawal-request" class="signup-btn w-80 d-flex justify-content-center align-items-center disabled" data-toggle="modal" data-target="#basicModal2" disabled>
                         SEND REQUEST
                     </button>
                     <!-- <input type="submit" class="nav-link btn-blue button-1 w-40" id="submit-withdrawal-request" name="sendRequest" value="Send Request" /> -->

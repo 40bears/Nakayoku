@@ -45,9 +45,8 @@
 
     <!-- Product list component starts -->
     <div class="row py-4">
+    @if($products->count() > 0)
     @foreach ($products as $product)
-
-    @if($product->status == 'draft')
     <div class="col-md-4 col-sm-12 mb-4 sp-mb">
         <div class="white-box">
             <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
@@ -63,34 +62,11 @@
             </a>
         </div>    
     </div>
-    {{-- <div id="productlist">
-        <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
-            <div class="d-flex flex-row justify-content-between border-nav py-4">
-                <div class="d-flex flex-row justify-content-around">
-                    <div class="pe-4">
-                        @if($product->image != null)
-                        <img src="{{ url('storage/uploads/' . $product->games->image ) }}" class="img-fluid sell-product-image" alt="product" />
-                        @else
-                        <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
-                        @endif
-                    </div>
-                    <div>
-                        <div>
-                            <p class="form-label mb-0">{{Str::upper($product->games->name)}} {{Str::upper($product->product_type)}}</p>
-                            <p class="currency-p pb-0 mb-0">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($product->price))}} / M</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="{{ url('assets/images/right-arrow.png') }}" class="img-fluid" alt="arrow" />
-                </div>
-            </div>
-        </a>
-
-    </div> --}}
-    @endif
-
     @endforeach
+    @else
+    <br><br>
+        <h3 class="pt-5 text-light">There are no products in draft.</h3>
+    @endif
     </div>
     <!-- Product list component ends -->
 </div>

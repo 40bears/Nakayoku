@@ -152,7 +152,6 @@ class ProductController extends Controller
             $product->game_id = $request['game_id'];
             $product->price = showConvertedPriceToUsd($request['price']);
             $product->stock_quantity = $request['stock_quantity'];
-            $product->description = $request['description'];
             $product->delivery_time = $request['delivery_time'];
             $product->min_quantity = $request['min_quantity'];
             $product->description = $request['description'];
@@ -165,7 +164,7 @@ class ProductController extends Controller
 
     public function viewDraftProducts()
     {
-        $products = Product::where('user_id', Auth::id())->with('games')->get();
+        $products = Product::where('user_id', Auth::id())->with('games')->where('status', 'draft')->get();
         $data = compact('products');
         return view('products.viewDraftProducts')->with($data);
     }
