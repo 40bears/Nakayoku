@@ -47,7 +47,7 @@
     <div class="row py-4">
     @if($products->count() > 0)
     @foreach ($products as $product)
-    <div class="col-md-4 col-sm-12 mb-4 sp-mb">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sp-mb">
         <div class="white-box">
             <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                  @if($product->image != null)
@@ -65,7 +65,7 @@
     @endforeach
     @else
     <br><br>
-        <h3 class="pt-5 text-light">There are no products in draft.</h3>
+        <h3 class="pt-5 text-light text-center">There are no products in draft.</h3>
     @endif
     </div>
     <!-- Product list component ends -->

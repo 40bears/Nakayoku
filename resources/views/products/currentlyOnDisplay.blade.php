@@ -46,14 +46,14 @@
     <!-- Product list component starts -->
     @if(count($products) == 0)
     <br><br>
-    <h3 class="pb-5 signin-h3">There are no products displayed.</h3>
+    <h3 class="pb-5 signin-h3 text-center">There are no products displayed.</h3>
     @else
 
      <div class="row py-4">
     @foreach($products as $product)
     @if($product->status == 'published')
 
-            <div class="col-md-4 col-sm-12 mb-4 sp-mb">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sp-mb">
                 <div class="white-box">
                     <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                          @if($product->image != null)

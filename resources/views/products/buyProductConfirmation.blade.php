@@ -53,7 +53,7 @@
                     <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
                 </p>
                 <div class="d-flex justify-content-center w-75 w-mb-100">
-                    <button type="submit" class="text-center signup-btn d-flex justify-content-center align-items-center w-50 w-mb-100">
+                    <button type="submit" class="text-center signup-btn d-flex justify-content-center align-items-center w-mb-100">
                         BUY / GET CONFIRM MAIL
                     </button>
                 </div>

@@ -204,7 +204,34 @@
               <p class="profile-p mb-0">Identity Not Confirmed</p>
               @endif
           </div> --}}
+<<<<<<< Updated upstream
       </div> -->
+=======
+      </div>
+
+        {{-- <div class="d-flex flex-row justify-content-between py-4">
+          <div class="d-flex flex-row justify-content-around">
+            <div class="pe-4">
+              @if($transaction->seller->profile_picture != null)
+              <img src="{{ url('storage/uploads/' . $transaction->seller->profile_picture) }}" class="img-fluid product-image-3" alt="games" />
+              @else
+              <img src="{{ url('assets/images/default-game.png') }}" class="img-fluid img-fluid product-image-3" alt="games" />
+              @endif
+            </div>
+            <div>
+              <div>
+                <a href="#" class="detail-a detail-p">{{$transaction->seller->display_name ? $transaction->seller->display_name : $transaction->seller->first_name}}</a>
+                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="check mark" />
+              </div>
+              <div class="d-flex justify-content-start pt-1 align-items-center">
+                <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="star mark" />
+                <span class="detail-p">{{showUserRatingPercentage($transaction->seller->id)}}% ({{$transaction->seller->total_ratings}})</span>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+      </div>
+>>>>>>> Stashed changes
       {{-- Right side ends --}}
     </div>
 

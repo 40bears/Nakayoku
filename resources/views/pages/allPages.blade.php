@@ -27,8 +27,8 @@
                 </a>
                 <p class="min-p mb-0 col-md-2 text-center">{{$page->status}}</p>
                 <div class="d-flex col-md-4 ms-2 ml-1 align-items-start">
-                    <a href="{{ route('edit-page', [ 'id' => $page->id ] ) }}" class="nav-link view-2 me-3">EDIT</a>
-                    <a href="{{ route('delete-page', [ 'id' => $page->id ] ) }}" class="nav-link view sell" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
+                    <a href="{{ route('edit-page', [ 'id' => $page->id ] ) }}" class="nav-link game-edit-btn me-3">EDIT</a>
+                    <a href="{{ route('delete-page', [ 'id' => $page->id ] ) }}" class="game-edit-delete-btn" onclick="return confirm('Are you sure you want to delete this?')">DELETE</a>
                 </div>
             </div>
         </div>

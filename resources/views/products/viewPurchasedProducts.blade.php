@@ -11,11 +11,11 @@
     <!-- Product list component starts -->
     @if(count($transactions) == 0 )
     <br><br>
-    <h3 class="pb-5 border-0 signin-h3">There are no purchases till date.</h3>
+    <h3 class="pb-5 border-0 signin-h3 text-center">There are no purchases till date.</h3>
     @else
     <div class="row py-4">
     @foreach($transactions as $transaction)
-    <div class="col-md-4 col-sm-12 mb-4 sp-mb">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sp-mb">
         <div class="white-box">
             @if($transaction->payment_status == 1)
             <span class="tag-green">Paid</span>
