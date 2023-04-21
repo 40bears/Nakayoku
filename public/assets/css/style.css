@@ -2536,7 +2536,7 @@ ul.footer-links li {
     }
 
     .main-box {
-        width: 95%;
+        width: 100% !important;
     }
 
     .signup-a {
