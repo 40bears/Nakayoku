@@ -25,6 +25,12 @@
 
                     <label class="signup-lbl py-2">Game Name</label>
                     <input type="text" class="signup-input" name="name" id="platforms" placeholder="GRAND THEFT AUTO V" value="{{ Route::is('edit-game') ? $game->name : ''}}" />
+                    @if($errors->has('name'))
+                    <div class="d-flex align-items-center">
+                        <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                        <p class="error-p">{{$errors->first('name')}}</p>
+                    </div>
+                    @endif
 
                     <label class="signup-lbl pb-2 pt-4">Game Category</label>
                     <select class="select-bank select-game w-100" name="category" id="exampleFormControlSelect3" value="{{ Route::is('edit-game') ? $game->device : ''}}">
@@ -33,6 +39,12 @@
                         @endforeach
                         <option value="other">OTHER</option>
                     </select>
+                    @if($errors->has('category'))
+                    <div class="d-flex align-items-center">
+                        <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                        <p class="error-p">{{$errors->first('category')}}</p>
+                    </div>
+                    @endif
                     
                     <div id="otherCategoryInput" class="d-flex flex-column hide">
                         <label class="signup-lbl pb-2 pt-4">Add new category</label>
@@ -49,29 +61,46 @@
                             <option value="other">OTHER</option>
                         </select>
                     </div>
+                    @if($errors->has('device'))
+                    <div class="d-flex align-items-center">
+                        <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                        <p class="error-p">{{$errors->first('device')}}</p>
+                    </div>
+                    @endif
 
                     <div id="otherDeviceInput" class="d-flex flex-column hide">
                         <label class="signup-lbl pb-2 pt-4">Add new device</label>
                         <input type="text" class="signup-input" name="other_device" placeholder="Add a device" />
                     </div>
 
-                    <label class="signup-lbl pb-2 pt-4">Upload Image</label>
-                    <div class="d-flex flex-column image-box image-select-div {{ $game->image != null ? 'hide' : ''}}">
-                        
+                    <input type="checkbox" class="delete-btn-click-listener" name="delete-image-confirmation" id="" hidden/>
+                    <div class="d-flex flex-column justify-content-center">
+                    <p class="signup-lbl pt-4 pb-2">Upload Image</p>
+
+                    <div class="d-flex flex-column image-box image-select-div-new {{ $game->image != null ? 'hide' : ''}}">
                         <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                            <img src="{{ url('assets/images/img-upload.svg') }}" class="img-fluid upload-img" alt="upload" />
-                            <span class="profile-p text-center py-3">Upload image</span>
-                            <label for="image-upload" class="custom-file-upload">
+                            <img src="{{ url('assets/images/img-upload-2.svg') }}" class="img-fluid upload-img" alt="upload" />
+                            <span class="profile-p text-center py-3">Upload Image</span>
+                            <label for="image-upload-new" class="custom-file-upload">
                                 <span class="browse-txt">Browse</span>
                             </label>
-                            <input type="file" name="image" id="image-upload">
+                            <input type="file" name="image" id="image-upload-new">
                         </div>
-      
                     </div>
-                    <div class="d-flex flex-column align-items-center image-box image-preview-div {{ $game->image == null ? 'hide' : ''}}">
-                        <img src="{{ Route::is('edit-game') &&  $game->image != null ? url('storage/uploads/' . $game->image) : '' }}" class="upload-game-img" id="image-upload-preview" alt="">
-                        <a class="request-a remove-uploaded-pic pb-2 pt-4">Delete</a>
+                    <div class="d-flex flex-column align-items-center image-box image-preview-new {{ $game->image != null ? '' : 'hide'}}">
+                        <img src="{{ url('storage/uploads/' . $game->image ) }}" class="upload-game-img image-upload-preview-new" id="" alt="">
                     </div>
+                    @if($errors->has('image'))
+                    <div class="d-flex align-items-center">
+                        <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                        <p class="error-p">{{$errors->first('image')}}</p>
+                    </div>
+                    @endif
+                    <p class="image-preview-para">Please select JPG or PNG files under 3 MB. Square photos are recommended. Changes will not take effect until you save</p>
+                    <div class="d-flex justify-content-end mt-2">
+                        <a class="request-a remove-uploaded-pic-new px-4 py-2 text-end">Delete</a>
+                    </div>
+                </div>
                 </div>
 
                 <div class="d-flex flex-column align-items-center">

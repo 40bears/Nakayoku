@@ -676,7 +676,8 @@ a:hover {
     text-align: center;
 }
 a.disabled,
-button.disabled{
+button.disabled,
+input.disabled{
     background: gray;
     color: white;
 }

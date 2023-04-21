@@ -56,10 +56,6 @@
                         <div class="mt-3 vector-image-text">
                             <p>{{{$product->user->introduction}}}</p>
                         </div>
-                        @else
-                        <div class="mt-3 vector-image-text">
-                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-                        </div>
                         @endif
                         <div class="d-flex">
 
@@ -94,7 +90,7 @@
                     <img src="{{ Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->image) : url('storage/uploads/' . $product->games->image) }}" class="img-fluid profile-image-w" alt="games" />
                     <!-- <img src="{{ url('storage/uploads/2023/Mar/6402ca5f396ca.png' ) }}" class="img-fluid profile-image-w w-50" alt="games" /> -->
                     @else
-                    <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image w-50" alt="games" />
+                    <img src="{{ url('assets/images/default-game-new.jpeg') }}" class="img-fluid profile-image w-50" alt="games" />
                     @endif
                 </div>
                 <div class="product-details-seller-section-2-description">
@@ -280,10 +276,6 @@
                         @if($product->user->introduction != null)
                         <div class="mt-3 vector-image-text">
                             <p>{{{$product->user->introduction}}}</p>
-                        </div>
-                        @else
-                        <div class="mt-3 vector-image-text">
-                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
                         </div>
                         @endif
                         <div class="d-flex mb-3 mt-3">
@@ -475,10 +467,6 @@
                         @if($product->user->introduction != null)
                         <div class="mt-3 vector-image-text">
                             <p>{{{$product->user->introduction}}}</p>
-                        </div>
-                        @else
-                        <div class="mt-3 vector-image-text">
-                            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
                         </div>
                         @endif
                         <div class="d-flex">

@@ -21,7 +21,7 @@
                             <div class="pb-4 d-flex flex-column">
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">First Name</span>
-                                    <input type="text" class="signup-input contact_field input-bg-blk" name="first_name" id="firstName" placeholder="Enter Your First Name" value="{{Auth::user() ? Auth::user()->first_name : ''}}" />
+                                    <input type="text" class="signup-input contact_field input-bg-blk contact-form-common-class form-first-name" name="first_name" id="firstName" placeholder="Enter Your First Name" value="{{Auth::user() ? Auth::user()->first_name : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('first_name'))
@@ -32,7 +32,7 @@
                                 @endif
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">Last Name</span>
-                                    <input type="text" class="signup-input contact_field input-bg-blk" name="last_name" id="lastName" placeholder="Enter Your Last Name" value="{{Auth::user() ? Auth::user()->last_name : ''}}" />
+                                    <input type="text" class="signup-input contact_field input-bg-blk contact-form-common-class form-last-name" name="last_name" id="lastName" placeholder="Enter Your Last Name" value="{{Auth::user() ? Auth::user()->last_name : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('last_name'))
@@ -43,7 +43,7 @@
                                 @endif
                                 <div class="d-flex flex-column form-input mb-4">
                                     <span class="signup-lbl pb-3">Email</span>
-                                    <input type="email" class="signup-input contact_field input-bg-blk" name="email" id="email" placeholder="Enter Your Email" value="{{Auth::user() ? Auth::user()->email : ''}}" />
+                                    <input type="email" class="signup-input contact_field input-bg-blk contact-form-common-class form-email" name="email" id="email" placeholder="Enter Your Email" value="{{Auth::user() ? Auth::user()->email : ''}}" />
                                     <span class="input-text contact_label hide"></span>
                                 </div>
                                 @if($errors->has('email'))
@@ -55,7 +55,7 @@
 
                                 <label class="signup-lbl py-3">Write Your Inquiry</label>
                                 
-                                <textarea class="signup-input h-100 contact_field input-bg-blk" id="introduction" name="inquiry" rows="15" cols="50" placeholder="Please Write Your Enquiry..." required></textarea>
+                                <textarea class="signup-input h-100 contact_field input-bg-blk contact-form-common-class form-inquiry" id="introduction" name="inquiry" rows="15" cols="50" placeholder="Please Write Your Enquiry..." required></textarea>
                                 <span class="input-text contact_label hide"></span>
                                 @if($errors->has('inquiry'))
                                     <div class="d-flex align-items-center mb-4">
@@ -71,9 +71,9 @@
                             </div>
 
                             <div class="d-flex flex-column align-items-center">
-                                <input type="button" class="signup-btn w-100" id="confirm" name="confirm" value="CONFIRM" />
+                                <input type="button" class="signup-btn w-100 contact-confirm-button disabled" id="confirm" name="confirm" value="CONFIRM" disabled />
                                 <input type="submit" id="submit" class="signup-btn w-100 hide" class="nav-link btn-blue hide button-1 w-100" id="submit" name="submit" value="SUBMIT" />
-                                <a class="signup-a pt-3" id="back" class="hide">Go back and edit</a>
+                                <a class="signup-a pt-3 hide" id="back">Go back and edit</a>
                             </div>
                         </form>
                     </div>
