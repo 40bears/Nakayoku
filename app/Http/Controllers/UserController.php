@@ -90,10 +90,10 @@ class UserController extends Controller
                 $user->document = $image;
             }
             if($request['document_type'] == "driving_license"){
-                $request->validate([
-                    'image2' => 'required',
-                ]);
                 if (!empty($request->file('image2'))) {
+                    $request->validate([
+                        'image2' => 'required',
+                    ]);
                     $image2 = Carbon::now()->format('Y') . '/' . Carbon::now()->format('M') . '/' . uniqid() . '.' . $request->file('image2')->getClientOriginalExtension();
                     $request->file('image2')->storeAs('uploads', $image2, 'public');
     

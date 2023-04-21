@@ -20,6 +20,12 @@ class GameController extends Controller
             $data = compact('devices', 'categories');
             return view('games.addGame')->with($data);
         } else {
+            $request->validate([
+                'name' => 'required',
+                'category' => 'required',
+                'device' => 'required',
+                'image' => 'required',
+            ]);
             $game = new Game();
             $game->name = $request['name'];
             if (!empty($request['other_device'])) {
@@ -108,6 +114,13 @@ class GameController extends Controller
 
     public function updateGame($id, Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'category' => 'required',
+            'device' => 'required',
+            // 'image' => 'required',
+        ]);
+
         $game = Game::where('id', $id)->first();
         $game->name = $request['name'];
         if (!empty($request['other_device'])) {
@@ -137,8 +150,11 @@ class GameController extends Controller
             $request->file('image')->storeAs('uploads', $game_image, 'public');
 
             $game->image = $game_image;
-        } else {
-            $game->image = null;
+        } elseif($request['delete-image-confirmation'] == true) {
+            $request->validate([
+                'image' => 'required'
+            ]);
+            $product->image = null;
         }
         $game->user_id = Auth::id();
         $game->save();

@@ -25,6 +25,12 @@
 
                         <label class="signup-lbl py-2">Game Name</label>
                         <input type="text" class="signup-input" name="name" id="platforms" placeholder="GRAND THEFT AUTO V" value="{{ Route::is('edit-game') ? $game->name : ''}}" />
+                        @if($errors->has('name'))
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                            <p class="error-p">{{$errors->first('name')}}</p>
+                        </div>
+                        @endif
 
                         <label class="signup-lbl pb-2 pt-4">Game Category</label>
                         <select class="select-bank select-game w-100" name="category" id="exampleFormControlSelect3" value="{{ Route::is('edit-game') ? $game->device : ''}}">
@@ -33,6 +39,12 @@
                             @endforeach
                             <option value="other">Other</option>
                         </select>
+                        @if($errors->has('category'))
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                            <p class="error-p">{{$errors->first('category')}}</p>
+                        </div>
+                        @endif
                         
                         <div id="otherCategoryInput" class="d-flex flex-column hide">
                             <label class="signup-lbl pb-2 pt-4">Add New Category</label>
@@ -49,6 +61,12 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
+                        @if($errors->has('device'))
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                            <p class="error-p">{{$errors->first('device')}}</p>
+                        </div>
+                        @endif
 
                         <div id="otherDeviceInput" class="d-flex flex-column hide">
                             <label class="signup-lbl pb-2 pt-4">Add New Device</label>
@@ -72,6 +90,12 @@
                             <img src="" class="upload-game-img" id="image-upload-preview" alt="">
                             <a class="request-a remove-uploaded-pic pb-2 pt-4">Delete</a>
                         </div>
+                        @if($errors->has('image'))
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url('assets/images/cross-red-new.svg') }}" class="img-fluid pe-2" alt="settings" />
+                            <p class="error-p">{{$errors->first('image')}}</p>
+                        </div>
+                        @endif
                     </div>
 
                     <div class="d-flex flex-column align-items-center">

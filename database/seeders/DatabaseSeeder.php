@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             DeviceSeeder::class,
             FelisBankAccountSeeder::class,
-            PageCategorySeeder::class
+            PageCategorySeeder::class,
+            CategorySeeder::class
         ]);
     }
 }

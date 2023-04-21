@@ -966,6 +966,21 @@ window.addEventListener("scroll", function () {
 });
 
 
+const contactFormCommonClass = document.querySelectorAll(".contact-form-common-class");
+const contactConfirmButton = document.querySelector(".contact-confirm-button");
+const formFirstName = document.querySelector(".form-first-name");
+const formLastName = document.querySelector(".form-last-name");
+const formEmail = document.querySelector(".form-email");
+const formInquiry = document.querySelector(".form-inquiry");
+contactFormCommonClass.forEach((e) => {
+    e.addEventListener("keyup", function(){
+        if(formFirstName.value != "" && formLastName.value != "" && formEmail.value != "" && formInquiry.value != ""){
+            contactConfirmButton.classList.remove("disabled");
+            contactConfirmButton.removeAttribute("disabled");
+        }
+    });
+});
+
 
 // Ambalika's JS start
 // select show all by default in popular collections tab menu
