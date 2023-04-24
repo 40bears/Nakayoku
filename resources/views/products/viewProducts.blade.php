@@ -112,10 +112,10 @@
                     </select>
                 </form>
 
-                <div class="d-flex">
-                    <a class="w-100 go" id="search-filter-btn">GO</a>
+                {{-- <div class="d-flex"> --}}
+                    {{-- <a class="w-100 go" id="search-filter-btn">GO</a> --}}
                     <!-- <a href="" class="d-flex justify-content-center align-items-center col tablinks isActive" id="defaultOpen">GO</a> -->
-                </div>
+                {{-- </div> --}}
             </div>
 
 
@@ -197,7 +197,7 @@
 
         </div>
 
-        <div class="col-md-12 col-sm-12 ps-5 common-space pt-0">
+        <div class="col-md-12 col-sm-12 common-space pt-0">
             <div class="d-flex pb-2">
                 @if(!empty(request()->get('min_price')))
                 <div class="properties d-flex justify-content-around align-items-center me-4 min-filter">
@@ -295,7 +295,7 @@
                                 <form>
                                     <button formaction="{{ route('profile-page', ['id' => $product->user->id]) }}" class="detail-para currency-profile-page-button"> {{$product->user->first_name}}</button>
                                 </form>
-                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                                <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid" alt="games" />
                             </div>
                             <div class="d-flex justify-content-between pt-1 align-items-center">
                                 <span class="detail-p text-dark">{{showUserRatingPercentage($product->user->id)}}% ({{$product->user->total_ratings}})</span>

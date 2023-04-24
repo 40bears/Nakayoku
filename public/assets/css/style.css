@@ -2459,6 +2459,12 @@ ul.footer-links li {
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    .item-price {
+        font-size: 22px;
+    }
+}
+
 @media only screen and (max-width: 1194px) {
     .logo-w {
         width: 75%;
@@ -2523,6 +2529,14 @@ ul.footer-links li {
 }
 
 @media only screen and (max-width: 834px) {
+    .vector-image-text {
+        font-size: 12px;
+    }
+
+    .item-price {
+        font-size: 16px;
+    }
+
     .logo-w {
         width: 90%;
     }
@@ -2684,6 +2698,10 @@ ul.footer-links li {
     }
 
     /* sp menu ends */
+
+    .filters-right-section {
+        width: 100% !important;
+    }
 
     .nav-link,
     .nav-link:focus {
@@ -3363,6 +3381,11 @@ ul.footer-links li {
 }
 
 @media only screen and (max-width: 393px) {
+
+    .left-menu a {
+        font-size: 13px;
+    }
+
     .sell-btn {
         width: 6.5rem !important;
     }
@@ -4499,6 +4522,7 @@ h1 {
     .hide-in-tab {
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 1200px) {
