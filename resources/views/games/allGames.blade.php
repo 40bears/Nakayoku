@@ -14,7 +14,7 @@
     <div class="container">
         <div class="d-flex flex-column flex-md-row">
             <h2 class="carousal-heading me-3">Popular Collections</h2>
-            <div class="carousal-nav mx-1 row tab mb-3 overflow-scroll h-auto" >
+            <div class="carousal-nav mx-1 row tab mb-3 all-games-filter h-auto" >
                 <a href="{{ route('all-games') }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('all-games') ? 'isActive' : '' }}" id="defaultOpen">
                 Show all
                 </a>

@@ -4677,6 +4677,9 @@ h1 {
         padding-left: 0rem;
         margin-top: 5%;
     }
+    .game-container{
+        margin: 0.5rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 1150px) and (orientation: landscape) {
@@ -4824,6 +4827,9 @@ h1 {
         font-weight: 500;
         font-size: 0.8rem;
     }
+    .all-games-filter{
+        overflow: scroll;
+    }
 
     .hero-section-mobile {
         height: 35vh !important;
@@ -4872,6 +4878,9 @@ h1 {
     .tab::-webkit-scrollbar {
         display: none;
         /* for Chrome, Safari, and Opera */
+    }
+    .overflow-scroll::-webkit-scrollbar{
+        display: none !important;
     }
 
     .hero-section-mobile {
