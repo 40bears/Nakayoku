@@ -13,35 +13,23 @@
 
       <!-- Hero section -->
       <div class="d-flex  hero-section hide-in-mob">
-        <div class="col w-16 animate__animated animate__slow animate__slideInUp">
+      <div class="col w-16 card5 animate__animated animate__slow animate__slideInUp">
+          <div class="hero-card" data-aos="fade-up">
+          <a href="{{route('view-products', [ 'id' => 23 ] )}}">
+            <img src="{{ url('assets/images/TopPageImages/WorldCraft.jpg') }}" class="size-md hero-img" alt="game-image">
+              <div class="">
+              </div></a>
+          </div>
 
-            <div class="row hero-card">
-            <a href="{{route('view-products', [ 'id' => 23 ] )}}">
-                <img src="{{ url('assets/images/TopPageImages/WorldCraft.jpg') }}" class="size-md hero-img" alt="game-image">
-                <div class="img-overlay-left">
-                </div>
-              </a>
-            </div>
-
-            <div class="row hero-card card1">
-            <a href="{{route('view-products', [ 'id' => 7 ] )}}">
-                <img src="{{ url('assets/images/TopPageImages/ApexLegends.jpg') }}" class="size-md hero-img" alt="game-image">
-                <div class="img-overlay-left-second">
-                </div>
-              </a>
-            </div>
-
-        </div>
+          <div class="hero-card card1" data-aos="fade-up">
+          <a href="{{route('view-products', [ 'id' => 7 ] )}}">
+            <img src="{{ url('assets/images/TopPageImages/ApexLegends.jpg') }}" class="size-md hero-img" alt="game-image">
+              <div class="">
+              </div></a>
+          </div>
+      </div>
 
         <div class="col-8 my-3 mx-4">
-          <!-- searchbar -->
-          <!-- <form class="d-flex w-100 display" action="{{ route('dashboard-search') }}" method="POST">
-            @csrf
-            <input type="text" class="search-text-box searchTerm" autocomplete="off" name="top_page_search" id="dashboard_game_name" placeholder="What are you looking for?" value="{{request()->get('top_page_search')}}">
-            <button type="submit" class="searchButton">
-                <i class="fa-solid fa-magnifying-glass icon txt-blk"></i>
-            </button>
-          </form> -->
           <div class="searchbar-main">
             <div class="d-flex justify-content-center">
               <div class="searchbar">
@@ -162,7 +150,7 @@
                 @if($transaction->seller->profile_picture != null)
                 <img src="{{ url('storage/uploads/' . $transaction->seller->profile_picture ) }}" class="  pe-1 size-md " alt="profile-image">
                 @else
-                <img src="{{ url('assets/images/TopPageImages/duck.png') }}" class="  pe-1 size-md" alt="profile-image">
+                <img src="{{ url('assets/images/default-profile.png') }}" class=" w-25 pe-1 size-md" alt="profile-image">
                 @endif
                 <div class="mx-2">{{$transaction->seller->first_name}}</div>
               </div>
@@ -170,7 +158,6 @@
                 <p class="company-sell-time">15 hours ago</p>
                 <p class="company-detail">{{$transaction->products->name}}</p>
               </div>
-              <!-- <a class="view-details col-3 pe-4 text-decoration-none" href="javascript:void(0)">View Details</a> -->
               <a class="view-details col-3 pe-4 text-decoration-none" href="{{ route('view-product-details', [ 'product_name' => makeURL($transaction->products->name), 'id' => $transaction->products->id] ) }}">View Details</a>
             </div>
             @endforeach
@@ -198,12 +185,10 @@
                   <a href="/" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('dashboard') ? 'isActive' : '' }}" id="defaultOpen">
                     Show all
                   </a>
-                  <!-- <button class="col tablinks" id="tablinks" onclick="viewCollections(this)"> -->
                     <a href="{{ route('dashboard-by-product-type', ['product_type' => 'item'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
                       <img src="{{ url('assets/images/TopPageImages/itemsIcon.svg') }}" alt="items" loading="lazy">
                       Items
                     </a>
-                  <!-- </button> -->
                   <a href="{{ route('dashboard-by-product-type', ['product_type' => 'account'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'account') ? 'isActive' : '' }}" id="tablinks">
                     <img src="{{ url('assets/images/TopPageImages/accountIcon.svg') }}" alt="account" loading="lazy">
                     Account
@@ -226,7 +211,6 @@
                     <div class="d-flex p-2 row justify-content-between">
                       <div class="d-flex col-8 pe-5">
                         <div>
-                          <!-- <img src="{{ url('assets/images/TopPageImages/GameImg3.png') }}" class="  pe-1 size-md m-1 game-image" alt="profile-image"> -->
                           @if($item->games->image != null)
                           <img src="{{ url('storage/uploads/' . $item->games->image ) }}" class="  pe-1 size-md m-1 game-image" alt="profile-image">
                           @else
@@ -234,7 +218,7 @@
                           @endif
                         </div>
                         <div class="color-white align-self-center col-10">
-                          <span class="game-box-title">{{Str::limit($item->name, 50, $end='.......')}}</span>
+                          <span class="game-box-title">{{Str::limit($item->name, 30, $end='...')}}</span>
                           <img src="{{ url('assets/images/TopPageImages/Checkmark.svg') }}" class="checkmark">
                           <div class="game-box-subheading d-flex pl-0">
                             <span class="mr-3">{{$item->stock_quantity}}</span>
@@ -242,7 +226,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 8, $end='.....')}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
                     </div>  
                   </a>
                   @endforeach
@@ -262,7 +246,7 @@
                           @endif
                         </div>
                         <div class="color-white align-self-center col-10">
-                          <span class="game-box-title">{{Str::limit($item->name, 50, $end='.......')}}</span>
+                          <span class="game-box-title">{{Str::limit($item->name, 30, $end='...')}}</span>
                           <img src="{{ url('assets/images/TopPageImages/Checkmark.svg') }}" class="checkmark">
                           <div class="game-box-subheading d-flex pl-0">
                             <span class="mr-3">{{$item->stock_quantity}}</span>
@@ -270,7 +254,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($item->price))}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
                     </div>  
                   </a>
                   @endforeach
@@ -290,7 +274,7 @@
                           @endif
                         </div>
                         <div class="color-white align-self-center col-10">
-                          <span class="game-box-title">{{Str::limit($item->name, 50, $end='.......')}}</span>
+                          <span class="game-box-title">{{Str::limit($item->name, 30, $end='...')}}</span>
                           <img src="{{ url('assets/images/TopPageImages/Checkmark.svg') }}" class="checkmark">
                           <div class="game-box-subheading d-flex pl-0">
                             <span class="mr-3">{{$item->stock_quantity}}</span>
@@ -298,7 +282,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($item->price))}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
                     </div>  
                   </a>
                   @endforeach
@@ -347,40 +331,7 @@
       </div>
 
 @else
-<!-- <div class="container-fluid px-0 bg-lgreen">
-  <div class="container py-5">
 
-      <div class="row pt-3">
-          @if(count($games) > 0)
-          @foreach($devices as $device)
-
-          @if(count($device->games) > 0)
-          <h3 class="top-h3">{{Str::upper($device->name)}}</h3>
-          @foreach($device->games as $game)
-          <div class="col-md-3 col-sm-12 space pb-4">
-
-              <a href="{{ route('view-products', [ 'id' => $game->id ] ) }}">
-                  @if(!empty($game->image))
-                  <img src="{{ url('storage/uploads/' . $game->image ) }}" class="img-fluid top-image" alt="games" />
-                  @else
-                  <img src="{{ url('assets/images/default-game-new.jpeg') }}" class="img-fluid top-image" alt="games" />
-                  @endif
-              </a>
-              <p class="detail-p text-center mt-4">({{Str::upper($game->name)}} - {{Str::upper($game->devices->name)}})</p>
-          </div>
-          @endforeach
-          @endif
-
-
-          @endforeach
-          @else
-          <div class="d-flex justify-content-center py-5 border-tb margin-t bg-lgreen">
-              <h3 class="pb-2 border-0">There are no matching results.</h3>
-          </div>
-          @endif
-      </div>
-  </div>
-</div> -->
 @endif
 </div>
 </div>

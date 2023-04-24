@@ -42,10 +42,8 @@
 
             <!-- Checkbox starts -->
             <div class="d-flex justify-content-center align-items-center">
-                <!-- <p class="keyword-p">ALL</p> -->
                 <ul class="ps-0 left-menu d-flex justify-content-center align-items-center mb-0">
                     <div class="carousal-nav mx-1 row tab" >
-                        <!-- <button class="col tablinks" id="tablinks" onclick="viewCollections(this)"> -->
                         <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
                                 Show all
                         </a>
@@ -63,33 +61,11 @@
                             Currency
                         </a>
                     </div>
-                    <!-- <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'account'] ) }}">
-                        <li class="border-nav border-t ps-3 py-2 {{str_contains(url()->current(), 'account') ? 'current-page' : ''}}">
-                            <div class="d-flex justify-content-between"> 
-                               ACCOUNT  <span>({{$accounts}})</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'currency'] ) }}">
-                        <li class="border-nav ps-3 py-2 {{str_contains(url()->current(), 'currency') ? 'current-page' : ''}}">
-                            <div class="d-flex justify-content-between"> 
-                                CURRENCY  <span class="ps-2">({{$currencies}})</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'item'] ) }}">
-                        <li class="border-nav ps-3 py-2 {{str_contains(url()->current(), 'item') ? 'current-page' : ''}}">
-                            <div class="d-flex justify-content-between"> 
-                                ITEM  <span class="ps-5">({{$items}})</span>
-                            </div>
-                        </li>
-                    </a> -->
                 </ul>
             </div>    
              <!-- Checkbox ends -->
 
             <div class="p-right d-flex flex-column flex-md-row pt-4 pt-lg-0 filters-right-section">
-                <!-- <p class="keyword-p pt-3">Keyword filters</p> -->
                 <form action="{{ route('view-products-search', [ 'id' => $game->id ] ) }}">
 
                     <div class="search-div w-100">
@@ -117,80 +93,6 @@
                     <!-- <a href="" class="d-flex justify-content-center align-items-center col tablinks isActive" id="defaultOpen">GO</a> -->
                 {{-- </div> --}}
             </div>
-
-
-            <!-- <div class="time-dropdown">
-                  <select name="platform" id="cars" class="dropdown">
-                    <option value="PS5">PS5</option>
-                    <option value="PS4">PS4</option>
-                    <option value="Last 6 hours">Last 6 hours</option>
-                  </select>
-                </div> -->
-
-            
-
-            <!-- <div class=" width-100 padding-tb">
-                <p class="keyword-p pt-4">Price Range Filters</p>
-
-                @if(str_contains(url()->current(), 'account'))
-                <form action="{{ route('view-products-type', [ 'id' => $game->id, 'type' => 'account', 'min' => request()->min_price, 'max' => request()->max_price ] ) }}" id="price-filters-form">
-                    @elseif(str_contains(url()->current(), 'item'))
-                    <form action="{{ route('view-products-type', [ 'id' => $game->id, 'type' => 'item', 'min' => request()->min_price, 'max' => request()->max_price ] ) }}" id="price-filters-form">
-                        @elseif(str_contains(url()->current(), 'currency'))
-                        <form action="{{ route('view-products-type', [ 'id' => $game->id, 'type' => 'currency', 'min' => request()->min_price, 'max' => request()->max_price ] ) }}" id="price-filters-form">
-                            @else
-                            <form action="{{ route('view-products', [ 'id' => $game->id, 'min' => request()->min_price, 'max' => request()->max_price ] ) }}" id="price-filters-form">
-                                @endif
-                                <div id="rangeSlider" class="range-slider d-flex justify-content-start align-items-center">
-                                    {{-- <div class="range-group">
-                                        @if(Auth::user())
-                                        @if(Auth::user()->base_currency != 'JPY')
-                                        <input class="range-input price-slider min-price-slider" value="{{request()->has('min_price') ? str_replace(',','',request()->get('min_price')) : 0}}" min="1" max="50000" step="1" type="range" />
-                                        <input class="range-input price-slider max-price-slider" value="{{request()->has('max_price') ? str_replace(',','',request()->get('max_price')) : 50000}}" min="1" max="50000" step="1" type="range" />
-                                        @else
-                                        <input class="range-input price-slider min-price-slider" value="{{request()->has('min_price') ? str_replace(',','',request()->get('min_price')) : 0}}" min="1" max="5000000" step="1" type="range" />
-                                        <input class="range-input price-slider max-price-slider" value="{{request()->has('max_price') ? str_replace(',','',request()->get('max_price')) : 5000000}}" min="1" max="5000000" step="1" type="range" />
-                                        @endif
-                                        @else
-                                        @if(Session::get('base_currency') != 'JPY')
-                                        <input class="range-input price-slider min-price-slider" value="{{request()->has('min_price') ? str_replace(',','',request()->get('min_price')) : 0}}" min="1" max="50000" step="1" type="range" />
-                                        <input class="range-input price-slider max-price-slider" value="{{request()->has('max_price') ? str_replace(',','',request()->get('max_price')) : 50000}}" min="1" max="50000" step="1" type="range" />
-                                        @else
-                                        <input class="range-input price-slider min-price-slider" value="{{request()->has('min_price') ? str_replace(',','',request()->get('min_price')) : 0}}" min="1" max="5000000" step="1" type="range" />
-                                        <input class="range-input price-slider max-price-slider" value="{{request()->has('max_price') ? str_replace(',','',request()->get('max_price')) : 5000000}}" min="1" max="5000000" step="1" type="range" />
-                                        @endif
-                                        @endif
-                                    </div> --}}
-                                    <div class="number-group d-flex justify-content-between ">
-                                        <input class="number-input price-input-1  min-price price-slider format-with-comma w-40" name="min_price" type="text" value="{{request()->has('min_price') ? request()->get('min_price') : ''}}" placeholder="min" />
-                                        {{-- to --}}
-                                        <input class="number-input price-input-1  max-price price-slider format-with-comma w-40" name="max_price" type="text" value="{{request()->has('max_price') ? request()->get('max_price') : ''}}" min="0" max="50000" placeholder="max" />
-                                    </div>
-
-                                </div>
-                            </form>
-            </div>
-
-            <div>
-                <p class="keyword-p pt-4">Platform</p>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1" class="d-none">Select</label>
-                        <form action="">
-                            <select class="minimal select-platform change_platform w-100" id="exampleFormControlSelect1" name="change_platform">
-                                <option>Change Platform</option>
-                                @foreach($devices as $device)
-                                @if(count($device->games) != 0)
-                                @foreach($device->games as $game)
-                                <option value="{{$game->id}}">{{Str::upper($device->name)}}</option>
-                                @endforeach
-                                @endif
-                                @endforeach
-                            </select>
-                        </form>
-                    </div>
-                </form>
-            </div> -->
             
         </div>
         <!-- Price filter ends -->
