@@ -34,7 +34,7 @@
                         @endif
                     </div> --}}
 
-                    <div class="d-flex flex-column product-details-seller-section ">
+                    <div class="d-flex flex-column">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -45,7 +45,7 @@
                         <div class="d-flex flex-column justify-content-center mt-3">
                             <div class="d-flex justify-content-start align-items-center">
                                 <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
-                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                                <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid mb-4 ms-1" alt="games" />
                             </div>
                             <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
                                 <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
@@ -57,24 +57,59 @@
                             <p>{{{$product->user->introduction}}}</p>
                         </div>
                         @endif
-                        <div class="d-flex">
+                        <div class="d-flex flex-column">
 
                             <div class="d-flex mb-3 mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                    <p class="mb-0 vector-image-text">Average delivery time</p>
                                     <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3 mt-3">
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-column ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->min_quantity}}</p>
+                                </div>
+                            </div>
+                            {{-- <div class="d-flex mb-3 mt-1">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/max-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Max Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->max_quantity}}</p>
+                                </div>
+                            </div> --}}
+                            <div class="d-flex mb-3 ">
                                 <div class="vector-image-border" >
-                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Device</p>
                                     <p class="mb-0 vector-image-text ms-4">{{Str::upper($product->games->devices->name)}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 ">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">In Stock</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +255,14 @@
                     <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
                         <div class="favourites-button-div">
-                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <i class="fa-regular fa-heart pink heart-w heart-2"></i>
                             <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Add to Favourite
                             </a>
                         </div>
                         @else
                         <div class="favourites-button-div">
-                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <i class="fa-solid fa-heart pink heart-w heart-1"></i>
                             <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Remove from Favourite
                             </a>
@@ -255,7 +290,7 @@
                         <img src="{{ url('assets/images/default-profile-picture.png') }}" class="img-fluid profile-image" alt="games" />
                         @endif
                     </div> --}}
-                    <div class="d-flex flex-column product-details-seller-section">
+                    <div class="d-flex flex-column">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -266,7 +301,7 @@
                         <div class="d-flex flex-column justify-content-center mt-3">
                             <div class="d-flex justify-content-start align-items-center">
                                 <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
-                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                                <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid mb-4 ms-2" alt="games" />
                             </div>
                             <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
                                 <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
@@ -278,13 +313,60 @@
                             <p>{{{$product->user->introduction}}}</p>
                         </div>
                         @endif
-                        <div class="d-flex mb-3 mt-3">
-                            <div class="vector-image-border" >
-                                <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                        <div class="d-flex flex-column">
+
+                            <div class="d-flex mb-3 mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Average delivery time</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
+                                </div>
                             </div>
-                            <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
-                                <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-column ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->min_quantity}}</p>
+                                </div>
+                            </div>
+                            {{-- <div class="d-flex mb-3 mt-1">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/max-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Max Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->max_quantity}}</p>
+                                </div>
+                            </div> --}}
+                            <div class="d-flex mb-3 ">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Device</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::upper($product->games->devices->name)}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 ">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">In Stock</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -411,14 +493,14 @@
                     <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
                         <div class="favourites-button-div">
-                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <i class="fa-regular fa-heart pink heart-w heart-2"></i>
                             <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Add to Favourite
                             </a>
                         </div>
                         @else
                         <div class="favourites-button-div">
-                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <i class="fa-solid fa-heart pink heart-w heart-1"></i>
                             <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Remove from Favourite
                             </a>
@@ -446,7 +528,7 @@
                         @endif
                     </div> --}}
 
-                    <div class="d-flex flex-column product-details-seller-section">
+                    <div class="d-flex flex-column">
                         <div class="w-25">
                             @if($product->user->profile_picture != null)
                             <img src="{{ url('storage/uploads/' . $product->user->profile_picture ) }}" class="img-fluid profile-image-w" alt="games" />
@@ -457,7 +539,7 @@
                         <div class="d-flex flex-column justify-content-center mt-3">
                             <div class="d-flex justify-content-start align-items-center">
                                 <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p buy-item-user-name">{{Str::upper($product->user->first_name)}}</a>
-                                <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                                <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid mb-4 ms-1" alt="games" />
                             </div>
                             <!-- <div class="d-flex justify-content-between pt-1 align-items-center">
                                 <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" />
@@ -469,24 +551,59 @@
                             <p>{{{$product->user->introduction}}}</p>
                         </div>
                         @endif
-                        <div class="d-flex">
+                        <div class="d-flex flex-column">
 
                             <div class="d-flex mb-3 mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                    <p class="mb-0 vector-image-text">Average delivery time</p>
                                     <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3 mt-3">
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-column ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->min_quantity}}</p>
+                                </div>
+                            </div>
+                            {{-- <div class="d-flex mb-3 mt-1">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/max-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">Max Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->max_quantity}}</p>
+                                </div>
+                            </div> --}}
+                            <div class="d-flex mb-3 ">
                                 <div class="vector-image-border" >
-                                    <img class="w-80" src="{{ url('assets/images/delivery-time.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Device</p>
                                     <p class="mb-0 vector-image-text ms-4">{{Str::upper($product->games->devices->name)}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3 ">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">In Stock</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
                                 </div>
                             </div>
                         </div>
@@ -642,14 +759,14 @@
                     <div class="d-flex align-items-center mt-4 ">
                         @if($interestedItem == null)
                         <div class="favourites-button-div">
-                            <i class="fa-regular fa-heart text-danger heart-w heart-2"></i>
+                            <i class="fa-regular fa-heart pink heart-w heart-2"></i>
                             <a href="{{ route('add-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Add to Favourite
                             </a>
                         </div>
                         @else
                         <div class="favourites-button-div">
-                            <i class="fa-solid fa-heart text-danger heart-w heart-1"></i>
+                            <i class="fa-solid fa-heart pink heart-w heart-1"></i>
                             <a href="{{ route('delete-interested-products', [ 'id' => $product->id ] ) }}" class="add-to-fav-text mb-0 ps-2">
                                 Remove from Favourite
                             </a>
@@ -742,7 +859,7 @@
                                 <div class="d-flex flex-column justify-content-center ms-4">
                                     <div>
                                         <a href="{{ route('profile-page', [ 'id' => $product->user->id ] ) }}" class="detail-a detail-p">{{$product->user->first_name}}</a>
-                                        <img src="{{ url('assets/images/check-mark.png') }}" class="img-fluid" alt="games" />
+                                        <img src="{{ url('assets/images/r-icon.svg') }}" class="img-fluid" alt="games" />
                                     </div>
                                     <div class="d-flex justify-content-between pt-1 align-items-center">
                                         <!-- <img src="{{ url('assets/images/star-mark.png') }}" class="img-fluid pe-2" alt="games" /> -->

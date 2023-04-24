@@ -310,7 +310,7 @@
       <!-- Popular Collections -->
 
       <div class="container mb-5">
-          <h2 class="carousal-heading py-2">Popular Collections</h2>
+          <h2 class="carousal-heading py-2">Trending Games</h2>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner slider d-flex" row>
             @foreach($games as $game)
@@ -327,7 +327,7 @@
 
         <!-- Choose by categories  -->
         
-        <h2 class="carousal-heading py-2 mt-4">Choose by categories</h2>
+        <h2 class="carousal-heading py-2 mt-4">Choose By Categories</h2>
           <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner slider d-flex" row>
             @foreach($categories as $category)
