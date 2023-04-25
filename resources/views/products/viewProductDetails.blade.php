@@ -61,7 +61,7 @@
 
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/delivery-time-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Average delivery time</p>
@@ -70,46 +70,37 @@
                             </div>
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/device-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Device</p>
                                     <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/sheild-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">100% Guaranteed Payment</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3 ">
+                            <div class="d-flex mt-3 ">
                                 <div class="vector-image-border">
                                     <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex ms-2">
                                     <p class="mb-0 vector-image-text">In Stock</p>
                                     <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->min_quantity)}}</p>
                                 </div>
                             </div>
                         </div>
@@ -241,46 +232,46 @@
 
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/delivery-time-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Guaranteed delivery time</p>
+                                    <p class="mb-0 vector-image-text">Average delivery time</p>
                                     <p class="mb-0 vector-image-text ms-4">{{$product->delivery_time}}</p>
                                 </div>
                             </div>
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/device-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Device</p>
                                     <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/sheild-white-icon.png') }}" alt="vector-image">
+                            <div class="d-flex mt-3 ">
+                                <div class="vector-image-border">
+                                    <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
                                 </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">100% Guaranteed Payment</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
+                                <div class="d-flex ms-2">
+                                    <p class="mb-0 vector-image-text">In Stock</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
                                 </div>
                             </div>
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->min_quantity)}}</p>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +391,7 @@
 
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/delivery-time-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/delivery-time.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Average delivery time</p>
@@ -409,47 +400,37 @@
                             </div>
                             <div class="d-flex mt-3">
                                 <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
+                                    <img class="w-80" src="{{ url('assets/images/guarantee-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">100% Secure Payments Guarantee</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/device-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex flex-row justify-content-start align-items-center ms-2">
                                     <p class="mb-0 vector-image-text">Device</p>
                                     <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
                                 </div>
                             </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/sheild-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">100% Guaranteed Payment</p>
-                                    <!-- <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p> -->
-                                </div>
-                            </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-3">
-                                <div class="vector-image-border" >
-                                    <img class="w-50" src="{{ url('assets/images/device-white-icon.png') }}" alt="vector-image">
-                                </div>
-                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
-                                    <p class="mb-0 vector-image-text">Device</p>
-                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->games->devices->name)}}</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3 ">
+                            <div class="d-flex mt-3 ">
                                 <div class="vector-image-border">
                                     <img class="w-80" src="{{ url('assets/images/instock-icon.svg') }}" alt="vector-image">
                                 </div>
                                 <div class="d-flex ms-2">
                                     <p class="mb-0 vector-image-text">In Stock</p>
                                     <p class="mb-0 vector-image-text ms-4">{{$product->stock_quantity}}</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <div class="vector-image-border" >
+                                    <img class="w-80" src="{{ url('assets/images/min-icon.svg') }}" alt="vector-image">
+                                </div>
+                                <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+                                    <p class="mb-0 vector-image-text">Min Quantity</p>
+                                    <p class="mb-0 vector-image-text ms-4">{{Str::title($product->min_quantity)}}</p>
                                 </div>
                             </div>
                         </div>
