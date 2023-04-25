@@ -2493,6 +2493,10 @@ ul.footer-links li {
 }
 
 @media only screen and (max-width: 1024px) {
+    .hide-ipad {
+        display: none !important;
+    }
+
     .pmypage {
         padding-bottom: 3rem;
     }
@@ -2529,6 +2533,7 @@ ul.footer-links li {
 }
 
 @media only screen and (max-width: 834px) {
+
     .vector-image-text {
         font-size: 12px;
     }
@@ -4677,7 +4682,8 @@ h1 {
         padding-left: 0rem;
         margin-top: 5%;
     }
-    .game-container{
+
+    .game-container {
         margin: 0.5rem 0rem;
     }
 }
@@ -4827,7 +4833,8 @@ h1 {
         font-weight: 500;
         font-size: 0.8rem;
     }
-    .all-games-filter{
+
+    .all-games-filter {
         overflow: scroll;
     }
 
@@ -4879,7 +4886,8 @@ h1 {
         display: none;
         /* for Chrome, Safari, and Opera */
     }
-    .overflow-scroll::-webkit-scrollbar{
+
+    .overflow-scroll::-webkit-scrollbar {
         display: none !important;
     }
 
