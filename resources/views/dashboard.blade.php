@@ -261,7 +261,7 @@
                 </div>
 
                 <!-- container 3 -->
-                <div class="game-container col mx-3 d-flex flex-column justify-content-around">
+                <div class="game-container col mx-3 d-flex flex-column justify-content-around hide-ipad">
                   @foreach($popularProducts3 as $item)
                   <a class="text-decoration-none" href="{{ route('view-product-details', [ 'product_name' => makeURL($item->name), 'id' => $item->id] ) }}">
                     <div class="d-flex p-2 row justify-content-between">
