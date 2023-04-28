@@ -545,7 +545,7 @@
                     <div class="white-box">
                         <a class="w-15" href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($item->image != null)
-                            <img src="{{ !Storage::exists('public/uploads/' . $product->image) ? url('assets/images/product-default.png') : url('storage/uploads/' . $item->image ) }}" class="img-fluid " alt="product" />
+                            <img src="{{ !Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $product->games->image) : url('storage/uploads/' . $item->image ) }}" class="img-fluid " alt="product" />
                             @else
                             <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid " alt="product" />
                             @endif
