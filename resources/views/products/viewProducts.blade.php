@@ -45,7 +45,7 @@
                 <ul class="ps-0 left-menu d-flex justify-content-center align-items-center mb-0">
                     <div class="carousal-nav mx-1 row tab" >
                         <a href="{{ route('view-products', [ 'id' => $game->id ]) }}" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('view-products') ? 'isActive' : '' }}" id="defaultOpen">
-                                Show all
+                            Show all
                         </a>
                         <a href="{{ route('view-products-type', [ 'id' => $game->id , 'type' =>  'item'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
                             <img src="{{ url('assets/images/TopPageImages/itemsIcon.svg') }}" alt="items" loading="lazy">
@@ -145,7 +145,8 @@
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($game->image != null)
-                            <img src="{{ url('storage/uploads/' . $game->image ) }}" class="img-fluid sell-product-image" alt="product" />
+                            <!-- <img src="{{ url('storage/uploads/' . $game->image ) }}" class="img-fluid sell-product-image" alt="product" /> -->
+                            <img src="{{ !Storage::exists('public/uploads/' . $game->image) ? url('assets/images/default-game-new.jpeg') : url('storage/uploads/' . $game->image ) }}" class="img-fluid sell-product-image" alt="product" />
                             @else
                             <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
                             @endif
@@ -180,7 +181,7 @@
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                     @if($product->image != null)
-                    <img src="{{ url('storage/uploads/' . $product->image ) }}" class="img-fluid sell-product-image mb-2" alt="user_profile_picture" />
+                    <img src="{{ !Storage::exists('public/uploads/' . $product->image) ? url('storage/uploads/' . $game->image ) : url('storage/uploads/' . $product->image ) }}" class="img-fluid sell-product-image" alt="product" />
                     @else
                     <img src="{{ url('storage/uploads/' . $game->image )  }}" class="img-fluid sell-product-image mb-2" alt="user_profile_picture" />
                     @endif
@@ -229,7 +230,7 @@
             <div class="white-box">
                 <a href="{{ route('view-product-details', [ 'product_name' => makeURL($product->name), 'id' => $product->id] ) }}">
                             @if($game->image != null)
-                            <img src="{{ url('storage/uploads/' . $game->image ) }}" class="img-fluid sell-product-image" alt="product" />
+                            <img src="{{ !Storage::exists('public/uploads/' . $game->image) ? url('assets/images/default-game-new.jpeg') : url('storage/uploads/' . $game->image ) }}" class="img-fluid sell-product-image" alt="product" />
                             @else
                             <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
                             @endif
