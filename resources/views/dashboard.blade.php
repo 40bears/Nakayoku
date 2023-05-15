@@ -226,7 +226,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($item->price))}}</p>
                     </div>  
                   </a>
                   @endforeach
@@ -254,7 +254,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($item->price))}}</p>
                     </div>  
                   </a>
                   @endforeach
@@ -282,7 +282,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{Str::limit(formatPrice(showConvertedPrice($item->price)), 6, $end='...')}}</p>
+                      <p class=" game-price col-4 d-flex justify-content-center" >{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($item->price))}}</p>
                     </div>  
                   </a>
                   @endforeach
