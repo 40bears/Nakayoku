@@ -54,7 +54,7 @@
 
                     <p class="text-p my-4">
                         (To sign up, you need to be at least 13. Your birthday won’t be
-                        shared with other people who use NAKAYOKU)
+                        shared with other people who use GLOBAL CARPATICA SL)
                     </p>
 
                     <div class="d-flex flex-column form-input">
@@ -79,7 +79,7 @@
                     </div>
                     @endif
                     <p class="text-p my-4">
-                        By selecting Agree and countinue, I agree to NAKAYOKU
+                        By selecting Agree and countinue, I agree to GLOBAL CARPATICA SL
                         <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Conditions</a> and acknowledge the
                         <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
                     </p>

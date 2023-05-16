@@ -229,9 +229,9 @@
                                             <span>Thanks for your purchase!</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; color: rgba(251, 251, 251, 0.82); text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 16px; font-weight: 500;">
-                                            Greetings from CII <br>
+                                            Greetings from GLOBAL CARPATICA SL <br>
 
-                                            This Mail is regarding your recent purchase through CII.<br>
+                                            This Mail is regarding your recent purchase through GLOBAL CARPATICA SL.<br>
 
                                             Please find the details of the purchase below
                                         </p>
@@ -349,7 +349,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 NAKAYOKU</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>
@@ -729,7 +729,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px; background: #000;color: #F8F7F8; position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 CII</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>

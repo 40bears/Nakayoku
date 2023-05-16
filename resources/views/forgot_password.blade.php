@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    Thank you for using CII.<br>
+    Thank you for using GLOBAL CARPATICA SL.<br>
     We have received your password change request. <br>
     <br>
     <br>
