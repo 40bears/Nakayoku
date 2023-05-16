@@ -31,18 +31,18 @@
             <ul class="footer-links sp-padl">
                 <li>
                     <h4 class="mb-0">Company</h4>
-                    <p class="lh-p">Marketing De Apoyo Estrategico Sl</p>
+                    <p class="lh-p">GLOBAL CARPATICA SL</p>
                 </li>
                 <li>
                     <h4 class="mb-0">Location</h4>
-                    <p class="lh-p">Company Number: B87277307 <br> C/ Cerro Del Castañar 50 Bis 28034<br> – Madrid, Spain</p>
+                    <p class="lh-p">Company Number: B-02939957 <br> AVENIDA DEL PUENTE CULTURAL 8 BLOQUE B PLANTA 4 PUERTA 628702 SAN SEBASTIAN DE LOS REYES MADRID SPAIN</p>
                 </li>
             </ul>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 bg-blk d-flex justify-content-center align-items-center">
-          <p class="mb-0 copy-h4">&copy; <?php echo date("Y"); ?> Nakayoku, Inc. All Rights Reserved.</p>
+          <p class="mb-0 copy-h4">&copy; <?php echo date("Y"); ?> GLOBAL CARPATICA SL, Inc. All Rights Reserved.</p>
         </div>
       </div>
         </div>

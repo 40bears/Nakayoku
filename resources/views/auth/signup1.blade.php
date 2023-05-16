@@ -10,7 +10,7 @@
             <p class="signup-p">For better experience please sign up</p>
             <h2 class="signup-h2 pb-5">Join be part of our vastly growing marketplace</h2>
             <div class="signup-box">
-                <h4 class="signup-h4">Welcome to Nakayoku</h4>
+                <h4 class="signup-h4">Welcome to GLOBAL CARPATICA SL</h4>
                 <form action="{{ route('signup1-post') }}" method="POST">
                     @csrf
                     <div class="d-flex flex-column">

@@ -2704,6 +2704,10 @@ ul.footer-links li {
 
     /* sp menu ends */
 
+    .copy-h4 {
+        font-size: 14px !important;
+    }
+
     .filters-right-section {
         width: 100% !important;
     }
@@ -3386,6 +3390,10 @@ ul.footer-links li {
 }
 
 @media only screen and (max-width: 393px) {
+
+    .copy-h4 {
+        font-size: 12px !important;
+    }
 
     .left-menu a {
         font-size: 13px;

@@ -42,7 +42,7 @@
                             <p class="error-p">Contains a number or symbol</p>
                         </div>
                         <p class="text-p mb-4">
-                            By selecting Agree and countinue, I agree to NAKAYOKU
+                            By selecting Agree and countinue, I agree to GLOBAL CARPATICA SL
                             <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Service</a>,
                             </a>
                             and acknowledge the

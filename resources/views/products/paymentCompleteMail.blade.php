@@ -229,11 +229,11 @@
                                             <span>Thank you for your payment.</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
-                                            Thank you for visiting the CII site.
+                                            Thank you for visiting the GLOBAL CARPATICA SL site.
                                             <br>
                                             <br>
                                             This email is to inform you that we have received the payment confirmation from the administrator.<br>
-                                            Please continue to use the CII site. <br>
+                                            Please continue to use the GLOBAL CARPATICA SL site. <br>
                                             <span>Click <a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
@@ -244,7 +244,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: #F8F7F8;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 CII</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>
@@ -497,7 +497,7 @@
                                             <span>ご入金ありがとうございました。</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
-                                            この度はCIIサイトをご利用いただき、ありがとうございます。
+                                            この度はGLOBAL CARPATICA SLサイトをご利用いただき、ありがとうございます。
                                             管理者より入金確認が取れましたのでご連絡いたします。
                                         </p>
                                         <br>
@@ -506,7 +506,7 @@
                                         </p>
                                         <br>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
-                                            引き続きCIIサイトをご利用ください。<br>
+                                            引き続きGLOBAL CARPATICA SLサイトをご利用ください。<br>
                                             <span>Webサイトの<a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
                                         </p>
                                     </td>
@@ -517,7 +517,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: #F8F7F8;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2022 CII</span>
+                                <span>©2022 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>

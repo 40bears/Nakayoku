@@ -2,8 +2,8 @@
 
 <body>
     Hi {{Str::title($buyer_name)}},<br>
-    Greetings from CII <br><br>
-    This Mail is regarding your recent purchase through CII. <br><br>
+    Greetings from GLOBAL CARPATICA SL <br><br>
+    This Mail is regarding your recent purchase through GLOBAL CARPATICA SL. <br><br>
     Please spare some time to rate your below purchase from {{Str::title($seller_name)}} : <br>
     <br>
     <br>
@@ -18,7 +18,7 @@
     ---------------------------------- <br>
     <br>
     Thanks and Regards
-    CII Ltd.
+    GLOBAL CARPATICA SL Ltd.
 
 </body>
 

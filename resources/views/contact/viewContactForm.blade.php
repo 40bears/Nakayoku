@@ -64,7 +64,7 @@
                                     </div>
                                 @endif
                                 <p class="text-p mb-4 pt-5">
-                                    By selecting Agree and countinue, I agree to NAKAYOKU
+                                    By selecting Agree and countinue, I agree to GLOBAL CARPATICA SL
                                     <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Conditions</a> and acknowledge the
                                     <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
                                 </p>

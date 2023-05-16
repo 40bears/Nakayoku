@@ -48,7 +48,7 @@
                 <input type="hidden" min="0" name="quantity" id="" value="{{$price / showConvertedPrice($product->price)}}" />
 
                 <p class="text-p mb-4 w-75 w-mb-100">
-                    By selecting Agree and countinue, I agree to CLASS INNOVATION INTERNATIONAL
+                    By selecting Agree and countinue, I agree to GLOBAL CARPATICA SL
                     <a href="{{ route('terms-and-conditions') }}" class="terms-a">Terms of Conditions</a> and acknowledge the
                     <a href="{{ route('privacy-policy') }}" class="terms-a">Privacy Policy</a>.
                 </p>
