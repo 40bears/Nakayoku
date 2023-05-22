@@ -4,7 +4,7 @@
         <div class="row padb-row">
           <div class="w-30">
             <ul class="footer-links">
-              <li><a href="/"><img src="{{ url('assets/images/Nakayoku-logo.svg') }}" class="logo-w" alt="logo"></a></li>
+              <li><a href="/"><img src="{{ url('assets/images/global-logo-white.svg') }}" class="logo-w" alt="logo"></a></li>
             </ul>
             {{-- <ul class="footer-links pt-2 sp-padl">
               <h4 class="mb-0">Join our community</h4>
