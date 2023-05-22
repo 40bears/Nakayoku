@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Purchase Successful | CII')
+@section('title', 'Purchase Successful | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Thankyou starts -->

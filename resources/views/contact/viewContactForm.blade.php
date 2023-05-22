@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Contact Us | Nakayoku')
+@section('title', 'Contact Us | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Contact section starts -->

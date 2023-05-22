@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Password Details | Nakayoku')
+@section('title', 'Password Details | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Right side starts -->

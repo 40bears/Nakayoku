@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Purchase Product Details | CII')
+@section('title', 'Purchase Product Details | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Blue section starts -->

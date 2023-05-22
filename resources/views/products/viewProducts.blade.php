@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', $game->name . ' | CII')
+@section('title', $game->name . ' | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Blue section starts -->

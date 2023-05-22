@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Verification Mail | Nakayoku')
+@section('title', 'Verification Mail | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Thankyou starts -->

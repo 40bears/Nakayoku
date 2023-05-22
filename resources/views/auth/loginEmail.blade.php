@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Login | MDAE')
+@section('title', 'Login | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <div class="container-fluid px-0 bg-blue plogin">

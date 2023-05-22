@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Add Product | Nakayoku')
+@section('title', 'Add Product | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Sell item starts -->

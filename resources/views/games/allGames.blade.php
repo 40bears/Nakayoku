@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'All Games | CII')
+@section('title', 'All Games | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <header class="padt-5 hide-on-sp">

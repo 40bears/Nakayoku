@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Profile Page | Nakayoku')
+@section('title', 'Profile Page | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Profile page section starts -->

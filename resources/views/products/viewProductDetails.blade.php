@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', $product->name . ' | CII')
+@section('title', $product->name . ' | GLOBAL CARPATICA SL')
 @section('main-container')
 
 

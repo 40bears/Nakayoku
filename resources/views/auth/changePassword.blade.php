@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Store Password | Nakayoku')
+@section('title', 'Store Password | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Sign up starts -->

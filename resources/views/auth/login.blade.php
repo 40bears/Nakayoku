@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Login | Nakayoku')
+@section('title', 'Login | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <div class="container-fluid px-0 bg-lgreen padt-5 position-relative" >
