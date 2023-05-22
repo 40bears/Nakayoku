@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Dashboard | CII')
+@section('title', 'Dashboard | GLOBAL CARPATICA SL')
 @section('main-container')
 
       @if(Route::is('dashboard') || Route::is('dashboard-by-product-type'))
