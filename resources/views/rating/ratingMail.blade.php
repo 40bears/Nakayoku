@@ -14,7 +14,7 @@
     Please click the link below to rate your experience : <br>
     ---------------------------------- <br>
     <!-- <a href="{{ url("rate-purchase?&transaction=$id") }}">{{ url("rate-purchase?&transaction=$id") }}</a> <br> -->
-    <a href="https://mdae-rmt-gamemarket-platform.com/rate-purchase?&transaction={{$id}}">Click Here</a> <br>
+    <a href="https://game3.40bears.com/rate-purchase?&transaction={{$id}}">Click Here</a> <br>
     ---------------------------------- <br>
     <br>
     Thanks and Regards

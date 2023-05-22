@@ -213,13 +213,13 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <img style="width: 10%;" src="https://mdae-rmt-gamemarket-platform.com/assets/images/logo.png">
+                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;background: white;">
                             <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="https://mdae-rmt-gamemarket-platform.com/assets/images/check.png">
+                                <img style="width: 15%;" src="http://game3.40bears.com/assets/images/email-right-icon.png">
                             </p>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
@@ -236,7 +236,7 @@
                                             <br>
                                             Please check if the amount is correct. <br>
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
-                                            <span>Click<a style="color: #00ac77;" href="https://mdae-rmt-gamemarket-platform.com/" target="_blank">here</a>to go to the website</span>
+                                            <span>Click<a style="color: #00ac77;" href="http://game3.40bears.com/" target="_blank">here</a>to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -246,7 +246,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2022 GLOBAL CARPATICA SL</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>
@@ -483,13 +483,13 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <img style="width: 10%;" src="https://mdae-rmt-gamemarket-platform.com/assets/images/logo.png">
+                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;background: white;">
                             <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="https://mdae-rmt-gamemarket-platform.com/assets/images/check.png">
+                                <img style="width: 15%;" src="http://game3.40bears.com/assets/images/email-right-icon.png">
                             </p>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
@@ -498,18 +498,18 @@
                                             <span>ご指定の口座へ入金が完了しました。</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
-                                            この度はMDAE RMTサイトをご利用いただき、ありがとうございます。<br>
+                                            この度は GLOBAL CARPATICA SL サイトをご利用いただき、ありがとうございます。<br>
                                             いただいている情報で確認が取れましたので、<br>
                                             ご指定の口座へ入金させていただきます。<br>
                                             3営業日ほど入金にお時間をいただきます。もうしばらくお待ちください。<br>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
-                                            Webサイトの<a style="color: #00ac77;" href="https://mdae-rmt-gamemarket-platform.com/" target="_blank">トップページへ</a>移動する。
+                                            Webサイトの<a style="color: #00ac77;" href="http://game3.40bears.com/" target="_blank">トップページへ</a>移動する。
                                             <br>
                                             <br>
                                         </p>
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
-                                            <span>本請求書に関するお問い合わせは、<a style="color: #00ac77;" href="https://mdae-rmt-gamemarket-platform.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
+                                            <span>本請求書に関するお問い合わせは、<a style="color: #00ac77;" href="http://game3.40bears.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -519,7 +519,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2022 GLOBAL CARPATICA SL</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>
