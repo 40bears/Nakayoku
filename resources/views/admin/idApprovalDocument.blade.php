@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Identity Approval | CII')
+@section('title', 'Identity Approval | GLOBAL CARPATICA SL')
 @section('main-container')
 
 

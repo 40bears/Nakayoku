@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Notification | Nakayoku')
+@section('title', 'Notification | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Notification section starts -->

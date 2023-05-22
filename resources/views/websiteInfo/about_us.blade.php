@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'About Us | CII')
+@section('title', 'About Us | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Main section starts -->

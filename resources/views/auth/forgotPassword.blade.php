@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Signup | Nakayoku')
+@section('title', 'Signup | GLOBAL CARPATICA SL')
 @section('main-container')
 
 

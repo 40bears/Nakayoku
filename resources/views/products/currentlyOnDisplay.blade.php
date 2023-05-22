@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Currently on Display | CII')
+@section('title', 'Currently on Display | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Right side starts -->

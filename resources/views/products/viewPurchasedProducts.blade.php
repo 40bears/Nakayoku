@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Purchase History | Nakayoku')
+@section('title', 'Purchase History | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Right side starts -->

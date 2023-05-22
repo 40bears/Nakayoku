@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Add CII Banks | CII')
+@section('title', 'Add Banks | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <div class="col-md-9 col-sm-12 ps-5 request-pad padt-5">

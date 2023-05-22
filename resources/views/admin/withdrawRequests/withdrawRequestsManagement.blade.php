@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Withdraw Requests Management | CII')
+@section('title', 'Withdraw Requests Management | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <div class="container-fluid px-0 bg-lgreen padt-6">

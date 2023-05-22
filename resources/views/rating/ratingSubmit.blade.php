@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Rating | CII')
+@section('title', 'Rating | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Rating thanks starts -->

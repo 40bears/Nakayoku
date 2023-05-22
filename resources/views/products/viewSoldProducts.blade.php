@@ -1,5 +1,5 @@
 @extends('layout.user')
-@section('title', 'Sold Products History | CII')
+@section('title', 'Sold Products History | GLOBAL CARPATICA SL')
 @section('main-container')
 
 

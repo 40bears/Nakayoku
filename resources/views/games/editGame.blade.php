@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Edit Game | CII')
+@section('title', 'Edit Game | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Sell item starts -->

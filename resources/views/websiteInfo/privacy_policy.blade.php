@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('title', 'Privacy Policy | CII')
+@section('title', 'Privacy Policy | GLOBAL CARPATICA SL')
 @section('main-container')
 
 <!-- Blue section starts -->
@@ -67,16 +67,16 @@
                         We collect information in a number of ways, examples of which are listed below:<br><br>
 
                         - When you register or use cii.com<br>
-                        - When you contact CII by telephone or email or through electronic channels (e.g. the website)<br>
-                        - When you register or use CII pop up or virtual shopping services (e.g. personal shopping)<br>
+                        - When you contact GLOBAL CARPATICA SL by telephone or email or through electronic channels (e.g. the website)<br>
+                        - When you register or use GLOBAL CARPATICA SL pop up or virtual shopping services (e.g. personal shopping)<br>
                         - When you sign up to receive marketing newsletters<br>
-                        - When you attend an event, or enter prize draws or competitions run by CII<br>
+                        - When you attend an event, or enter prize draws or competitions run by GLOBAL CARPATICA SL<br>
                         - When completing any surveys that we send to you for research purposes (although you are under no obligation to complete these)<br>
                         - When completing any forms for transactional, employment or other purposes<br>
-                        - When you buy products, services and gift certificates from CII (ie: details of transactions you make from CII)<br>
+                        - When you buy products, services and gift certificates from GLOBAL CARPATICA SL (ie: details of transactions you make from GLOBAL CARPATICA SL)<br>
                         - When you use or are a customer of any of our other Services or pop-up or virtual offerings<br>
                         - When you visit our website: we use cookies to help make the experience of using our website better and to personalise the service you receive from us – this means we will remember your previous visits and track the pages on our website that you visit. For more information please see our Cookie Policy.<br>
-                        - When you visit www.cii.com the CII web server automatically records your public internet protocol ('IP') address.<br><br>
+                        - When you visit www.cii.com the GLOBAL CARPATICA SL web server automatically records your public internet protocol ('IP') address.<br><br>
 
                         From time to time, we may also get data about you from third parties. This could include other partners that we have run partnerships, competitions and events with or that provide some of our Services.
 
@@ -109,16 +109,16 @@
                         Where your personal information is not in an anonymous form, we will have a lawful reason to use your personal information in such a way to ensure that we provide the very best products to you and our other customers.
 
                         Why we collect your personal information and how we use it
-                        At CII, we like to get to know our customers – after all, this is how we find new ways to provide you with an extraordinary experience. We use information about you in a number of ways, including providing the services that you have requested, offering you a personalised experience and informing you about special events or exciting CII news. We might also use the information we have to contact you about any information we might need to process your orders, returns or queries.
+                        At GLOBAL CARPATICA SL, we like to get to know our customers – after all, this is how we find new ways to provide you with an extraordinary experience. We use information about you in a number of ways, including providing the services that you have requested, offering you a personalised experience and informing you about special events or exciting GLOBAL CARPATICA SL news. We might also use the information we have to contact you about any information we might need to process your orders, returns or queries.
 
                         Examples of how we use your data are as follows:
                         - To carry out our business and to provide a service or carry out a contract with you.
                         - Fulfilment of, and delivery of, products and services you have ordered and our other services that we provide. We may share your personal information with our delivery partners, third party service providers and third party concessions.
-                        - Process payments. CII does not store any payment card numbers once the transaction has been completed. We share your personal information with credit card companies and other payment providers and acquirers. These third parties will be responsible for the handling of your personal data for these purposes and their privacy policies will set out how they do this. An example of this is Shopify Pay, who provide payment processing services for CII. They are a Data Controller of your transactional data in order to process the payment. Shopify Pay’s privacy statement, which can be found on their corporate website, sets out how they use and handle your personal information.
+                        - Process payments. GLOBAL CARPATICA SL does not store any payment card numbers once the transaction has been completed. We share your personal information with credit card companies and other payment providers and acquirers. These third parties will be responsible for the handling of your personal data for these purposes and their privacy policies will set out how they do this. An example of this is Shopify Pay, who provide payment processing services for GLOBAL CARPATICA SL. They are a Data Controller of your transactional data in order to process the payment. Shopify Pay’s privacy statement, which can be found on their corporate website, sets out how they use and handle your personal information.
                         - Contact you with important information relating to your booking or purchase, or use and administration of any of our Services, such as confirming your order, letting you know about returns and refunds and any information in relation to that Service. We may share your information with our communication partners for this purpose.
 
                         Where we have your consent:
-                        - Send you marketing updates via email about all the latest news, events and offers at CII. You can unsubscribe at any time by clicking the unsubscribe link in any email. We share your personal information with a variety of third party email marketing providers who assist us in delivering our email marketing campaigns to you. Third Parties include: Klaviyo, Calendly, Shopify Flows.
+                        - Send you marketing updates via email about all the latest news, events and offers at GLOBAL CARPATICA SL. You can unsubscribe at any time by clicking the unsubscribe link in any email. We share your personal information with a variety of third party email marketing providers who assist us in delivering our email marketing campaigns to you. Third Parties include: Klaviyo, Calendly, Shopify Flows.
                         - Use your details to show you advertising on such Social Media platforms, such as Facebook and Instagram, or via other third party advertising that may appear on other websites you use. Online advertising channels we may use are: digital display, video on demand, search engine marketing, paid social - these are all on third party sites or platforms.
                         - We tailor emails and online advertising to the things you love, so they’re relevant to your location, what you have shown an interest in and the things you buy from us.
 
@@ -127,13 +127,13 @@
                         - Send an abandoned basket email via third party suppliers, e.g. Shopify flow, Klaviyo.
                         - Invite you to provide feedback about our products and services in the form of online, or email surveys. We use this information to help us improve the quality of service provided; to monitor the quality of our products and services and to assist with the selection of future product and service lines.
                         - Conduct postal marketing. We share your personal information with a variety of third party postal providers who assist us in delivering our postal marketing campaigns to you, including the post office.
-                        - Analyse aggregated customer information with other interactions customers have with CII in order to continually improve the products and services we offer through our website. We do this using third parties such as Google Analytics.
+                        - Analyse aggregated customer information with other interactions customers have with GLOBAL CARPATICA SL in order to continually improve the products and services we offer through our website. We do this using third parties such as Google Analytics.
                         - For classifying our audience into user profiles, groups or segments, using shopping habits information regarding your personal or professional interests, demographics, experiences with our products and contact preferences. These segments help us to understand our audience better. We do this using Customer Relationship Management systems such as Gorgias and digital platforms for online behaviours, such as Google Analytics.
                         - To keep our database accurate and relevant, we may do this for example, using National Change of Address.
                         - Detect and reduce fraud and credit risk.
 
                         Business Administration and Legal Compliance
-                        In certain circumstances, we share and/or are obliged to share your personal information for business administration and legal compliance purposes with third parties outside of CII. We may use your personal information in connection with a business transition (such as a merger, acquisition by another company, or a sale of all of or portion of our assets), to enforce our legal rights and/or to protect the rights of third parties and it is in our legitimate interest to do so. In such instances it will be necessary to share your personal information with external professional advisors such as lawyers and accountants, or insurers or financial institutions.
+                        In certain circumstances, we share and/or are obliged to share your personal information for business administration and legal compliance purposes with third parties outside of GLOBAL CARPATICA SL. We may use your personal information in connection with a business transition (such as a merger, acquisition by another company, or a sale of all of or portion of our assets), to enforce our legal rights and/or to protect the rights of third parties and it is in our legitimate interest to do so. In such instances it will be necessary to share your personal information with external professional advisors such as lawyers and accountants, or insurers or financial institutions.
                         We may use your personal information for legal compliance purposes and to enforce our legal rights. In such instances it will be necessary to share your personal information with external parties such as administrative authorities (HMRC), the Financial Conduct Authority, police and public prosecutors or to comply with a court order or power of attorney. We may also have legal obligations to overseas tax authorities and will be required to share your personal information for these purposes.
                         We will also need to use your personal information for legal compliance purposes to undertake customer checks to know our customers and verify their identity. We will use your information to conduct online searches with Thomson Reuters World-Check, to assist us with meeting our legal requirements. We may also be required to share your information to report any suspicious and/or criminal activity including fraud, sanctions and anti-money laundering. It is our legal obligation to do so.
 
