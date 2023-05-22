@@ -214,7 +214,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://cii.40bears.com/assets/images/email-logo.png">
+                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -234,7 +234,7 @@
                                             <br>
                                             This email is to inform you that we have received the payment confirmation from the administrator.<br>
                                             Please continue to use the GLOBAL CARPATICA SL site. <br>
-                                            <span>Click <a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">here</a> to go to the website</span>
+                                            <span>Click <a style="color: #E42575;" href="https://game3.40bears.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -482,7 +482,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://cii.40bears.com/assets/images/logo.png">
+                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -507,7 +507,7 @@
                                         <br>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             引き続きGLOBAL CARPATICA SLサイトをご利用ください。<br>
-                                            <span>Webサイトの<a style="color: #E42575;" href="http://cii.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
+                                            <span>Webサイトの<a style="color: #E42575;" href="https://game3.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
                                         </p>
                                     </td>
                                 </tr>
