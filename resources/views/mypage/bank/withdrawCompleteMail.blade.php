@@ -1,18 +1,18 @@
 @if($base_currency != 'JPY')
 {{-- English email starts --}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Heebo', sans-serif;line-height: 1.65;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
 
-<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Heebo', sans-serif;line-height: 1.65;">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Heebo', sans-serif;line-height: 1.65;">
-    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Heebo', sans-serif;line-height: 1.65;">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
-    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Heebo', sans-serif;line-height: 1.65;">
+<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400;500;700&display=swap" rel="stylesheet">
+    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
         * {
             margin: 0;
             padding: 0;
             font-size: 100%;
-            font-family: 'Heebo', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             line-height: 1.65;
         }
 
@@ -205,29 +205,29 @@
     </style>
 </head>
 
-<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
+<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
                 <!-- Message start -->
-                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
+                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;background: white;">
-                            <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
+                            <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
                                 <img style="width: 15%;" src="http://game3.40bears.com/assets/images/email-right-icon.png">
                             </p>
-                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
-                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #00ac77; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
+                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>The payment has been completed to the specified account.</span>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;  color: rgba(251, 251, 251, 0.82)">
                                             This email is to inform you that. <br>
                                             your withdrawal request is approved by the Administrator. <br>
                                             and completed to the designated account details. <br>
@@ -235,17 +235,17 @@
                                             <br>
                                             <br>
                                             Please check if the amount is correct. <br>
-                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
-                                            <span>Click<a style="color: #00ac77;" href="http://game3.40bears.com/" target="_blank">here</a>to go to the website</span>
+                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;  color: rgba(251, 251, 251, 0.82)">
+                                            <span>Click <a style="color: #E42575;" href="http://game3.40bears.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
+                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
                                 <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
@@ -263,18 +263,18 @@
 @else
 {{-- Japanese email starts --}}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
 
-<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
+<head style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+    <style type="text/css" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
         * {
             margin: 0;
             padding: 0;
             font-size: 100%;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             line-height: 1.65;
         }
 
@@ -475,50 +475,50 @@
     </style>
 </head>
 
-<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
-        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
+<body style="margin: 0;padding: 0;background: #efefef;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+    <table class="body-wrap" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;height: 100%;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none;width: 100% !important;">
+        <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+            <td class="container" style="margin: 0 auto !important;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;display: block !important: 580px !important;">
                 <!-- Message start -->
-                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
+                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;background: white;">
-                            <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
+                            <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
                                 <img style="width: 15%;" src="http://game3.40bears.com/assets/images/email-right-icon.png">
                             </p>
-                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
-                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #00ac77; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                            <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
+                                <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                    <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>ご指定の口座へ入金が完了しました。</span>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
                                             この度は GLOBAL CARPATICA SL サイトをご利用いただき、ありがとうございます。<br>
                                             いただいている情報で確認が取れましたので、<br>
                                             ご指定の口座へ入金させていただきます。<br>
                                             3営業日ほど入金にお時間をいただきます。もうしばらくお待ちください。<br>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400;">
-                                            Webサイトの<a style="color: #00ac77;" href="http://game3.40bears.com/" target="_blank">トップページへ</a>移動する。
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
+                                            Webサイトの<a style="color: #E42575;" href="http://game3.40bears.com/" target="_blank">トップページへ</a>移動する。
                                             <br>
                                             <br>
                                         </p>
-                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
-                                            <span>本請求書に関するお問い合わせは、<a style="color: #00ac77;" href="http://game3.40bears.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
+                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
+                                            <span>本請求書に関するお問い合わせは、<a style="color: #E42575;" href="http://game3.40bears.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
                                         </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;">
-                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Noto Sans JP', sans-serif;line-height: 0px;background: #00ac77;color: white;position:relative;">
-                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Noto Sans JP', sans-serif;line-height: 1.65;font-weight: normal;">
+                    <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
+                        <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
+                            <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
                                 <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>

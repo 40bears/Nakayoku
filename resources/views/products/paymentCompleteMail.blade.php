@@ -214,7 +214,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -225,7 +225,7 @@
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #E42575; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>Thank you for your payment.</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
@@ -482,7 +482,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 10%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -493,7 +493,7 @@
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0;color: #E42575; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>ご入金ありがとうございました。</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
