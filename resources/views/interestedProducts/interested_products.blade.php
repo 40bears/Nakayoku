@@ -14,16 +14,17 @@
     <div class="col-lg-4 col-md-6 col-sm-12 sp-mb">
         <div class="white-box">
             <a href="{{ route('view-product-details', [ 'product_name' => makeURL($products->name), 'id' => $products->id] ) }}">
-                            @if($products->image != null)
-                            <img src="{{ url('storage/uploads/' . $products->image ) }}" class="img-fluid sell-product-image" alt="product" />
-                            @else
-                            <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
-                            @endif
-                            <h3 class="menu-h3 pt-3">{{Str::upper($products->games->name)}} </h3>
-                            <h3 class="menu-h3 text-capitalize">{{$products->product_type}}</h3>
-                            <p class="price mb-0">Price</p>
-                            <h6 class="price-num">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($products->price))}}</h6>
-                            <p class="pur-date pb-0 mb-0">{{$products->updated_at->format('Y/m/d H:i')}}</p>
+                @if($products->image != null)
+                <!-- <img src="{{ url('storage/uploads/' . $products->image ) }}" class="img-fluid sell-product-image" alt="product" /> -->
+                <img src="{{ !Storage::exists('public/uploads/' . $products->image) ? url('assets/images/default-game-new.jpeg') : url('storage/uploads/' . $products->image ) }}" class="img-fluid sell-product-image" alt="product" />
+                @else
+                <img src="{{ url('assets/images/default-product.jpeg') }}" class="img-fluid sell-product-image" alt="product" />
+                @endif
+                <h3 class="menu-h3 pt-3">{{Str::upper($products->games->name)}} </h3>
+                <h3 class="menu-h3 text-capitalize">{{$products->product_type}}</h3>
+                <p class="price mb-0">Price</p>
+                <h6 class="price-num">{{showCurrencySymbol()}} {{formatPrice(showConvertedPrice($products->price))}}</h6>
+                <p class="pur-date pb-0 mb-0">{{$products->updated_at->format('Y/m/d H:i')}}</p>
             </a>
         </div>
     </div>
