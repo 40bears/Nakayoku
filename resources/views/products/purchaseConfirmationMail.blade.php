@@ -322,7 +322,7 @@
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td align="left" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400;">
-                                            <span>If you have any questions regarding this invoice, please address your inquiries to our <a href="http://cii.40bears.com/contact" target="_blank">Accounting Department</a>.</span>
+                                            <span>If you have any questions regarding this invoice, please address your inquiries to our <a href="https://globalcarpatica-dmp.com/contact" target="_blank">Accounting Department</a>.</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -334,7 +334,7 @@
                                 </tr>
                                 <tr style="text-align: center;">
                                     <td>
-                                        <a href="http://cii.40bears.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
+                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
                                         border-radius: 5px;     padding: 0.5rem 1.2rem; font-family: 'Helvetica Neue'; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
                                             Complete transfer
                                         </a>
@@ -709,7 +709,7 @@
                                 </tr>
                                 <tr style="text-align: center;">
                                     <td>
-                                        <a href="http://cii.40bears.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
+                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
                                         border-radius: 5px;     padding: 0.5rem 1.2rem; font-family: 'Inter'; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
                                             振込完了通知を送る
                                         </a>
@@ -718,7 +718,7 @@
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td align="left" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400;">
-                                            <span>本請求書に関するお問い合わせは、<a style="color: #E42575;" href="http://cii.40bears.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
+                                            <span>本請求書に関するお問い合わせは、<a style="color: #E42575;" href="https://globalcarpatica-dmp.com/contact" target="_blank">お問い合わせまで</a>お願いいたします。</span>
                                         </p>
                                     </td>
                                 </tr>
