@@ -214,7 +214,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                            <img style="width: 50%;" src="https://globalcarpatica-dmp.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -482,7 +482,7 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
-                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                            <img style="width: 50%;" src="https://globalcarpatica-dmp.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">

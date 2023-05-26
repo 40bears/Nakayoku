@@ -214,13 +214,13 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white; position:relative;">
-                            <img style="width: 50%;" src="http://game3.40bears.com/assets/images/global-logo-white.png">
+                            <img style="width: 50%;" src="https://globalcarpatica-dmp.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
                             <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="http://game3.40bears.com/assets/images/email-right-icon.png">
+                                <img style="width: 15%;" src="https://globalcarpatica-dmp.com/assets/images/email-right-icon.png">
                             </p>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
