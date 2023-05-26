@@ -220,7 +220,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
                             <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="http://cii.40bears.com/assets/images/check.png">
+                                <img style="width: 15%;" src="https://globalcarpatica-dmp.com/assets/images/check.png">
                             </p> -->
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -488,7 +488,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
                             <!-- <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="http://cii.40bears.com/assets/images/check.png">
+                                <img style="width: 15%;" src="https://globalcarpatica-dmp.com/assets/images/check.png">
                             </p> -->
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
