@@ -176,7 +176,7 @@ class AdminController extends Controller
     public function paymentCompleteNotification()
     {
         $user = User::where('user_type', 'admin')->first();
-        Notification::send($user, new GeneralNotification('A payment completed by user. Please click to approve it', 'https://game3.40bears.com/admin/transactions-management'));
+        Notification::send($user, new GeneralNotification('A payment completed by user. Please click to approve it', 'https://globalcarpatica-dmp.com/admin/transactions-management'));
 
         return view('products.paymentCompleteThanks');
     }
