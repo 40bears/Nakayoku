@@ -55,18 +55,18 @@
                         Introduction<br>
                         Leather to Love Forever Limited (we or us) is committed to protecting and respecting your privacy. It’s your information, and we respect that. <br><br>
 
-                        This policy, along with our website terms of use, sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. Please read the following carefully, alongside our Terms & Conditions, to understand our views and practices regarding your personal data and how we will treat it. By visiting https://www.cii.com (our site), you are accepting and consenting to the practices described in this policy. Please also note that this Privacy Policy only applies to personal information obtained by us in accordance with applicable laws – not information collected from your interactions with third parties.<br><br>
+                        This policy, along with our website terms of use, sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. Please read the following carefully, alongside our Terms & Conditions, to understand our views and practices regarding your personal data and how we will treat it. By visiting https://globalcarpatica-dmp.com/ (our site), you are accepting and consenting to the practices described in this policy. Please also note that this Privacy Policy only applies to personal information obtained by us in accordance with applicable laws – not information collected from your interactions with third parties.<br><br>
 
                         Who we are and how to contact us<br>
                         The website is operated by or on behalf of Leather to Love Forever Limited.<br>
-                        If you have any questions about this Privacy Policy or want to exercise your rights set out in this Privacy Policy, please email us at hello@cii.com<br><br>
+                        If you have any questions about this Privacy Policy or want to exercise your rights set out in this Privacy Policy, please email us at hello@globalcarpatica-dmp.com<br><br>
 
                         How we collect your personal information<br>
                         Generally, we collect your information when you decide to interact with us. This could include purchasing online or when you sign up to receive emails from us. We also look at how customers use our website, so that we can offer the best possible experience. <br><br>
 
                         We collect information in a number of ways, examples of which are listed below:<br><br>
 
-                        - When you register or use cii.com<br>
+                        - When you register or use https://globalcarpatica-dmp.com/<br>
                         - When you contact GLOBAL CARPATICA SL by telephone or email or through electronic channels (e.g. the website)<br>
                         - When you register or use GLOBAL CARPATICA SL pop up or virtual shopping services (e.g. personal shopping)<br>
                         - When you sign up to receive marketing newsletters<br>
@@ -76,7 +76,7 @@
                         - When you buy products, services and gift certificates from GLOBAL CARPATICA SL (ie: details of transactions you make from GLOBAL CARPATICA SL)<br>
                         - When you use or are a customer of any of our other Services or pop-up or virtual offerings<br>
                         - When you visit our website: we use cookies to help make the experience of using our website better and to personalise the service you receive from us – this means we will remember your previous visits and track the pages on our website that you visit. For more information please see our Cookie Policy.<br>
-                        - When you visit www.cii.com the GLOBAL CARPATICA SL web server automatically records your public internet protocol ('IP') address.<br><br>
+                        - When you visit https://globalcarpatica-dmp.com/ the GLOBAL CARPATICA SL web server automatically records your public internet protocol ('IP') address.<br><br>
 
                         From time to time, we may also get data about you from third parties. This could include other partners that we have run partnerships, competitions and events with or that provide some of our Services.
 
@@ -95,7 +95,7 @@
 
                         KLARNA: In order to be able to offer you Klarna’s payment options, we will pass to Klarna certain aspects of your personal information, such as contact and order details, in order for Klarna to assess whether you qualify for their payment options and to tailor the payment options for you. General information on Klarna can be found here. Your personal data is handled in accordance with applicable data protection law and in accordance with the information in Klarna’s privacy policy.
 
-                        Epsilon Abacus: We work with Epsilon Abacus (registered as Epsilon International UK Ltd), a company that manages the Abacus Alliance on behalf of UK retailers. The participating retailers are active in the clothing, collectables, food & wine, gardening, gadgets & entertainment, health & beauty, household goods, and home interiors categories. Retailers share information about their customers and what they buy. Epsilon Abacus processes this information as a processor on behalf of the retailers to help them understand consumers’ wider buying patterns. From this information, retailers can tailor their communications, sending individuals suitable offers that should be of interest to them, based on what they like to buy. You can learn more about how Epsilon Abacus processes your personal information in their Privacy Policy, which is available here:https://abacus.epsilon.com/privacy-policy/
+                        Epsilon Abacus: We work with Epsilon Abacus (registered as Epsilon International UK Ltd), a company that manages the Abacus Alliance on behalf of UK retailers. The participating retailers are active in the clothing, collectables, food & wine, gardening, gadgets & entertainment, health & beauty, household goods, and home interiors categories. Retailers share information about their customers and what they buy. Epsilon Abacus processes this information as a processor on behalf of the retailers to help them understand consumers’ wider buying patterns. From this information, retailers can tailor their communications, sending individuals suitable offers that should be of interest to them, based on what they like to buy. You can learn more about how Epsilon Abacus processes your personal information in their Privacy Policy, which is available here:https://globalcarpatica-dmp.com//privacy-policy/
 
                         Social Media: Depending on your settings or the privacy policies for social media and messaging services like Facebook, WhatsApp or Twitter, you may give us permission to access information from those accounts or services.
 
@@ -161,7 +161,7 @@
 
                         Applicable laws for the purpose of this Policy means: (a) the Data Protection Act 2018 and the Privacy and Electronic Communications (EC Directive) Regulations 2013; (b) General Data Protection Regulation (Regulation (EU) 2016/679) (“GDPR”) until such time as it might cease to apply in the UK; and (c) to the extent applicable, any legislation ratifying or otherwise adopting the GDPR in the UK, and any applicable associated or supplementary data protection laws or regulations.
 
-                        We recognise that as an international business, some of our customers are resident in jurisdictions other than England and Wales. In certain circumstances, local laws of these jurisdictions, may by way of their application, afford rights to a customer in respect of the personal data that they provide to us. We anticipate that the rights set out in this Policy also provide you with such protection in relation to your personal information. Please do email us directly at hello@cii.com to discuss any additional questions you may have.
+                        We recognise that as an international business, some of our customers are resident in jurisdictions other than England and Wales. In certain circumstances, local laws of these jurisdictions, may by way of their application, afford rights to a customer in respect of the personal data that they provide to us. We anticipate that the rights set out in this Policy also provide you with such protection in relation to your personal information. Please do email us directly at hello@globalcarpatica-dmp.com to discuss any additional questions you may have.
 
                         Changes to this Privacy Policy
                         We may make changes to this Privacy Policy from time to time. To ensure that you are always aware of how we use your personal information, we will update this Privacy Policy from time to time to reflect any changes to our use of your personal information. We may also make changes as required, to comply with changes in applicable law or regulatory requirements. We will notify you by e-mail of any significant changes. However, we encourage you to review this Privacy Policy periodically to be informed of how we use your personal information.
@@ -182,7 +182,7 @@
                         - If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our website terms of use or terms and conditions of sale and other agreements, or to protect the rights, property, or safety of Leather to Love Forever Limited, our customers, or others.
 
                         Your rights
-                        You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes, or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at hello@cii.com.
+                        You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes, or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at hello@globalcarpatica-dmp.com.
 
                         Our site may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies. Please check these policies before you submit any personal data to these websites.
 
@@ -190,7 +190,7 @@
                         Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by email. Please check back frequently to see any updates or changes to our privacy policy.
 
                         Contact
-                        Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to hello@cii.com.
+                        Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to hello@globalcarpatica-dmp.com.
                     </p>
 
                 </div>

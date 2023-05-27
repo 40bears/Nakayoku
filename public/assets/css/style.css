@@ -1862,7 +1862,7 @@ select.minimal {
 .signup-btn {
     background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%);
     border: 1px solid #717782;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 50px;
     color: #fff;
     font-weight: 500;

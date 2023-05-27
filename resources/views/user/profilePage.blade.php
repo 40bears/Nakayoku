@@ -9,7 +9,7 @@
        {{-- First section starts --}}
        <div class="container py-5">
         <h2 class="games-head text-center pb-5">Display</h2>
-        <div class="d-flex  justify-content-start align-items-center mypage-div w-100 border-0">
+        <div class="d-flex  flex-column justify-content-start align-items-center mypage-div w-100 border-0">
             <div class="d-flex py-3">
                 @if($user->profile_picture != null)
                 <img src="{{ url('storage/uploads/' . $user->profile_picture) }}" class="img-fluid  my-profile-image upload-profile-pic mypage-img" alt="profile" />

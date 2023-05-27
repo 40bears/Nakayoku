@@ -586,13 +586,13 @@
                 <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important;">
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="masthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000 ;color: white;position:relative;">
-                            <img style="width: 50%;" src="/assets/images/logo-email.png">
+                            <img style="width: 50%;" src="https://globalcarpatica-dmp.com/assets/images/global-logo-white.png">
                         </td>
                     </tr>
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td class="content td-p" style="margin: 0;padding: 30px 80px;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;background: #232323;">
                             <p style="margin: 0;padding: 0;font-size: 16px;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px;">
-                                <img style="width: 15%;" src="/assets/images/email-right-icon.png">
+                                <img style="width: 15%;" src="https://globalcarpatica-dmp.com/assets/images/email-right-icon.png">
                             </p>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
@@ -601,7 +601,7 @@
                                             <span>ご購入ありがとうございます。</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
-                                            この度はCIIサイトをご利用いただき、ありがとうございました。<br>
+                                            この度はGlobal carpatica slサイトをご利用いただき、ありがとうございました。<br>
                                             下記の内容でご注文を受付しました。 ご注文の詳細をご確認ください。<br>
                                             お支払い前は契約の成立を通知するものではありませんのでご注意ください。
                                         </p>

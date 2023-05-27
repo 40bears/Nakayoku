@@ -6,13 +6,13 @@
 <!-- Blue section starts -->
 <div class="container-fluid px-0 bg-lgreen">
     <div class="container padt-6 padt-mb-8">
-        {{-- <ul class="breadcrumb menu menu1">
+        <ul class="breadcrumb menu menu1">
             <li class="breadcrumb-item"><a href="/">TOP</a></li>
             <li class="breadcrumb-item"><a href="{{ route('all-games') }}">ALL GAMES</a></li>
             <li class="breadcrumb-item"><a href="{{ route('view-products', [ 'id' => $product->game_id ] ) }}">{{Str::upper($product->games->name)}}</a></li>
             <li class="breadcrumb-item"><a href="{{ route('view-product-details', [ 'id' => $product->game_id, 'product_name' => $product->name ] ) }}">{{Str::upper($product->product_type)}}</a></li>
             <li class="breadcrumb-item"><a href="{{ route('profile-page', [ 'id' => $product->user_id ] ) }}">{{Str::upper($product->user->first_name)}}</a></li>
-        </ul> --}}
+        </ul>
     </div>
 
     <!-- All games starts -->

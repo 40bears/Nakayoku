@@ -21,7 +21,7 @@
           </div>
           <div class="w-20 sp-padtb">
             <ul class="footer-links sp-padl">
-              <h4 class="mb-0">Nakayoku Games</h4>
+              <h4 class="mb-0">Games</h4>
               <li><a href="{{route('all-games')}}">All Games</a></li>
               <li><a href="{{route('contact')}}">Contact Us</a></li>
               <li><a href="{{ route('user-guide') }}">Community Guidelines </a></li>
