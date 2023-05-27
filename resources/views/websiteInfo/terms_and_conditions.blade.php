@@ -52,7 +52,7 @@
                 <div class="d-flex flex-column align-items-center py-5 justify-content-center">
                     <p class="terms-head mb-0 pb-5 align-self-start">Terms & Conditions</p>
                     <p class="about-p">
-                        This page (together with our privacy policy and cookie policy) tells you information about us and the legal terms and conditions (Terms) on which we sell any of the products (Products) listed on our websites at https://www.cii.com, https://www.us.cii.com,  https://www.eu.cii.com, https://www.de.cii.com, https://www.au.cii.com, https://www.cn.cii.com,(our sites) to you. <br><br>
+                        This page (together with our privacy policy and cookie policy) tells you information about us and the legal terms and conditions (Terms) on which we sell any of the products (Products) listed on our websites at https://www.globalcarpatica-dmp.com, https://www.us.globalcarpatica-dmp.com,  https://www.eu.globalcarpatica-dmp.com, https://www.de.globalcarpatica-dmp.com, https://www.au.globalcarpatica-dmp.com, https://www.cn.globalcarpatica-dmp.com,(our sites) to you. <br><br>
 
                         These Terms will apply to any contract between us for the sale of Products to you (Contract). Please read these Terms carefully and make sure that you understand them, before ordering any Products from our site. Please note that before placing an order you will be asked to agree to these Terms. If you refuse to accept these Terms, you will not be able to order any Products from our site.<br>
                         You should print a copy of these Terms or save them to your computer for future reference.
@@ -61,16 +61,16 @@
 
                         1. Information About Us <br>
                         1.1 We operate the websites: 
-                        https://www.cii.com, https://www.us.cii.com,  https://www.eu.cii.com, https://www.de.cii.com, https://www.au.cii.com, https://www.cn.cii.com. We are Leather to Love Forever Limited, a limited company registered in England and Wales under company number 07110128 and with our registered office and main trading address at 325 Ordsall Lane, Salford, M5 3LW. Our VAT number is GB 1758 107 91.<br><br>
+                        https://www.globalcarpatica-dmp.com, https://www.us.globalcarpatica-dmp.com,  https://www.eu.globalcarpatica-dmp.com, https://www.de.globalcarpatica-dmp.com, https://www.au.globalcarpatica-dmp.com, https://www.cn.globalcarpatica-dmp.com. We are Leather to Love Forever Limited, a limited company registered in England and Wales under company number 07110128 and with our registered office and main trading address at 325 Ordsall Lane, Salford, M5 3LW. Our VAT number is GB 1758 107 91.<br><br>
 
                         1.2 Contacting us if you are a consumer: <br>
                         (a) To cancel a Contract in accordance with your legal right to do so as set out in clause 9, you just need to let us know that you have decided to cancel within 1 hour of placing your order. After this, your order will be being processed and therefore we will be unable to cancel it. <br><br>
 
-                        (b) If you wish to contact us for any other reason, including because you have any complaints, you can contact us by emailing us at hello@cii.com.<br><br>
+                        (b) If you wish to contact us for any other reason, including because you have any complaints, you can contact us by emailing us at hello@globalcarpatica-dmp.com.<br><br>
 
                         (c) If we have to contact you or give you notice in writing, we will do so by email or by pre-paid post to the address you provide to us in your order.<br><br>
 
-                        1.3 Contacting us if you are a business. You may contact us by emailing us at hello@cii.com. If you wish to give us formal notice of any matter in accordance with these Terms, please see clause 17.3. <br><br>
+                        1.3 Contacting us if you are a business. You may contact us by emailing us at hello@globalcarpatica-dmp.com. If you wish to give us formal notice of any matter in accordance with these Terms, please see clause 17.3. <br><br>
 
 
                         2. Our Products <br>
@@ -132,7 +132,7 @@
 
                         9.3 Your legal right to cancel a Contract starts from the date of the Order Confirmation (the date on which we email you to confirm our acceptance of your order), which is when the Contract between us is formed. Your deadline for cancelling the Contract is 1 hour.<br><br>
 
-                        9.4 To cancel a Contract, you just need to let us know that you have decided to cancel within 1 hour of placing your order. The easiest way to do this is to email us at hello@cii.com.<br><br>
+                        9.4 To cancel a Contract, you just need to let us know that you have decided to cancel within 1 hour of placing your order. The easiest way to do this is to email us at hello@globalcarpatica-dmp.com.<br><br>
 
                         9.5 If you cancel your Contract we will:<br><br>
 
@@ -159,7 +159,7 @@
                         9.9 Because you are a consumer, we are under a legal duty to supply Products that are in conformity with this Contract. As a consumer, you have legal rights in relation to Products that are faulty or not as described. These legal rights are not affected by your right of return and refund in this clause 9 or anything else in these Terms. Advice about your legal rights is available from your local Citizens' Advice Bureau or Trading Standards office. We're not able to make changes or cancel orders once they've been placed. If you do wish to return please follow our Simple + Easy Returns process.<br><br>
 
                         9.10 Note - all items ordered from the SUPER COOL SH*T: Bespoke Art Service range are non returnable/refundable. If an order is cancelled, there will be a non refundable deposit of 15% of the total value of your order before the painting has began, OR, there will be a non refundable deposit of 100% of the total value of your order after the painting has began.<br><br>
-                        We strongly advise against wearing your SUPER COOL SH*T jacket in heavy rain. CII holds no responsibility for evidence of wear and tear or water damage post purchase. The jacket will be non returnable in this instance.
+                        We strongly advise against wearing your SUPER COOL SH*T jacket in heavy rain. GLOBAL CARPATICA SL holds no responsibility for evidence of wear and tear or water damage post purchase. The jacket will be non returnable in this instance.
                         9.11 Each engraving plate is customised per order. Therefore, we are unable to offer a refund for this item.<br><br>
                         10. Delivery<br>
                         10.1 We will contact you with an estimated delivery date, which will be within 30 days after the date of the Order Confirmation (the date on which we email you to confirm our acceptance of your order)]. Occasionally our delivery to you may be affected by an Event Outside Our Control. See clause 16 for our responsibilities when this happens.<br><br>
@@ -212,7 +212,7 @@
 
 
                         13. How to pay<br>
-                        13.1 You can only pay for Products using a debit card or credit card. We accept all of the major credit and debit cards, or you can make your payment using Paypal, Klarna, LayBuy or Sofort (on the de.cii.com website).<br><br>
+                        13.1 You can only pay for Products using a debit card or credit card. We accept all of the major credit and debit cards, or you can make your payment using Paypal, Klarna, LayBuy or Sofort (on the de.globalcarpatica.com website).<br><br>
 
                         13.2 Payment for the Products and all applicable delivery charges is in advance. We will charge your debit card or credit card when you place your order.<br><br>
 
@@ -330,7 +330,7 @@
 
 
 
-                        Thank you for reading. If you have any questions, please contact us directly at hello@cii.com.
+                        Thank you for reading. If you have any questions, please contact us directly at hello@globalcarpatica-dmp.com.
                     </p>
 
                 </div>

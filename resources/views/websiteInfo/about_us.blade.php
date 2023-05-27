@@ -23,8 +23,7 @@
         <div class="pt-5">
             <h2 class="story-head text-center">Everybody will get what they wants </h2>
             <p class="about-p">
-                "Person in charge for this website is                                                                                             
-                Producer SASAKI-sanr-sasaki@physis-rs.com We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
+                "We are a leading provider of virtual item trading services for the Japanese gaming community. Our mission is to make it easy for players to buy, sell, and trade their favorite in-game items and currency for real-world money. With a focus on security, reliability, and fair pricing, we have built a reputation as the trusted destination for all your gaming needs. Whether you're a seasoned player or just starting out, we have the expertise and resources to help you achieve your goals. Join us today and experience the best in game item trading!"
             </p>
 
          </div>
@@ -37,7 +36,7 @@
     </div>
     </div>
 
-    <div class="row py-5 px-5">
+    {{-- <div class="row py-5 px-5">
         <div class="col-md-4 col-sm-12">
             <img src="{{ url('assets/images/about-face-3.png') }}" class="img-fluid border-r" alt="terms" />
         </div>
@@ -47,15 +46,20 @@
         <div class="col-md-4 col-sm-12">
             <img src="{{ url('assets/images/about-face-1.png') }}" class="img-fluid border-r" alt="terms" />
         </div>
-    </div>
+    </div> --}}
 
-    <div class="cloud-img">
+    <div class="cloud-img pt-5">
         <div class="container">
             <h2 class="story-head text-center">Story</h2>
             <p class="about-p">
-                Once upon a time, in the early 1980s, two avid gamers in Japan named Takashi and Yuki realized that there was a huge demand for rare and collectible game items among their fellow gamers. They also noticed that there were no dedicated stores or companies catering to this niche market. Thus, they decided to team up and start their own trading company specializing in rare and vintage game items. <br><br>
-They began their business by acquiring a small collection of rare game cartridges and other gaming memorabilia. They then set up shop in a small storefront in Akihabara, a district in Tokyo known for its electronics and gaming shops. They started advertising their items through gaming magazines and word of mouth, and soon enough, their small store became a hub for collectors and enthusiasts alike. <br><br>
-As their reputation grew, Takashi and Yuki expanded their inventory and began importing rare items from overseas. They also hired more staff to help with the growing demand. Eventually, their company became one of the most respected game item trading companies in Japan, with a reputation for quality items and excellent customer service. And that's how a passion for gaming turned into a successful business venture.
+                Once upon a time, in the early 2010s, two 16-year-old avid gamers in Japan named Takashi and Yuki noticed a lucrative opportunity within their passion for online gaming. They realized there was substantial demand among fellow gamers for ways to earn money while playing games. They also noticed that there were no companies specifically catering to this unique market. As a result, they decided to team up and start their own company that would provide such opportunities. <br><br>
+
+They began their venture by playing popular online games and developing strategies to profit from them. They then shared these strategies and services through online gaming communities and via social media platforms. Word of mouth quickly spread about their novel methods, and their online platform became a hub for gamers looking to monetize their hobby. <br><br>
+
+As their reputation grew, Takashi and Yuki began creating guides and tutorials for more games, further increasing their influence within the gaming community. They also hired fellow gamers to assist with strategy development and customer service, catering to the burgeoning demand. <br><br>
+
+Eventually, their venture transformed into one of the most respected platforms in Japan for gamers seeking to profit from their pastime. They earned a reputation for their in-depth game knowledge, effective money-making strategies, and exceptional customer service. This story illustrates how a love for online gaming and a keen sense of business opportunity can lead to a successful entrepreneurial venture. <br><br>
+
             </p>
         </div>
     </div>

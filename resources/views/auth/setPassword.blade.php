@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="d-flex flex-column align-items-center pt-4">
-                    <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="CONTINUE" />
+                    <input type="submit" class="signup-btn w-100" id="signup2" name="signup2" value="SUBMIT" />
                     <a class="signup-a pt-3" href="{{ route('login') }}">Already have an account ?</a>
                 </div>
             </form>

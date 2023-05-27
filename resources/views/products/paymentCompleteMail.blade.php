@@ -234,7 +234,7 @@
                                             <br>
                                             This email is to inform you that we have received the payment confirmation from the administrator.<br>
                                             Please continue to use the GLOBAL CARPATICA SL site. <br>
-                                            <span>Click <a style="color: #E42575;" href="https://game3.40bears.com/" target="_blank">here</a> to go to the website</span>
+                                            <span>Click <a style="color: #E42575;" href="https://globalcarpatica-dmp.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -507,7 +507,7 @@
                                         <br>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             引き続きGLOBAL CARPATICA SLサイトをご利用ください。<br>
-                                            <span>Webサイトの<a style="color: #E42575;" href="https://game3.40bears.com/" target="_blank">トップページへ移動</a>する。</span>
+                                            <span>Webサイトの<a style="color: #E42575;" href="https://globalcarpatica-dmp.com/" target="_blank">トップページへ移動</a>する。</span>
                                         </p>
                                     </td>
                                 </tr>

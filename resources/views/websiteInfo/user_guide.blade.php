@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('assets/images/favicon-nakayoku.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('assets/images/favicon-global.svg') }}">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                                     </div>
                                     {{-- sp menu ends --}}
 
-                                    <a href="/"> <img src="{{ url('assets/images/Nakayoku-logo.svg') }}" alt="logo"></a>    
+                                    <a href="/"> <img src="{{ url('assets/images/global-logo-white.svg') }}" alt="logo" class="w-75"></a>    
                                     <a class="nav-link view-2 d-md-none d-sm-block" href="{{route('add-product')}}">SELL</a>
                                     <div id="navbarNav" class="display">
                                         <ul class="navbar-nav">
