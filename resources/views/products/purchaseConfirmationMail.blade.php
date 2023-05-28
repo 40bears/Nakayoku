@@ -240,8 +240,8 @@
                             </table>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:40px;">
                                 <tr class="sp-font" style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;  font-size: 35px;">
-                                    <td style="color: #1D262D; font-weight: 500;">Total</td>
-                                    <td style="text-align:right; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">
+                                    <td style="color: #F8F7F8; font-weight: 500;">Total</td>
+                                    <td style="text-align:right; color: #E42575; font-size: 40px; font-weight: 600;">
                                         {{$base_currency == 'USD' ? '$' : '€' }} {{$amount}}
                                     </td>
                                 </tr>
@@ -322,7 +322,7 @@
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td align="left" style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:left; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400;">
-                                            <span>If you have any questions regarding this invoice, please address your inquiries to our <a href="https://globalcarpatica-dmp.com/contact" target="_blank">Accounting Department</a>.</span>
+                                            <span>If you have any questions regarding this invoice, please address your inquiries to our <a href="https://globalcarpatica-dmp.com/contact" target="_blank" style="color:#E42575;">Accounting Department</a>.</span>
                                         </p>
                                     </td>
                                 </tr>
@@ -334,8 +334,8 @@
                                 </tr>
                                 <tr style="text-align: center;">
                                     <td>
-                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
-                                        border-radius: 5px;     padding: 0.5rem 1.2rem; font-family: 'Helvetica Neue'; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
+                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none;  color:#E42575;  
+                                        font-family: 'Helvetica Neue'; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
                                             Complete transfer
                                         </a>
                                     </td>
@@ -610,32 +610,32 @@
                             </table>
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:40px;">
                                 <tr class="sp-font" style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #707070; font-size: 45px; font-weight: 400;">
-                                    <td style="font-size: 25px; color: #1D262D; font-weight: 500;">合計</td>
-                                    <td style="text-align:right; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;"> ¥ {{$amount}} </td>
+                                    <td style="font-size: 25px; color: #F8F7F8; font-weight: 500;">合計</td>
+                                    <td style="text-align:right; color: #E42575; font-size: 40px;  font-weight: 600;"> ¥ {{$amount}} </td>
                                 </tr>
-                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #F8F7F8; font-weight: 500;">
+                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif; line-height: 1.65; color: #F8F7F8; font-weight: 500;">
                                     <td style="font-size: 13px;" class="space-game">ゲーム名</td>
                                     <td style="font-size: 16px; text-align:right;width:300px;line-height:15px;" class="space-game">
                                         {{$game_name}}
                                     </td>
                                 </tr>
-                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
+                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif; line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
                                     <td style="font-size: 13px;" class="space">商品名</td>
                                     <td style="font-size: 16px; text-align:right;" class="space">
                                         {{$product_name}}
                                     </td>
                                 </tr>
-                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
+                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif; line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
                                     <td style="font-size: 13px;" class="space">購入価格</td>
                                     <td style="font-size: 16px; text-align:right;" class="space">¥ {{$unit_price}} </td>
                                 </tr>
-                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
+                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif; line-height: 1.65; color: #F8F7F8;  font-weight: 500;">
                                     <td style="font-size: 13px;" class="space">個数</td>
                                     <td style="font-size: 16px; text-align:right;" class="space">
                                         {{$quantity}}
                                     </td>
                                 </tr>
-                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); text; font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; color: #F8F7F8; font-weight: 500;">
+                                <tr style="margin: 0;padding: 0; border-bottom:1px solid rgba(251, 251, 251, 0.82); font-size: 100%;font-family: 'Helvetica Neue', sans-serif; line-height: 1.65; color:#F8F7F8; font-weight: 500;">
                                     <td style="font-size: 13px;" class="space">購入番号</td>
                                     <td style="font-size: 16px; text-align:right;" class="space">
                                         {{$order_id}}
@@ -709,8 +709,8 @@
                                 </tr>
                                 <tr style="text-align: center;">
                                     <td>
-                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none; background: linear-gradient(103.53deg, #09FBD3 0.13%, #FE53BB 98.34%); display: flex; align-items: center; justify-content: center; box-sizing: border-box; 
-                                        border-radius: 5px;     padding: 0.5rem 1.2rem; font-family: 'Inter'; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
+                                        <a href="https://globalcarpatica-dmp.com/payment-complete-notification" style="text-decoration: none; 
+                                        color: #E42575; font-family: 'Helvetica Neue', sans-serif; font-size: 17px;font-weight: 400;font-style: normal;letter-spacing: normal;line-height: normal; margin-bottom: 1rem; margin-top: 2rem;">
                                             振込完了通知を送る
                                         </a>
                                     </td>
