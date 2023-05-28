@@ -224,7 +224,7 @@
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                                        <p style="margin: 0;padding: 0; color: #E42575; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>Thank you for your withdrawal request.</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
@@ -234,7 +234,7 @@
                                             <br>
                                             <br>
                                             Please continue to use the GLOBAL CARPATICA SL site. <br>
-                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
+                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
                                             <span>Click <a style="color: #E42575;" href="https://globalcarpatica-dmp.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
                                     </td>
@@ -493,7 +493,7 @@
                             <table style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;border-collapse: collapse;width: 100% !important; margin-bottom:20px;">
                                 <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                                     <td style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
-                                        <p style="margin: 0;padding: 0; background: linear-gradient(161deg, #09FBD3 30.34%, #FE53BB 70.34%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
+                                        <p style="margin: 0;padding: 0; color: #E42575; font-weight: 600; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;margin-bottom: 20px; font-size: 25px; font-weight: 400;">
                                             <span>出金申請を承りました</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
@@ -503,12 +503,12 @@
                                             出金には２−３営業日ほどお時間をいただく場合がございます。<br>
                                             ご指定の口座へ着金されるまでしばらくおまちください。<br>
                                         </p>
-                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
+                                        <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82);">
                                             Webサイトの<a style="color: #E42575;" href="https://globalcarpatica-dmp.com/" target="_blank">トップページへ</a>移動する。
                                             <br>
                                             <br>
                                         </p>
-                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: #707070; font-size: 18px; font-weight: 400;">
+                                        <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400;">
                                             <span>本請求書に関するお問い合わせは、<a style="color: #E42575;" href="https://globalcarpatica-dmp.com/contact" target="_blank">お問い合わせまで</a> お願いいたします。</span>
                                         </p>
                                     </td>

@@ -532,7 +532,7 @@ a:hover {
 
 .bank-edit-button {
     padding: 10px 24px;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 50px;
     background: #181818;
     width: 45%;
@@ -545,7 +545,7 @@ a:hover {
 
 .bank-delete-button {
     padding: 10px 24px;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 50px;
     background: #272727;
     font-size: 16px;
@@ -1990,7 +1990,7 @@ input:-webkit-autofill:active {
 
 .image-preview-delete-button {
     border: 1px solid #717782;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 5px;
     color: #717782 !important;
     text-decoration: none !important;
@@ -2166,7 +2166,7 @@ hr {
     padding: 12px 50px;
     gap: 10px;
     background: #232323;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 50px;
     color: #FFF;
 }
@@ -3609,7 +3609,7 @@ li.nav-item {
     display: flex;
     align-items: flex-start;
     padding: 10px 24px;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     border-radius: 50px;
     font-size: 16px;
     width: 110px;
@@ -3624,7 +3624,7 @@ li.nav-item {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
     font-size: 16px;
     width: 110px;
     height: 38px;
