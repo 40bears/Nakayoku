@@ -517,7 +517,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: #F8F7F8;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2022 GLOBAL CARPATICA SL</span>
+                                <span>©2023 GLOBAL CARPATICA SL</span>
                             </p>
                         </td>
                     </tr>
