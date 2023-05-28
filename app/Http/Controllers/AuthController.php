@@ -194,16 +194,20 @@ class AuthController extends Controller
         $categories = Category::with('games')->get();
         $games = Game::with('products')->get();
         $pages = Pages::orderBy('created_at', 'asc')->get();
-        $transactions = Transaction::with('seller', 'products')->paginate(5);
-        $popularProducts1 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%'. ' ' . '%')->limit(4)->get();
-        $popularProducts2 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%'. ' ' . '%')->limit(4)->get();
-        $popularProducts3 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%'. ' ' . '%')->limit(4)->get();
+        // $transactions = Transaction::with('seller', 'products')->paginate(5);
+        $transactions = Transaction::with('seller', 'products')->whereHas('products', function ($q) {
+            $q->whereBetween('price', [75, 350]);
+        })->paginate(5);
+        $popularProducts1 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%' . ' ' . '%')->limit(4)->get();
+        $popularProducts2 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%' . ' ' . '%')->limit(4)->get();
+        $popularProducts3 = Product::with('games')->inRandomOrder()->where('name', 'LIKE', '%' . ' ' . '%')->limit(4)->get();
         $data = compact('pages', 'games', 'devices', 'categories', 'popularProducts1', 'popularProducts2', 'popularProducts3', 'transactions');
 
         return view('dashboard')->with($data);
     }
 
-    public function dashboardWithProductType($productType){
+    public function dashboardWithProductType($productType)
+    {
         $devices = Device::with('games')->get();
         $categories = Category::with('games')->get();
         $games = Game::with('products')->get();
