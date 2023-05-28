@@ -9,7 +9,7 @@ class IdVerificationController extends Controller
 {
     public function viewIdApprovals()
     {
-        $users = User::paginate(20);
+        $users = User::orderBy('updated_at', 'desc')->paginate(20);
         $data = compact('users');
         return view('admin.idApprovals')->with($data);
     }

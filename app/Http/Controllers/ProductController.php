@@ -78,9 +78,11 @@ class ProductController extends Controller
             $q->where('name', 'LIKE', '%' . $game->name . '%');
         }])->get();
         if (request()->has('min')) {
-            $products = Product::where('game_id', $id)->where('name', 'LIKE', '%' . $request['search_product'] . '%')
-                ->orwhere('product_type', 'LIKE', '%' . $request['search_product'] . '%')
-                ->orwhere('description', 'LIKE', '%' . $request['search_product'] . '%');
+            $products = Product::where('game_id', $id)->where(function ($q) use ($request) {
+                $q->where('name', 'LIKE', '%' . $request['search_product'] . '%')
+                    ->orwhere('product_type', 'LIKE', '%' . $request['search_product'] . '%')
+                    ->orwhere('description', 'LIKE', '%' . $request['search_product'] . '%');
+            });
             if (request()->has('min_price') && !empty(request()->get('min_price'))) {
                 $products = $products->where('price', '>=', showConvertedPriceToUsd(request()->get('min_price')));
             }
@@ -90,10 +92,11 @@ class ProductController extends Controller
             $products = $products->orderBy('price')->paginate(10);
         } else {
             if ($request['search_product']) {
-                $products = Product::where('game_id', $id)->where('name', 'LIKE', '%' . $request['search_product'] . '%')
-                    ->orwhere('product_type', 'LIKE', '%' . $request['search_product'] . '%')
-                    ->orwhere('description', 'LIKE', '%' . $request['search_product'] . '%')
-                    ->paginate(10);
+                $products = Product::where('game_id', $id)->where(function ($q) use ($request) {
+                    $q->where('name', 'LIKE', '%' . $request['search_product'] . '%')
+                        ->orwhere('product_type', 'LIKE', '%' . $request['search_product'] . '%')
+                        ->orwhere('description', 'LIKE', '%' . $request['search_product'] . '%');
+                })->paginate(10);
             } else {
                 return redirect()->route('view-products', ['id' => $id]);
             }
@@ -350,7 +353,7 @@ class ProductController extends Controller
                 $request->file('image')->storeAs('uploads', $product_image, 'public');
 
                 $product->image = $product_image;
-            } elseif($request['delete-image-confirmation'] == true) {
+            } elseif ($request['delete-image-confirmation'] == true) {
                 $product->image = null;
             }
             $product->status = 'published';

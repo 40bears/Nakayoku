@@ -9,9 +9,9 @@
     <div class="row">
         <div class="col-md-3 col-12 py-5 px-5">
             <div class="d-flex justify-content-start align-items-center id-select-passport-div">
-                <div class="{{Auth::user()->document_type == 'passport' ? 'active-document-border' : ''}} " style=""></div>
+                <div class="{{Auth::user()->document_type == 'passport' ? 'active-document-border' : ''}} {{Auth::user()->document_type == '' ? 'active-document-border' : ''}}  " style=""></div>
                 <div class="d-flex justify-content-start align-items-center ps-2 pe-4 py-1 passport-icon-div">
-                    <i class="fa-solid fa-passport passport {{Auth::user()->document_type == 'passport' ? 'active' : ''}}"></i>
+                    <i class="fa-solid fa-passport passport {{Auth::user()->document_type == 'passport' ? 'active' : ''}} {{Auth::user()->document_type == '' ? 'active' : ''}}"></i>
                     <p class="text-light mb-0 ms-3">Passport</p>
                 </div>
             </div>

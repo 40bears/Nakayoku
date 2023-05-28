@@ -181,19 +181,19 @@
                     <option value="Last 6 hours">Last 6 hours</option>
                   </select>
                 </div>
-                <div class="carousal-nav mx-1 row tab" >
-                  <a href="/" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('dashboard') ? 'isActive' : '' }}" id="defaultOpen">
+                <div class="carousal-nav mx-1 row tab">
+                  <a href="/#popular-collection" class="d-flex justify-content-center align-items-center col tablinks {{ Route::is('dashboard') ? 'isActive' : '' }}" id="defaultOpen">
                     Show all
                   </a>
-                    <a href="{{ route('dashboard-by-product-type', ['product_type' => 'item'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
+                    <a href="{{ route('dashboard-by-product-type', ['product_type' => 'item'] ) }}#popular-collection" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'item') ? 'isActive' : '' }}" id="tablinks">
                       <img src="{{ url('assets/images/TopPageImages/itemsIcon.svg') }}" alt="items" loading="lazy">
                       Items
                     </a>
-                  <a href="{{ route('dashboard-by-product-type', ['product_type' => 'account'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'account') ? 'isActive' : '' }}" id="tablinks">
+                  <a href="{{ route('dashboard-by-product-type', ['product_type' => 'account'] ) }}#popular-collection" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'account') ? 'isActive' : '' }}" id="tablinks">
                     <img src="{{ url('assets/images/TopPageImages/accountIcon.svg') }}" alt="account" loading="lazy">
                     Account
                   </a>
-                  <a href="{{ route('dashboard-by-product-type', ['product_type' => 'currency'] ) }}" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'currency') ? 'isActive' : '' }}" id="tablinks">
+                  <a href="{{ route('dashboard-by-product-type', ['product_type' => 'currency'] ) }}#popular-collection" class="d-flex justify-content-evenly align-items-center col tablinks {{ str_contains(url()->current(), 'currency') ? 'isActive' : '' }}" id="tablinks">
                     <img src="{{ url('assets/images/TopPageImages/currencyIcon.svg') }}" alt="currency" loading="lazy">
                     Currency
                   </a>
