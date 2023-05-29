@@ -246,7 +246,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 GLOBAL CARPATICA SL</span>
+                                <span>©2023 Global carpatica sl</span>
                             </p>
                         </td>
                     </tr>
@@ -498,7 +498,7 @@
                                             <span>ご指定の口座へ入金が完了しました。</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
-                                            この度は GLOBAL CARPATICA SL サイトをご利用いただき、ありがとうございます。<br>
+                                            この度は Global carpatica sl サイトをご利用いただき、ありがとうございます。<br>
                                             いただいている情報で確認が取れましたので、<br>
                                             ご指定の口座へ入金させていただきます。<br>
                                             3営業日ほど入金にお時間をいただきます。もうしばらくお待ちください。<br>
@@ -519,7 +519,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 GLOBAL CARPATICA SL</span>
+                                <span>©2023 Global carpatica sl</span>
                             </p>
                         </td>
                     </tr>
