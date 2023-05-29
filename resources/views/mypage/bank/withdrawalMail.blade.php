@@ -228,12 +228,12 @@
                                             <span>Thank you for your withdrawal request.</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
-                                            Thank you for visiting the GLOBAL CARPATICA SL site. <br>
+                                            Thank you for visiting the Global carpatica sl site. <br>
                                             We are currently checking with the administrator. <br>
                                             If there is no mistake in the deposit destination account and amount, we will deposit as soon as we can confirm. <br>
                                             <br>
                                             <br>
-                                            Please continue to use the GLOBAL CARPATICA SL site. <br>
+                                            Please continue to use the Global carpatica sl site. <br>
                                         <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;margin-bottom: 20px; margin-top:30px; color: rgba(251, 251, 251, 0.82); font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
                                             <span>Click <a style="color: #E42575;" href="https://globalcarpatica-dmp.com/" target="_blank">here</a> to go to the website</span>
                                         </p>
@@ -245,7 +245,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 GLOBAL CARPATICA SL</span>
+                                <span>©2023 Global carpatica sl</span>
                             </p>
                         </td>
                     </tr>
@@ -497,7 +497,7 @@
                                             <span>出金申請を承りました</span>
                                         </p>
                                         <p class="sp-p" style="margin: 0;padding: 0; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65; margin-bottom: 20px; font-size: 18px; font-weight: 400; color: rgba(251, 251, 251, 0.82)">
-                                            この度はGLOBAL CARPATICA SLサイトをご利用いただき、ありがとうございます。<br>
+                                            この度はGlobal carpatica slサイトをご利用いただき、ありがとうございます。<br>
                                             いただいている情報で確認が取れましたので、<br>
                                             ご指定の口座へ出金させていただきます。<br>
                                             出金には２−３営業日ほどお時間をいただく場合がございます。<br>
@@ -519,7 +519,7 @@
                     <tr style="margin: 0;padding: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;">
                         <td align="center" class="lasthead logo-td" style="margin: 0;font-size: 100%;font-family: 'Helvetica Neue', sans-serif;line-height: 0px;background: #000;color: white;position:relative;">
                             <p style="margin: 0;padding: 0;font-size: 16px; text-align:center; font-family: 'Helvetica Neue', sans-serif;line-height: 1.65;font-weight: normal;">
-                                <span>©2023 GLOBAL CARPATICA SL</span>
+                                <span>©2023 Global carpatica sl</span>
                             </p>
                         </td>
                     </tr>
