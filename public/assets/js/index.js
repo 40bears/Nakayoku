@@ -8,6 +8,15 @@ window.onload = () => {
     }, 1000);
 };
 
+if ($("#popular-collection").length) {
+    $(document).on("click", "#popular-collection .tablinks", function (e) {
+        $.get($(this).attr("href")).then((data) => {
+            $('#popular-collection').html($(data).find('#popular-collection').html());
+        });
+        return false;
+    });
+}
+
 // sp menu starts
 
 $(".menu-outer").click(function () {
@@ -137,8 +146,8 @@ withdrawalAmount?.addEventListener("keyup", function () {
                     .toString()
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
                 " ";
-                submitWithdrawalRequest.removeAttribute("disabled");
-                submitWithdrawalRequest.classList.remove("disabled");
+            submitWithdrawalRequest.removeAttribute("disabled");
+            submitWithdrawalRequest.classList.remove("disabled");
         } else {
             totalWithdrawalAmount.innerHTML =
                 " " +
@@ -418,7 +427,7 @@ const imageUploadPreviewNew = document.querySelector(".image-upload-preview-new"
 const removeUploadedPicNew = document.querySelector(".remove-uploaded-pic-new");
 
 
-imageUploadNew?.addEventListener("change", function(e){
+imageUploadNew?.addEventListener("change", function (e) {
     imageSelectDivNew.classList.add("hide");
     imagePreviewNew.classList.remove("hide");
     let preview = URL.createObjectURL(e.target.files[0]);
@@ -426,7 +435,7 @@ imageUploadNew?.addEventListener("change", function(e){
     deleteBtnClickListener.checked = false;
 });
 
-removeUploadedPicNew?.addEventListener("click", function(){
+removeUploadedPicNew?.addEventListener("click", function () {
     imageSelectDivNew.classList.remove("hide");
     imagePreviewNew.classList.add("hide");
     imageUploadNew.value = null;
@@ -557,7 +566,7 @@ const idTypeDrivingLicense = document.querySelector(".id-select-driving-license-
 const passportIconDiv = document.querySelector(".passport-icon-div");
 const licenseIconDiv = document.querySelector(".license-icon-div");
 
-idTypePassport?.addEventListener("click", function(){
+idTypePassport?.addEventListener("click", function () {
     documentType.value = "passport";
     idTypePassport.firstElementChild.classList.add("active-document-border");
     idTypeDrivingLicense.firstElementChild.classList.remove("active-document-border");
@@ -565,7 +574,7 @@ idTypePassport?.addEventListener("click", function(){
     licenseIconDiv.firstElementChild.classList.remove("active");
     secondDocument?.classList.add("hide");
 });
-idTypeDrivingLicense?.addEventListener("click", function(){
+idTypeDrivingLicense?.addEventListener("click", function () {
     documentType.value = "driving_license";
     idTypeDrivingLicense.firstElementChild.classList.add("active-document-border");
     idTypePassport.firstElementChild.classList.remove("active-document-border");
@@ -973,8 +982,8 @@ const formLastName = document.querySelector(".form-last-name");
 const formEmail = document.querySelector(".form-email");
 const formInquiry = document.querySelector(".form-inquiry");
 contactFormCommonClass.forEach((e) => {
-    e.addEventListener("keyup", function(){
-        if(formFirstName.value != "" && formLastName.value != "" && formEmail.value != "" && formInquiry.value != ""){
+    e.addEventListener("keyup", function () {
+        if (formFirstName.value != "" && formLastName.value != "" && formEmail.value != "" && formInquiry.value != "") {
             contactConfirmButton.classList.remove("disabled");
             contactConfirmButton.removeAttribute("disabled");
         }
