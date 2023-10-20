@@ -2,6 +2,8 @@
 
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
+use AshAllenDesign\LaravelExchangeRates\Facades\ExchangeRate;
 
 /**
  *
@@ -17,17 +19,12 @@ use Illuminate\Support\Facades\Session;
 if (!function_exists('convertCurrency')) {
     function convertCurrency()
     {
+        
         if (!Session::has('convertedCurrency')) {
             if (Auth::user()) {
-                Session::put('convertedCurrency', Currency::convert()
-                    ->from('USD')
-                    ->to(Auth::user()->base_currency)
-                    ->get());
+                Session::put('convertedCurrency',ExchangeRate::exchangeRate('USD', Auth::user()->base_currency));
             } else {
-                Session::put('convertedCurrency', Currency::convert()
-                    ->from('USD')
-                    ->to(Session::get('base_currency'))
-                    ->get());
+                Session::put('convertedCurrency', ExchangeRate::exchangeRate('USD', Session::get('base_currency')));
             }
         }
         return Session::get('convertedCurrency');

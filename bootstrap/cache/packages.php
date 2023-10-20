@@ -10,6 +10,17 @@
       'Currency' => 'AmrShawky\\LaravelCurrency\\Facade\\Currency',
     ),
   ),
+  'ashallendesign/laravel-exchange-rates' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AshAllenDesign\\LaravelExchangeRates\\Providers\\ExchangeRatesProvider',
+    ),
+    'aliases' => 
+    array (
+      'ExchangeRate' => 'AshAllenDesign\\LaravelExchangeRates\\Facades\\ExchangeRate',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
